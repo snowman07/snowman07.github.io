@@ -1,0 +1,1138 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+   html {
+    color: #222;
+    font-size: 100%;
+    line-height: 1.4;
+    box-sizing: border-box;
+    /* font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif; */
+    font-family: 'Roboto Slab', serif;
+}
+
+*, *:before, *:after
+{
+    box-sizing: inherit;
+}
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+/*=====HOMEPAGE=====*/
+
+/*=====BODY=====*/
+
+@font-face {
+    font-family: 'roboto-bold';
+    src: url('../fonts/Roboto-Bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'roboto-regular';
+    src: url('../fonts/Roboto-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'roboto-slab-bold';
+    src: url('../fonts/RobotoSlab-Bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'roboto-slab-regular';
+    src: url('../fonts/RobotoSlab-Regular-webfont.woff') format('woff');   
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'roboto-slab-light';
+    src: url('../fonts/RobotoSlab-Light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+.container {
+    margin: 0 auto; /*centers the web page */
+	width: 93.75rem;
+	font-size: 100%;
+	line-height: 1.5;
+}
+
+/*=====HEADER=====*/
+
+        /*=====Start of nav=====*/
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-top: 1.875rem; */
+    margin: 1.785rem 0;
+}
+
+header ul li {
+    font-family: 'roboto-regular';
+    font-size: 1rem;
+    display: flex;
+    display: inline;
+    /* list-style: none; */
+    justify-content: center;
+    text-transform: uppercase; /*use to transform capital texts*/
+    padding-left: 1.9375rem;
+    margin-left: 1.875rem; /*use to move the ul li right*/
+}
+
+
+.navigation-buttons {
+    font-family: 'roboto-regular';
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase; /*use to transform capital texts*/
+}
+
+.navigation-buttons a:first-child {
+    text-decoration: none;
+    border-radius: 0.3125rem; /*for rounded button*/
+    background-color: #047590;
+    color: white;
+    padding: 1.25rem 2rem; /*to move tickets text to left*/
+    margin-right: 1.25rem; 
+}
+
+.navigation-buttons a:last-child {
+    text-decoration: none;
+    border-radius: 0.3125rem; /*for rounded button*/
+    background-color: #e97300;
+    color: white;
+    padding: 1.25rem 2rem; /*to move line-up text to left*/
+    margin-right: 6.25rem; /*to push the button left*/
+}
+
+        /*=====End of nav=====*/
+
+        /*=====Start ======*/
+
+.banner {
+    background-image: url(../img/home/party-people.jpg), url(../img/home/banner-background.jpg) ;
+    background-position: 480px center, left top;
+    background-repeat: no-repeat, no-repeat;
+    height: 37.5rem;
+    /* text-align: center; */
+}
+
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-left: 22.125rem;
+    padding-right: 19.75rem;
+    padding-top: 8.125rem;
+}
+
+h1 {
+    font-variant: small-caps;
+    font-family: 'Roboto Slab';
+    /* font-weight: bold; */
+    font-size: 7.5rem;
+    line-height: 8.3125rem;
+    letter-spacing: 0.3125rem;
+    margin: 0.5rem;
+}
+
+.banner-text > p {
+    text-transform: uppercase;
+    font-family: 'roboto-bold';
+    font-size: 1.5rem;
+    margin: 0
+}
+
+time {
+    text-transform: capitalize;
+    font-family: 'roboto-regular';
+    font-size: 2.5rem;
+    margin: 0
+}
+
+
+/*=====END OF HEADER=====*/
+
+
+
+
+
+
+/*=====MAIN=====*/
+
+        /*=====Start of four-images=====*/
+.four-images {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2.5rem 6.25rem;
+}
+
+h4
+{
+    display: flex;
+    justify-content: center;
+    /* align-items: flex-end; */
+    padding-top: 13rem; /*use to move h2 at the bottom of an image*/
+    font-family: 'roboto-slab-regular';
+    font-size: 1.75rem;
+    text-transform: capitalize;
+    color: white;
+}
+.camping {
+    background-image: url(../img/home/camping.jpg);
+    width: 18.4375rem;
+    height: 18.4375rem;
+}
+.dance {
+    background-image: url(../img/home/dance.jpg);
+    width: 18.4375rem;
+    height: 18.4375rem;
+}
+.food-and-drink {
+    background-image: url(../img/home/food-and-drink.jpg);
+    width: 18.4375rem;
+    height: 18.4375rem;
+}
+.music {
+    background-image: url(../img/home/music-show.jpg);
+    width: 18.4375rem;
+    height: 18.4375rem;
+}
+        /*=====End of four-images=====*/
+
+
+
+
+        /*=====Start of Section plan=====*/
+.plan {
+    background-image: url(../img/home/bottom-background.jpg);
+    height: 89.6875rem;
+    padding: 4.6875rem 12.5rem;
+    /* margin-top: 5.125rem; */
+}
+
+h2 {
+    font-family: 'roboto-slab-bold';
+    font-size: 4.875rem;
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 3.125rem;
+    border-bottom: solid 1px;
+    border-width: 1px;
+    border-bottom-color: #8be5c3;
+    margin-top: 0;
+    letter-spacing: 6px;
+}
+
+
+.plan > p {
+    font-family: 'roboto-regular';
+    font-size: 1rem;
+    text-transform: capitalize;
+    text-align: center;
+    color: white;
+    margin: 0 16.875rem;
+}
+
+h3 {
+    font-family: 'roboto-slab-regular';
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    margin: 16px 0 0 0; /*this code is to move the img and h3 closer*/
+    
+}
+
+.six-images {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    justify-content: space-around;
+ 
+}
+
+    /*First Image on .six-images*/
+.deals {
+        /*  - there are 4 items inside this container
+            - this code will put space on the items */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+        /*  - end of code for the space of 4 items*/
+    background-color: white;
+    padding: 3.75rem 2.1875rem;
+    width: 21.25rem; /*size of the white background*/
+    height: 32.8125rem; /*size of the white background*/
+    text-align: center;
+    margin-top: 1.875rem;
+}
+
+.deals > img {
+        /*  - this code is used to retain the size of img*/
+    max-width: 4rem;
+    max-height: 4rem;
+    width: auto;
+    height: auto;
+        /*  - end of code*/
+    align-self: center;
+}
+
+.deals > p {
+    text-transform: capitalize;
+}
+
+.deals > a {
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 0.3125rem;
+    background-color: #e97300;
+    color: white;
+    padding: 1.25rem 2rem;
+    margin: 0 2.6875rem; 
+    font-family: 'roboto-regular';
+    font-size: 0.875rem;   
+}
+    /*End of the first image*/
+
+
+
+    /*Second Image on .six-images*/
+.guess {
+    /*  - there are 4 items inside this container
+        - this code will put space on the items */
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+    /*  - end of code for the space of 4 items*/
+background-color: white;
+padding: 3.75rem 2.1875rem;
+width: 21.25rem; /*size of the white background*/
+height: 32.8125rem; /*size of the white background*/
+text-align: center;
+margin-top: 1.875rem;
+}
+
+.guess > img {
+    /*  - this code is used to retain the size of img*/
+max-width: 4rem;
+max-height: 4rem;
+width: auto;
+height: auto;
+    /*  - end of code*/
+align-self: center;
+}
+
+.guess > p {
+text-transform: capitalize;
+}
+
+.guess > a {
+text-transform: uppercase;
+text-decoration: none;
+border-radius: 0.3125rem;
+background-color: #047590;
+color: white;
+padding: 1.25rem 2rem;
+margin: 0 2.6875rem;
+font-family: 'roboto-regular';
+font-size: 0.875rem;    
+}
+    /*End of the second image*/
+
+    /*Third Image on .six-images*/
+.parking {
+    /*  - there are 4 items inside this container
+        - this code will put space on the items */
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+    /*  - end of code for the space of 4 items*/
+background-color: white;
+padding: 3.75rem 2.1875rem;
+width: 21.25rem; /*size of the white background*/
+height: 32.8125rem; /*size of the white background*/
+text-align: center;
+margin-top: 1.875rem;
+}
+
+.parking > img {
+    /*  - this code is used to retain the size of img*/
+max-width: 4rem;
+max-height: 4rem;
+width: auto;
+height: auto;
+    /*  - end of code*/
+align-self: center;
+}
+
+.parking > p {
+text-transform: capitalize;
+}
+
+.parking > a {
+text-transform: uppercase;
+text-decoration: none;
+border-radius: 0.3125rem;
+background-color: #e97300;
+color: white;
+padding: 1.25rem 2rem;
+margin: 0 2.6875rem;
+font-family: 'roboto-regular';
+font-size: 0.875rem;      
+}
+    /*End of the third image*/
+
+
+    /*Fourth Image on .six-images*/
+.public {
+    /*  - there are 4 items inside this container
+        - this code will put space on the items */
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+    /*  - end of code for the space of 4 items*/
+background-color: white;
+padding: 3.75rem 2.1875rem;
+width: 21.25rem; /*size of the white background*/
+height: 32.8125rem; /*size of the white background*/
+text-align: center;
+margin-top: 1.875rem;
+}
+
+.public > img {
+    /*  - this code is used to retain the size of img*/
+max-width: 4rem;
+max-height: 4rem;
+width: auto;
+height: auto;
+    /*  - end of code*/
+align-self: center;
+}
+
+.public > p {
+text-transform: capitalize;
+}
+
+.public > a {
+text-transform: uppercase;
+text-decoration: none;
+border-radius: 0.3125rem;
+background-color: #e97300;
+color: white;
+padding: 1.25rem 1rem;
+margin: 0 2.6875rem;  
+font-family: 'roboto-regular';
+font-size: 0.875rem;    
+}
+    /*End of the fourth image*/
+
+
+    /*Fifth Image on .six-images*/
+.tickets {
+    /*  - there are 4 items inside this container
+        - this code will put space on the items */
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+    /*  - end of code for the space of 4 items*/
+background-color: white;
+padding: 3.75rem 2.1875rem;
+width: 21.25rem; /*size of the white background*/
+height: 32.8125rem; /*size of the white background*/
+text-align: center;
+margin-top: 1.875rem;
+}
+
+.tickets > img {
+    /*  - this code is used to retain the size of img*/
+max-width: 4rem;
+max-height: 4rem;
+width: auto;
+height: auto;
+    /*  - end of code*/
+align-self: center;
+}
+
+.tickets > p {
+text-transform: capitalize;
+}
+
+.tickets > a {
+text-transform: uppercase;
+text-decoration: none;
+border-radius: 0.3125rem;
+background-color: #e97300;
+color: white;
+padding: 1.25rem 1rem;
+margin: 0 2.6875rem; 
+font-family: 'roboto-regular';
+font-size: 0.875rem;     
+}
+    /*End of the fifth image*/
+
+    /*Sixth Image on .six-images*/
+.contact {
+    /*  - there are 4 items inside this container
+        - this code will put space on the items */
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+    /*  - end of code for the space of 4 items*/
+background-color: white;
+padding: 3.75rem 2.1875rem;
+width: 21.25rem; /*size of the white background*/
+height: 32.8125rem; /*size of the white background*/
+text-align: center;
+margin-top: 1.875rem;
+}
+
+.contact > img {
+    /*  - this code is used to retain the size of img*/
+max-width: 4rem;
+max-height: 4rem;
+width: auto;
+height: auto;
+    /*  - end of code*/
+align-self: center;
+}
+
+.contact > p {
+text-transform: capitalize;
+}
+
+.contact > a {
+text-transform: uppercase;
+text-decoration: none;
+border-radius: 0.3125rem;
+background-color: #e97300;
+color: white;
+padding: 1.25rem 1rem;
+margin: 0 2.6875rem;  
+font-family: 'roboto-regular';
+font-size: 0.875rem;    
+}
+    /*End of the sixth image*/
+
+        /*=====End of Section=====*/
+
+
+
+/*======END OF MAIN=====*/
+
+
+
+/*=====START OF FOOTER=====*/
+
+footer {
+    /* background-image: url(../img/footer-background.png); */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.foot-container {
+    background-image: url(../img/footer-background.png);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 4.8125rem 6.25rem;
+    /* height: 357px; */
+}
+
+.foot-text {
+    display: flex;
+    flex-direction: column;
+    /* width: 20rem; */
+    align-items: flex-start;
+    /* padding: 11.9rem 0; */
+    width: 295px;
+}
+
+.foot-text > p {
+    /* font-size: 1.6rem;
+    line-height: 2.6rem; */
+    color: #a7b2bf;
+
+    font-family: 'roboto-regular';
+    font-size: 16px;
+}
+
+
+.foot-ul > ul > li {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: space-evenly;
+    padding: 5px 0;
+    /* display: flex;
+    align-items: space-between; */
+    color: #a7b2bf;
+    /* font-size: 1.6rem;
+    line-height: 3rem; */
+    /* list-style: none; */
+    text-transform: capitalize;
+}
+
+
+.foot-image-one {
+    border-radius: 10rem;
+}
+.foot-image-two {
+    border-radius: 10rem;
+}
+.foot-image-three {
+    border-radius: 10rem;
+}
+
+.foot-bar{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 3.4rem 0 3.4rem 12rem; */
+    height: 3.75rem;
+    padding: 0 6.25rem;
+}
+
+.foot-bar > div > p {
+    color: #5c6571;
+    font-size: 1.3rem;
+    line-height: 3.6rem;
+}
+
+.social-media > img{
+    padding-left: 1.25rem;
+   
+}
+
+
+
+/*=====END OF FOOTER=====*/
+
+
+/*=====END OF HOMEPAGE=====*/
+
+
+
+
+
+
+/*=====START OF TICKETS PAGE======*/
+
+/*=====This is the Main=====*/
+
+.tickets-page {
+    /* height: 200px; */
+    background-image: url(../img/tickets/banner-background.jpg), url(../img/tickets/background.jpg);
+    background-position: center 140px, left top;
+    background-repeat: no-repeat, no-repeat;
+    height: 138.875rem;
+}
+
+
+
+.ticket-banner {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    /* padding-left: 22.125rem;
+    padding-right: 19.75rem;*/
+    padding-top: 390px; 
+    padding-bottom: 290px;
+}
+
+.ticket-banner > h1 {
+    font-variant: small-caps;
+    font-family: 'Roboto Slab';
+    /* font-weight: bold; */
+    font-size: 7.5rem;
+    line-height: 8.3125rem;
+    letter-spacing: 5px;
+    margin: 0.5rem;
+}
+
+.ticket-banner > p {
+    /* display: flex;
+    align-items: flex-start; */
+    text-transform: uppercase;
+    font-family: 'roboto-bold';
+    font-size: 1.5rem;
+    margin: 0
+}
+
+
+
+/*=====Start of Section Ticket=====*/
+.section-ticket {
+    margin: 80px 100px;
+    /* border-style: solid;
+    border-width: 1px 1px 1px px; */
+    background-color: #f3ede9;
+    height: 1225px;
+    width: 1300px;
+    /* margin: 80px 100px; */ /*??????*/
+    padding-top: 85px;
+}
+
+.section-ticket > h2 {
+    font-family: 'roboto-slab-bold';
+    font-size: 4.875rem;
+    color: black;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 3.125rem;
+    
+    border-bottom: solid 1px;
+    border-width: 1px;
+    border-bottom-color: #8be5c3;
+    margin-top: 0;
+    letter-spacing: 6px;
+    /* padding-top: 20.50px */
+}
+
+.section-ticket > p {
+    font-family: 'roboto-regular';
+    font-size: 1rem;
+    text-transform: capitalize;
+    text-align: center;
+    color: black;
+    margin: 0 16.875rem;
+}
+
+
+
+/*four ticket types*/
+
+h3 {
+    font-family: 'roboto-slab-regular';
+    font-size: 2.5rem;
+    text-transform: capitalize;
+}
+
+.four-ticket-types {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.top-left {
+    /*  - there are 4 items inside this container
+        - this code will put space on the items */
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+    /*  - end of code for the space of 4 items*/
+background-color: white;
+padding: 3.75rem 2.1875rem;
+width: 33.125rem; /*size of the white background*/
+height: 25.3125rem; /*size of the white background*/
+text-align: center;
+margin-top: 4.0625rem;
+}
+
+.top-left > a {
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 0.3125rem;
+    background-color: #047590;
+    color: white;
+    padding: 1.25rem 2rem;
+    margin-right: 12.5rem; 
+    font-family: 'roboto-regular';
+    font-size: 0.875rem; 
+}
+
+.top-right {
+    /*  - there are 4 items inside this container
+        - this code will put space on the items */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+        /*  - end of code for the space of 4 items*/
+    background-color:#047590;
+    padding: 3.75rem 2.1875rem;
+    width: 33.125rem; /*size of the white background*/
+    height: 25.3125rem; /*size of the white background*/
+    text-align: center;
+    margin-top: 4.0625rem;
+}
+
+.top-right > a {
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 0.3125rem;
+    background-color: white;
+    color: #047590;
+    padding: 1.25rem 2rem;
+    margin-right: 12.5rem; 
+    font-family: 'roboto-regular';
+    font-size: 0.875rem; 
+}
+
+.bottom-left {
+    /*  - there are 4 items inside this container
+        - this code will put space on the items */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+        /*  - end of code for the space of 4 items*/
+    background-color: white;
+    padding: 3.75rem 2.1875rem;
+    width: 33.125rem; /*size of the white background*/
+    height: 25.3125rem; /*size of the white background*/
+    text-align: center;
+    margin-top: 4.0625rem;
+}
+
+.bottom-left > a {
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 0.3125rem;
+    background-color: #047590;
+    color: white;
+    padding: 1.25rem 2rem;
+    margin-right: 12.5rem; 
+    font-family: 'roboto-regular';
+    font-size: 0.875rem; 
+}
+
+.bottom-right {
+    /*  - there are 4 items inside this container
+        - this code will put space on the items */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+        /*  - end of code for the space of 4 items*/
+    background-color: white;
+    padding: 3.75rem 2.1875rem;
+    width: 33.125rem; /*size of the white background*/
+    height: 25.3125rem; /*size of the white background*/
+    text-align: center;
+    margin-top: 4.0625rem;
+}
+
+.bottom-right > a {
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 0.3125rem;
+    background-color: #047590;
+    color: white;
+    padding: 1.25rem 2rem;
+    margin-right: 12.5rem; 
+    font-family: 'roboto-regular';
+    font-size: 0.875rem; 
+}
+
+
+.sponsors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 7.5rem 6.25rem;
+    height: 18.125rem;
+}
+
+
+/*=====END OF MAIN=====>*/
+
+/*=====End of the Body=====*/
+
+/*=====END OF TICKETS PAGE=====*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
