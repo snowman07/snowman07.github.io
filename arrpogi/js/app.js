@@ -2,6 +2,12 @@
 /* How to use? : Check the GitHub README
 /* ----------------------------------------------- */
 
+/* 
+REFERENCES:
+animation: https://www.sliderrevolution.com/resources/css-animated-background/
+github: https://github.com/VincentGarreau/particles.js/
+*/
+
 /* To load a config file (particles.json) you need to host this demo (MAMP/WAMP/local)... */
 /*
 particlesJS.load('particles-js', 'particles.json', function() {
