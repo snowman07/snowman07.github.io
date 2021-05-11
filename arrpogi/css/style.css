@@ -225,3 +225,18 @@ canvas {
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
+
+/* typewriter */
+
+/* #typedtext {
+  font-family: "Waiting for the Sunrise", cursive;
+  font-size: 30px;
+  margin: 10px 50px;
+  letter-spacing: 6px;
+  font-weight: bold;
+} */
+
+.typewrite {
+  color: #fff;
+  text-decoration: none;
+}
