@@ -264,12 +264,9 @@ canvas {
 /*******    START OF DESKTOP VIEW (769-1140px)   **********/
 /**********************************************************/
 @media only screen and (min-width: 48.0625rem) {
-  header nav {
-    /*we want to see the nav by default, so make sure it's shown*/
-    max-height: 100%;
-    /*since mobile view used absolute and relative position for nav, use position: static on this breakpoint to positioned according to the normal flow of the page*/
-    position: static;
-    padding-left: 50px;
+  .nav-link {
+    margin: 10px;
+    text-transform: uppercase;
   }
 }
 /**********************************************************/
