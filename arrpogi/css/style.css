@@ -185,8 +185,8 @@ body {
 }
 
 canvas {
-  display: block;
-  /* vertical-align: bottom; */
+  /* display: block; */
+  vertical-align: bottom;
 }
 /* ---------------------- END OF base --- */
 /* -------------------------------------- */
@@ -203,9 +203,12 @@ canvas {
 /* -------------------------------------- */
 
 /* -------------------------------------------------- */
-/* --- START OF particles.js container -------------- */
+/* --- START OF particles-js -------------- */
+/* header {
+  position: relative;
+} */
 
-#particles-js {
+header > #particles-js {
   width: 100%;
   height: 100%;
   background-color: #b61924;
@@ -214,29 +217,27 @@ canvas {
   background-position: 50% 50%;
   /* background-position: center; */
   background-repeat: no-repeat;
-  position: absolute;
+  position: relative; /*this is container for h1, needed to align h1*/
 }
-/* ---------------- END OF particles.js container --- */
-/* -------------------------------------------------- */
 
-/* -------------------------------------------------- */
-/* --- START OF typewriter -------------------------- */
 #particles-js > h1 {
-  display: block;
-  flex-flow: column;
+  position: absolute;
+  top: 50%;
+  width: 100%;
   text-align: center;
-  font-size: 10px;
-  /* position: absolute; */
-  margin-top: 100px;
-  margin-left: 50px;
+  font-size: 18px;
 }
 
 .typewrite {
   color: #fff;
   text-decoration: none;
 }
-/* -------------------------- START OF typewriter --- */
+/* ---------------- END OF particles-js --- */
 /* -------------------------------------------------- */
+
+/* main {
+  position: relative;
+} */
 
 /**********************************************************/
 /********    END OF MOBILE VIEW (DEFAULT 1-400px)    ******/
@@ -265,14 +266,14 @@ canvas {
     font-weight: bolder;
     font-size: large;
   } */
-  #particles-js > h1 {
+  /* #particles-js > h1 {
     display: block;
     text-align: center;
     font-size: 100px;
     position: absolute;
     margin-top: 300px;
     margin-left: 50px;
-  }
+  } */
 }
 /**********************************************************/
 /**********    END OF DESKTOP VIEW (769-1140px)    ********/
