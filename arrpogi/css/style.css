@@ -217,7 +217,7 @@ header > #particles-js {
   background-position: 50% 50%;
   /* background-position: center; */
   background-repeat: no-repeat;
-  position: relative; /*this is container for h1, needed to align h1*/
+  position: fixed; /*this is container for h1, needed to align h1*/
 }
 
 #particles-js > h1 {
