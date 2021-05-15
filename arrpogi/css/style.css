@@ -218,7 +218,7 @@ header > #particles-js {
   /* background-position: center; */
   background-repeat: no-repeat;
   /*position: fixed; this is container for h1, needed to align h1*/
-  background-attachment: fixed;
+  background-attachment: fixed; /*??? need to remove, experiment first*/
 }
 
 #particles-js > h1 {
