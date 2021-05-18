@@ -199,6 +199,30 @@ canvas {
 /* -------------------------------------- */
 /* --- START OF Navbar ------------------ */
 
+/* nav {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+} */
+
+/* nav {
+  position: sticky;
+  border: solid black 2px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+} */
+/* nav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+} */
+
 /* -------------------- END OF Navbar --- */
 /* -------------------------------------- */
 
@@ -206,6 +230,10 @@ canvas {
 /* --- START OF particles-js -------------- */
 /* header {
   position: relative;
+} */
+/* nav {
+  position: fixed;
+  opacity: 0;
 } */
 
 header > #particles-js {
