@@ -217,13 +217,12 @@ header > #particles-js {
   background-position: 50% 50%;
   /* background-position: center; */
   background-repeat: no-repeat;
-  /*position: fixed; this is container for h1, needed to align h1*/
-  background-attachment: fixed; /*??? need to remove, experiment first*/
+  position: fixed; /*for the background of particles*/
 }
 
 #particles-js > h1 {
   position: absolute;
-  top: 50%;
+  top: 50%; /*to center the h1 typewriter*/
   width: 100%;
   text-align: center;
   font-size: 18px;
@@ -232,6 +231,7 @@ header > #particles-js {
 .typewrite {
   color: #fff;
   text-decoration: none;
+  font-size: x-large;
 }
 
 .container {
@@ -240,6 +240,8 @@ header > #particles-js {
   background: #f9f9f9;
   font-size: 24px;
   padding: 25px;
+  position: relative; /*use to hide particle background when scroll up*/
+  top: 700px; /*partner of position: relative to move container down. can also use down, left, right*/
 }
 
 .parallax {
