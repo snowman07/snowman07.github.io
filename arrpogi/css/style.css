@@ -198,44 +198,15 @@ canvas {
 
 /* -------------------------------------- */
 /* --- START OF Navbar ------------------ */
-
-/* nav {
-  overflow: hidden;
-  background-color: #333;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-} */
-
-/* nav {
-  position: sticky;
-  border: solid black 2px;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-} */
-/* nav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-} */
-/* header {
-  position: relative;
-} */
-
+/* 
 nav {
   width: 100%;
-  /* background-color: #062397; */
   opacity: 3;
   position: fixed;
 }
 
 nav ul {
   text-align: center;
-  /* position: absolute; */
 }
 
 nav ul li {
@@ -248,16 +219,69 @@ nav ul li a {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 20px;
-  /* letter-spacing: ;
-  font-weight: ; */
   color: #fff;
   padding: 30px;
-  transition: all ease 0.6s; /*code for hover of <a> tag*/
+  transition: all ease 0.6s;
 }
 
 nav ul li a:hover {
   background-color: #211b4385;
-  /* https://www.youtube.com/watch?v=eQ5SU6UN46w */
+} */
+/* https://www.youtube.com/watch?v=eQ5SU6UN46w */
+
+/*****************************************************/
+/*****************************************************/
+
+nav a {
+  position: fixed;
+  left: -80px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border: solid white 5px;
+  border-radius: 0 5px 5px 0;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+nav a:hover {
+  left: 0;
+}
+
+.my-profile {
+  top: 20px;
+  background-color: #04aa6d;
+}
+
+.it-experience {
+  top: 200px;
+  background-color: #2196f3;
+}
+
+.technical-skills {
+  top: 200px;
+  background-color: #f44336;
+}
+
+.projects {
+  top: 300px;
+  background-color: #555;
+}
+
+nav a i {
+  padding-left: 70px;
+}
+
+nav a span {
+  writing-mode: vertical-lr;
+  text-orientation: sideways-right;
 }
 
 /* -------------------- END OF Navbar --- */
@@ -302,12 +326,12 @@ nav ul li a:hover {
 .container {
   max-width: 100%;
   margin: 0 auto;
-  background: #f9f9f9;
+  background: #04aa6d;
   font-size: 24px;
   padding: 25px;
   position: absolute; /*use to hide particle background when scroll up*/
   top: 800px; /*partner of position: relative to move container down. can also use down, left, right*/
-  left: 90px;
+  left: 60px;
   right: 20px;
 }
 
