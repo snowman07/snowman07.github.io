@@ -241,8 +241,8 @@ nav a {
   text-decoration: none;
   font-size: 20px;
   color: white;
-  border: solid white 5px;
-  border-radius: 0 5px 5px 0;
+  /* border: solid white 5px; */
+  /* border-radius: 0 5px 5px 0; */
 }
 
 nav ul {
@@ -257,7 +257,8 @@ nav a:hover {
 
 .my-profile {
   top: 20px;
-  background-color: #04aa6d;
+  /* background-color: #04aa6d; */
+  border: solid #04aa6d 5px;
 }
 
 .it-experience {
