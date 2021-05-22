@@ -236,12 +236,12 @@ nav a {
   position: fixed;
   left: -80px;
   transition: 0.3s;
-  padding: 15px;
+  padding: 20px;
   width: 100px;
   text-decoration: none;
   font-size: 20px;
   color: white;
-  /* border: solid white 5px; */
+  /* border: solid white 2px; */
   /* border-radius: 0 5px 5px 0; */
 }
 
@@ -255,10 +255,27 @@ nav a:hover {
   left: 0;
 }
 
+li a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+li a i {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding-right: 15px;
+}
+
+/* li a span {
+  margin-left: 15px;
+} */
+
 .my-profile {
   top: 20px;
-  /* background-color: #04aa6d; */
-  border: solid #04aa6d 5px;
+  background-color: #04aa6d;
+  /* border: solid #04aa6d 5px; */
 }
 
 .it-experience {
