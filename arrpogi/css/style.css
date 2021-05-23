@@ -198,44 +198,11 @@ canvas {
 
 /* -------------------------------------- */
 /* --- START OF Navbar ------------------ */
-/* 
-nav {
-  width: 100%;
-  opacity: 3;
-  position: fixed;
-}
-
-nav ul {
-  text-align: center;
-}
-
-nav ul li {
-  list-style: none;
-  display: inline-block;
-}
-
-nav ul li a {
-  display: block;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 20px;
-  color: #fff;
-  padding: 30px;
-  transition: all ease 0.6s;
-}
-
-nav ul li a:hover {
-  background-color: #211b4385;
-} */
-/* https://www.youtube.com/watch?v=eQ5SU6UN46w */
-
-/*****************************************************/
-/*****************************************************/
 
 nav a {
   position: fixed;
   left: -80px;
-  transition: 0.3s;
+  transition: 0.4s;
   padding: 20px;
   width: 100px;
   text-decoration: none;
@@ -258,48 +225,43 @@ nav a:hover {
 li a {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: left;
 }
 
 li a i {
   display: flex;
   flex-direction: column;
   align-self: center;
-  padding-right: 15px;
-}
-
-/* li a span {
-  margin-left: 15px;
-} */
-
-.my-profile {
-  top: 20px;
-  background-color: #04aa6d;
-  /* border: solid #04aa6d 5px; */
-}
-
-.it-experience {
-  top: 200px;
-  background-color: #2196f3;
-}
-
-.technical-skills {
-  top: 200px;
-  background-color: #f44336;
-}
-
-.projects {
-  top: 300px;
-  background-color: #555;
 }
 
 nav a i {
-  padding-left: 70px;
+  padding-left: 45px;
 }
 
 nav a span {
   writing-mode: vertical-lr;
   text-orientation: sideways-right;
+}
+
+.my-profile {
+  /* top: 20px; */
+  background-color: #04aa6d;
+  /* border: solid #04aa6d 5px; */
+}
+
+.it-experience {
+  top: 128px;
+  background-color: #2196f3;
+}
+
+.technical-skills {
+  top: 290px;
+  background-color: #f44336;
+}
+
+.projects {
+  top: 466px;
+  background-color: #555;
 }
 
 /* -------------------- END OF Navbar --- */
