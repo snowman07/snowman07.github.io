@@ -206,7 +206,7 @@ nav a {
   padding: 20px;
   width: 100px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 18px;
   color: white;
   /* border: solid white 2px; */
   /* border-radius: 0 5px 5px 0; */
@@ -241,6 +241,7 @@ nav a i {
 nav a span {
   writing-mode: vertical-lr;
   text-orientation: sideways-right;
+  text-transform: uppercase;
 }
 
 .my-profile {
@@ -250,17 +251,17 @@ nav a span {
 }
 
 .it-experience {
-  top: 128px;
+  top: 117px;
   background-color: #2196f3;
 }
 
 .technical-skills {
-  top: 290px;
+  top: 273px;
   background-color: #f44336;
 }
 
 .projects {
-  top: 466px;
+  top: 374px;
   background-color: #555;
 }
 
@@ -268,7 +269,7 @@ nav a span {
 /* -------------------------------------- */
 
 /* -------------------------------------------------- */
-/* --- START OF particles-js -------------- */
+/* --- START OF particles-js ------------------------ */
 /* header {
   position: relative;
 } */
@@ -321,12 +322,20 @@ nav a span {
   background-attachment: fixed;
   height: 1000px;
 }
-/* ---------------- END OF particles-js --- */
+/* -------------------------- END OF particles-js --- */
 /* -------------------------------------------------- */
 
-/* main {
-  position: relative;
-} */
+/* -------------------------------------------------- */
+/* --- START OF footer ------------------------------ */
+
+footer {
+  position: fixed;
+  top: 520px;
+  color: #fff;
+}
+
+/* -------------------------------- END OF footer --- */
+/* -------------------------------------------------- */
 
 /**********************************************************/
 /********    END OF MOBILE VIEW (DEFAULT 1-400px)    ******/
