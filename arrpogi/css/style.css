@@ -196,6 +196,17 @@ canvas {
 /*******    START OF MOBILE VIEW (DEFAULT 1-400px)   ******/
 /**********************************************************/
 
+/* ------------------------------------------- */
+/* --- START OF header-logo ------------------ */
+
+.header-logo {
+  position: fixed;
+  color: #fff;
+}
+
+/* -------------------- END OF header-logo --- */
+/* ------------------------------------------- */
+
 /* -------------------------------------- */
 /* --- START OF Navbar ------------------ */
 
@@ -245,23 +256,23 @@ nav a span {
 }
 
 .my-profile {
-  /* top: 20px; */
+  top: 60px;
   background-color: #04aa6d;
   /* border: solid #04aa6d 5px; */
 }
 
 .it-experience {
-  top: 117px;
+  top: 177px;
   background-color: #2196f3;
 }
 
 .technical-skills {
-  top: 273px;
+  top: 333px;
   background-color: #f44336;
 }
 
 .projects {
-  top: 374px;
+  top: 434px;
   background-color: #555;
 }
 
@@ -331,8 +342,19 @@ nav a span {
 
 footer {
   position: fixed;
-  top: 520px;
+  top: 570px;
   color: #fff;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
+}
+
+.footer-container > i {
+  padding: 3px 3px;
 }
 
 /* -------------------------------- END OF footer --- */
