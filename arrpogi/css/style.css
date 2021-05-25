@@ -256,23 +256,23 @@ nav a span {
 }
 
 .my-profile {
-  top: 60px;
+  top: 70px;
   background-color: #04aa6d;
   /* border: solid #04aa6d 5px; */
 }
 
 .it-experience {
-  top: 177px;
+  top: 187px;
   background-color: #2196f3;
 }
 
 .technical-skills {
-  top: 333px;
+  top: 343px;
   background-color: #f44336;
 }
 
 .projects {
-  top: 434px;
+  top: 444px;
   background-color: #555;
 }
 
@@ -342,7 +342,7 @@ nav a span {
 
 footer {
   position: fixed;
-  top: 570px;
+  top: 580px;
   color: #fff;
 }
 
