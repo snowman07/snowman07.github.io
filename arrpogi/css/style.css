@@ -305,8 +305,8 @@ nav a span {
   position: absolute;
   top: 50%; /*to center the h1 typewriter*/
   width: 100%;
-  text-align: right;
-  /* padding-right: 10px; */
+  text-align: center;
+  padding-left: 20px;
   font-size: 18px;
 }
 
