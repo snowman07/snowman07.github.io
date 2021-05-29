@@ -316,6 +316,11 @@ nav a span {
   font-size: x-large;
 }
 
+/* -------------------------- END OF particles-js --- */
+/* -------------------------------------------------- */
+
+/* -------------------------------------------------- */
+/* --- START OF main---------------------------------- */
 .profile-container {
   max-width: 100%;
   margin: 0 auto;
@@ -334,7 +339,19 @@ nav a span {
   background-attachment: fixed;
   height: 1000px;
 }
-/* -------------------------- END OF particles-js --- */
+
+.experience-container {
+  max-width: 100%;
+  margin: 0 auto;
+  background: #c4b921;
+  font-size: 24px;
+  padding: 25px;
+  position: absolute; /*use to hide particle background when scroll up*/
+  top: 2745px; /*partner of position: relative to move container down. can also use down, left, right*/
+  left: 60px;
+  /* right: 20px; */
+}
+/* ---------------------------------- END OF main --- */
 /* -------------------------------------------------- */
 
 /* -------------------------------------------------- */
