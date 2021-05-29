@@ -201,7 +201,7 @@ canvas {
 
 .header-logo {
   position: fixed;
-  color: #fff;
+  /* color: #fff; */
 }
 
 /* -------------------- END OF header-logo --- */
@@ -255,7 +255,7 @@ nav a span {
   text-transform: uppercase;
 }
 
-.my-profile {
+.profile {
   top: 70px;
   background-color: #04aa6d;
   /* border: solid #04aa6d 5px; */
@@ -263,7 +263,7 @@ nav a span {
 
 .it-experience {
   top: 187px;
-  background-color: #2196f3;
+  background-color: #c4b921;
 }
 
 .technical-skills {
@@ -273,7 +273,7 @@ nav a span {
 
 .projects {
   top: 444px;
-  background-color: #555;
+  background-color: #2196f3;
 }
 
 /* -------------------- END OF Navbar --- */
@@ -316,7 +316,7 @@ nav a span {
   font-size: x-large;
 }
 
-.container {
+.profile-container {
   max-width: 100%;
   margin: 0 auto;
   background: #04aa6d;
@@ -325,7 +325,7 @@ nav a span {
   position: absolute; /*use to hide particle background when scroll up*/
   top: 800px; /*partner of position: relative to move container down. can also use down, left, right*/
   left: 60px;
-  right: 20px;
+  /* right: 20px; */
 }
 
 .parallax {
