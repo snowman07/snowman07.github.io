@@ -348,6 +348,7 @@ nav a span {
   padding: 25px;
   position: absolute; /*use to hide particle background when scroll up*/
   top: 2745px; /*partner of position: relative to move container down. can also use down, left, right*/
+  /* top: 800px; */
   left: 60px;
   /* right: 20px; */
 }
