@@ -204,6 +204,10 @@ canvas {
   /* color: #fff; */
 }
 
+.header-logo a {
+  color: #fff;
+}
+
 /* -------------------- END OF header-logo --- */
 /* ------------------------------------------- */
 
@@ -266,7 +270,7 @@ nav a span {
   background-color: #c4b921;
 }
 
-.technical-skills {
+.skills {
   top: 343px;
   background-color: #f44336;
 }
@@ -351,6 +355,28 @@ nav a span {
   /* top: 800px; */
   left: 60px;
   /* right: 20px; */
+}
+
+.skills-container {
+  max-width: 100%;
+  margin: 0 auto;
+  background: #f44336;
+  font-size: 24px;
+  padding: 25px;
+  position: absolute;
+  top: 3691px;
+  left: 60px;
+}
+
+.projects-container {
+  max-width: 100%;
+  margin: 0 auto;
+  background: #2196f3;
+  font-size: 24px;
+  padding: 25px;
+  position: absolute;
+  top: 4915px;
+  left: 60px;
 }
 /* ---------------------------------- END OF main --- */
 /* -------------------------------------------------- */
