@@ -325,7 +325,7 @@ nav a span {
 
 /* -------------------------------------------------- */
 /* --- START OF main---------------------------------- */
-.profile-container {
+#profile-container {
   max-width: 100%;
   margin: 0 auto;
   background: #04aa6d;
@@ -344,7 +344,7 @@ nav a span {
   height: 1000px;
 }
 
-.experience-container {
+#experience-container {
   max-width: 100%;
   margin: 0 auto;
   background: #c4b921;
@@ -357,7 +357,7 @@ nav a span {
   /* right: 20px; */
 }
 
-.skills-container {
+#skills-container {
   max-width: 100%;
   margin: 0 auto;
   background: #f44336;
@@ -368,7 +368,7 @@ nav a span {
   left: 60px;
 }
 
-.projects-container {
+#projects-container {
   max-width: 100%;
   margin: 0 auto;
   background: #2196f3;
