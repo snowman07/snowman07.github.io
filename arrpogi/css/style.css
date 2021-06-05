@@ -386,15 +386,19 @@ nav a span {
 
 footer {
   position: fixed;
-  top: 580px;
+  top: 610px;
   color: #fff;
+}
+
+footer p {
+  text-align: center;
 }
 
 .footer-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 15px;
+  padding: 0 15px;
 }
 
 .footer-container > i {
