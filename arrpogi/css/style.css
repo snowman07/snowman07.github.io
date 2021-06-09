@@ -311,13 +311,13 @@ nav a span {
   width: 100%;
   text-align: center;
   padding-left: 20px;
-  font-size: 18px;
+  /* font-size: 100px; */
 }
 
 .typewrite {
   color: #fff;
   text-decoration: none;
-  font-size: x-large;
+  font-size: 35px;
 }
 
 /* -------------------------- END OF particles-js --- */
@@ -337,7 +337,7 @@ nav a span {
   /* right: 20px; */
 }
 
-.parallax {
+.profile-parallax {
   background: url("../img/profile-gray.jpg") no-repeat center;
   background-size: cover;
   background-attachment: fixed;
@@ -347,6 +347,24 @@ nav a span {
   /* background-position: 50% 210px !important; */
   /* background-position: 50% 50px; */
   height: 800px;
+}
+
+h2 {
+  font-size: 80px;
+  color: #04aa6d;
+  text-align: center;
+  text-shadow: 6px 4px #000;
+  padding-top: 500px;
+}
+
+#profile-container > p {
+  border: 7px solid rgba(171, 183, 183, 1);
+  border-radius: 15px;
+  background-color: rgba(149, 165, 166, 1);
+  padding: 40px;
+  margin: 0 50px;
+  box-shadow: inset 0 0 10px #000000; /*https://css-tricks.com/almanac/properties/b/box-shadow/*/
+  text-indent: 50px;
 }
 
 #experience-container {
@@ -423,6 +441,14 @@ footer p {
 /*********    START OF TABLET VIEW (401-768px)   **********/
 /**********************************************************/
 @media all and (min-width: 25.0625rem) {
+  /* -------------------------------------------------- */
+  /* --- START OF particles-js ------------------------ */
+  .typewrite {
+    font-size: 60px;
+  }
+
+  /* -------------------------- END OF particles-js --- */
+  /* -------------------------------------------------- */
 }
 /**********************************************************/
 /**********    END OF TABLET VIEW (401-768px)    **********/
@@ -434,29 +460,16 @@ footer p {
 /*******    START OF DESKTOP VIEW (769-1140px)   **********/
 /**********************************************************/
 @media all and (min-width: 48.0625rem) {
-  /* .nav-link {
-    margin: 10px;
-    text-transform: uppercase;
-    font-weight: bolder;
-    font-size: large;
-  } */
-  /* #particles-js > h1 {
-    display: block;
-    text-align: center;
-    font-size: 100px;
-    position: absolute;
-    margin-top: 300px;
-    margin-left: 50px;
-  } */
+  /* -------------------------------------------------- */
+  /* --- START OF particles-js ------------------------ */
+  .typewrite {
+    font-size: 90px;
+  }
+
+  /* -------------------------- END OF particles-js --- */
+  /* -------------------------------------------------- */
 }
 /**********************************************************/
 /**********    END OF DESKTOP VIEW (769-1140px)    ********/
 /**********************************************************/
 /**********************************************************/
-
-/* 
-=============================================================================
-END OF CSS
-============================================================================= 
-=============================================================================
-*/
