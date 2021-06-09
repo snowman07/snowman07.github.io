@@ -350,11 +350,13 @@ nav a span {
 }
 
 h2 {
-  font-size: 80px;
+  /* font-size: 80px; */
+  font-size: 30px;
   color: #04aa6d;
   text-align: center;
   text-shadow: 6px 4px #000;
-  padding-top: 500px;
+  /* padding-top: 500px; */
+  padding-top: 300px;
 }
 
 #profile-container > p {
