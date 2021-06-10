@@ -349,13 +349,6 @@ nav a span {
   /* background-position: 50% 50px; */
   /* height: 800px; */
   height: 900px;
-  z-index: 9;
-}
-
-.profile-parallax:before {
-  content: "";
-  background: url("../img/profile-gray.jpg") no-repeat center;
-  position: fixed;
 }
 
 h2 {
