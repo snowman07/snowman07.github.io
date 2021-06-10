@@ -343,12 +343,12 @@ nav a span {
   background-size: cover;
   /* background-attachment: fixed; */
   /*size of img*/
-  background-size: 200%;
+  background-size: 250%;
   /* height: 800px; */
   /* background-position: 50% 210px !important; */
   /* background-position: 50% 50px; */
   /* height: 800px; */
-  height: 900px;
+  height: 650px;
 }
 
 /* PARALLAX DOESNT WORK ON MOBILE DEVICES
@@ -362,7 +362,8 @@ h2 {
   text-align: center;
   text-shadow: 6px 4px #000;
   /* padding-top: 500px; */
-  padding-top: 300px;
+  /* padding-top: 300px; */
+  padding-top: 500px;
 }
 
 #profile-container > p {
@@ -472,6 +473,10 @@ footer p {
   /* --- START OF particles-js ------------------------ */
   .typewrite {
     font-size: 90px;
+  }
+
+  #profile-container {
+    max-width: 100%;
   }
 
   .profile-parallax {
