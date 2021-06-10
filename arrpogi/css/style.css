@@ -259,23 +259,23 @@ nav a span {
   text-transform: uppercase;
 }
 
-.profile {
+.profile-nav {
   top: 70px;
   background-color: #04aa6d;
   /* border: solid #04aa6d 5px; */
 }
 
-.it-experience {
+.experience-nav {
   top: 187px;
   background-color: #c4b921;
 }
 
-.skills {
+.skills-nav {
   top: 343px;
   background-color: #f44336;
 }
 
-.projects {
+.projects-nav {
   top: 444px;
   background-color: #2196f3;
 }
@@ -326,7 +326,8 @@ nav a span {
 /* -------------------------------------------------- */
 /* --- START OF main---------------------------------- */
 #profile-container {
-  max-width: 100%;
+  /* max-width: 100%;  for desktop*/
+  max-width: 72%;
   margin: 0 auto;
   background: #04aa6d;
   font-size: 24px;
@@ -382,7 +383,7 @@ h2 {
   /* right: 20px; */
 }
 
-#skills-container {
+/* #skills-container {
   max-width: 100%;
   margin: 0 auto;
   background: #f44336;
@@ -402,7 +403,7 @@ h2 {
   position: absolute;
   top: 4915px;
   left: 60px;
-}
+} */
 /* ---------------------------------- END OF main --- */
 /* -------------------------------------------------- */
 
