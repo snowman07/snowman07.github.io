@@ -341,13 +341,14 @@ nav a span {
 .profile-parallax {
   background: url("../img/profile-gray.jpg") no-repeat center;
   background-size: cover;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   /*size of img*/
-  background-size: 60%;
+  background-size: 200%;
   /* height: 800px; */
   /* background-position: 50% 210px !important; */
   /* background-position: 50% 50px; */
-  height: 800px;
+  /* height: 800px; */
+  height: 900px;
 }
 
 h2 {
@@ -467,6 +468,19 @@ footer p {
   /* --- START OF particles-js ------------------------ */
   .typewrite {
     font-size: 90px;
+  }
+
+  .profile-parallax {
+    background: url("../img/profile-gray.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    /*size of img*/
+    background-size: 60%;
+    /* height: 800px; */
+    /* background-position: 50% 210px !important; */
+    /* background-position: 50% 50px; */
+    /* height: 800px; */
+    height: 900px;
   }
 
   /* -------------------------- END OF particles-js --- */
