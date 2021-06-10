@@ -351,6 +351,10 @@ nav a span {
   height: 900px;
 }
 
+/* PARALLAX DOESNT WORK ON MOBILE DEVICES
+https://community.adobe.com/t5/muse/parallax-scroll-effect-works-in-all-devices-but-ipad-iphone/m-p/8834589
+*/
+
 h2 {
   /* font-size: 80px; */
   font-size: 30px;
