@@ -341,7 +341,7 @@ nav a span {
 }
 
 .profile-parallax {
-  background: url("../img/profile-gray.jpg") no-repeat center;
+  background: url("../img/background.jpg") no-repeat center;
   background-size: cover;
   /* background-attachment: fixed; */
   /*size of img*/
@@ -352,6 +352,7 @@ nav a span {
   /* height: 800px; */
   height: 650px;
   border-radius: 15px; /*radius of the image*/
+  opacity: 0.7;
 }
 
 /* PARALLAX DOESNT WORK ON MOBILE DEVICES
@@ -380,22 +381,27 @@ h2 {
   font-size: 20px;
 }
 
+#profile-container > p:hover {
+  background-color: #04aa6d;
+  opacity: 3;
+}
+
 #profile-container > p span {
   text-transform: uppercase;
   font-weight: bold;
   font-size: larger;
 }
 
-/* #experience-container {
+#experience-container {
   max-width: 100%;
   margin: 0 auto;
   background: #c4b921;
   font-size: 24px;
   padding: 25px;
-  position: absolute; 
-  top: 2745px; 
+  position: absolute;
+  top: 2500px;
   left: 60px;
-} */
+}
 
 /* #skills-container {
   max-width: 100%;
@@ -513,6 +519,9 @@ footer p {
 
   /* -------------------------------------------------- */
   /* --- START OF main -------------------------------- */
+  #profile-container {
+    padding: 35px 15px;
+  }
   .profile-parallax {
     background-attachment: fixed;
     /*size of img*/
