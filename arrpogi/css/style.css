@@ -399,10 +399,19 @@ h2 {
   font-size: 24px;
   padding: 25px;
   position: absolute;
-  top: 2500px;
+  top: 3069px;
   left: 60px;
 }
 
+.experience-parallax {
+  background: url("../img/experience.jpg") no-repeat center;
+  background-size: cover;
+  /*size of img*/
+  background-size: 150%;
+  height: 750px;
+  border-radius: 15px; /*radius of the image*/
+  opacity: 0.7;
+}
 /* #skills-container {
   max-width: 100%;
   margin: 0 auto;
