@@ -327,11 +327,13 @@ nav a span {
 /* --- START OF main---------------------------------- */
 #profile-container {
   /* max-width: 100%;  for desktop*/
-  max-width: 72%;
+  /* max-width: 72%; for desktop*/
+  max-width: 100%;
   margin: 0 auto;
   background: #04aa6d;
   font-size: 24px;
-  padding: 25px;
+  /* padding: 20px; for desktop*/
+  padding: 15px;
   position: absolute; /*use to hide particle background when scroll up*/
   top: 800px; /*partner of position: relative to move container down. can also use down, left, right*/
   left: 60px;
@@ -349,6 +351,7 @@ nav a span {
   /* background-position: 50% 50px; */
   /* height: 800px; */
   height: 650px;
+  border-radius: 15px; /*radius of the image*/
 }
 
 /* PARALLAX DOESNT WORK ON MOBILE DEVICES
@@ -357,37 +360,42 @@ https://community.adobe.com/t5/muse/parallax-scroll-effect-works-in-all-devices-
 
 h2 {
   /* font-size: 80px; */
-  font-size: 30px;
+  font-size: 35px;
   color: #04aa6d;
   text-align: center;
-  text-shadow: 6px 4px #000;
+  text-shadow: 3px 2px #000;
   /* padding-top: 500px; */
   /* padding-top: 300px; */
-  padding-top: 500px;
+  padding-top: 530px;
 }
 
 #profile-container > p {
-  border: 7px solid rgba(171, 183, 183, 1);
+  border: 3px solid rgba(171, 183, 183, 1);
   border-radius: 15px;
   background-color: rgba(149, 165, 166, 1);
-  padding: 40px;
-  margin: 0 50px;
+  padding: 20px;
+  /* margin: 0 20px; */
   box-shadow: inset 0 0 10px #000000; /*https://css-tricks.com/almanac/properties/b/box-shadow/*/
-  text-indent: 50px;
+  /* text-indent: 50px; */
+  font-size: 20px;
 }
 
-#experience-container {
+#profile-container > p span {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: larger;
+}
+
+/* #experience-container {
   max-width: 100%;
   margin: 0 auto;
   background: #c4b921;
   font-size: 24px;
   padding: 25px;
-  position: absolute; /*use to hide particle background when scroll up*/
-  top: 2745px; /*partner of position: relative to move container down. can also use down, left, right*/
-  /* top: 800px; */
+  position: absolute; 
+  top: 2745px; 
   left: 60px;
-  /* right: 20px; */
-}
+} */
 
 /* #skills-container {
   max-width: 100%;
@@ -458,6 +466,32 @@ footer p {
 
   /* -------------------------- END OF particles-js --- */
   /* -------------------------------------------------- */
+
+  /* -------------------------------------------------- */
+  /* --- START OF main -------------------------------- */
+  #profile-container {
+    max-width: 100%;
+  }
+
+  .profile-parallax {
+    /*size of img*/
+    background-size: 150%;
+    height: 700px;
+  }
+
+  h2 {
+    font-size: 50px;
+    padding-top: 520px;
+  }
+
+  #profile-container > p {
+    border: 7px solid rgba(171, 183, 183, 1);
+    padding: 25px;
+    font-size: 25px;
+  }
+
+  /* ---------------------------------- END OF main --- */
+  /* -------------------------------------------------- */
 }
 /**********************************************************/
 /**********    END OF TABLET VIEW (401-768px)    **********/
@@ -474,25 +508,24 @@ footer p {
   .typewrite {
     font-size: 90px;
   }
+  /* -------------------------- END OF particles-js --- */
+  /* -------------------------------------------------- */
 
-  #profile-container {
-    max-width: 100%;
-  }
-
+  /* -------------------------------------------------- */
+  /* --- START OF main -------------------------------- */
   .profile-parallax {
-    background: url("../img/profile-gray.jpg") no-repeat center;
-    background-size: cover;
     background-attachment: fixed;
     /*size of img*/
     background-size: 60%;
-    /* height: 800px; */
-    /* background-position: 50% 210px !important; */
-    /* background-position: 50% 50px; */
-    /* height: 800px; */
-    height: 900px;
+    height: 800px;
   }
 
-  /* -------------------------- END OF particles-js --- */
+  h2 {
+    font-size: 80px;
+    padding-top: 500px;
+    text-shadow: 5px 3px #000;
+  }
+  /* ---------------------------------- END OF main --- */
   /* -------------------------------------------------- */
 }
 /**********************************************************/
