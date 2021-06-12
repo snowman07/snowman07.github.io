@@ -362,12 +362,15 @@ https://community.adobe.com/t5/muse/parallax-scroll-effect-works-in-all-devices-
 h2 {
   /* font-size: 80px; */
   font-size: 35px;
-  color: #04aa6d;
   text-align: center;
   text-shadow: 3px 2px #000;
   /* padding-top: 500px; */
   /* padding-top: 300px; */
   padding-top: 530px;
+}
+
+.profile-parallax > h2 {
+  color: #04aa6d;
 }
 
 #profile-container > p {
@@ -397,20 +400,24 @@ h2 {
   margin: 0 auto;
   background: #c4b921;
   font-size: 24px;
-  padding: 25px;
+  padding: 15px;
   position: absolute;
   top: 3069px;
   left: 60px;
 }
 
 .experience-parallax {
-  background: url("../img/experience.jpg") no-repeat center;
+  background: url("../img/experience2.jpg") no-repeat center;
   background-size: cover;
   /*size of img*/
-  background-size: 150%;
-  height: 750px;
+  background-size: 200%;
+  height: 650px;
   border-radius: 15px; /*radius of the image*/
-  opacity: 0.7;
+  opacity: 0.8;
+}
+
+.experience-parallax > h2 {
+  color: #c4b921;
 }
 /* #skills-container {
   max-width: 100%;
@@ -505,6 +512,10 @@ footer p {
     font-size: 25px;
   }
 
+  #experience-container {
+    top: 3400px;
+  }
+
   /* ---------------------------------- END OF main --- */
   /* -------------------------------------------------- */
 }
@@ -542,6 +553,18 @@ footer p {
     font-size: 80px;
     padding-top: 500px;
     text-shadow: 5px 3px #000;
+  }
+
+  #experience-container {
+    padding: 35px 15px;
+    top: 2312px;
+  }
+
+  .experience-parallax {
+    background-attachment: fixed;
+    /*size of img*/
+    background-size: 70%;
+    height: 800px;
   }
   /* ---------------------------------- END OF main --- */
   /* -------------------------------------------------- */
