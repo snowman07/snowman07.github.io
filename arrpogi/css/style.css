@@ -325,6 +325,11 @@ nav a span {
 
 /* -------------------------------------------------- */
 /* --- START OF main---------------------------------- */
+/* main {
+  display: flex;
+  flex-direction: column;
+} */
+
 #profile-container {
   /* max-width: 100%;  for desktop*/
   /* max-width: 72%; for desktop*/
@@ -335,9 +340,13 @@ nav a span {
   /* padding: 20px; for desktop*/
   padding: 15px;
   position: absolute; /*use to hide particle background when scroll up*/
+  /* position: relative; */
   top: 800px; /*partner of position: relative to move container down. can also use down, left, right*/
   left: 60px;
   /* right: 20px; */
+  /* flex-flow: row wrap; */
+  /* aspect-ratio: 100 / 29; */
+  aspect-ratio: inherit;
 }
 
 .profile-parallax {
@@ -404,6 +413,9 @@ h2 {
   position: absolute;
   top: 3069px;
   left: 60px;
+  /* flex-flow: row wrap; */
+  /* aspect-ratio: 100 / 29; */
+  aspect-ratio: inherit;
 }
 
 .experience-parallax {
