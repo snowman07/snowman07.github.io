@@ -302,7 +302,7 @@ nav a span {
   background-position: 50% 50%;
   /* background-position: center; */
   background-repeat: no-repeat;
-  position: fixed; /*for the background of particles*/
+  position: fixed; /*-------for the background of particles-------*/
 }
 
 #particles-js > h1 {
@@ -325,40 +325,26 @@ nav a span {
 
 /* -------------------------------------------------- */
 /* --- START OF main---------------------------------- */
-/* main {
-  display: flex;
-  flex-direction: column;
-} */
+main {
+  position: absolute; /*position:relative for profile,expe,skills,proj*/
+  left: 60px;
+}
 
 #profile-container {
-  /* max-width: 100%;  for desktop*/
-  /* max-width: 72%; for desktop*/
-  max-width: 100%;
-  margin: 0 auto;
+  /* max-width: 100%; */
+  /* margin: 0 auto; */
   background: #04aa6d;
   font-size: 24px;
-  /* padding: 20px; for desktop*/
   padding: 15px;
-  position: absolute; /*use to hide particle background when scroll up*/
-  /* position: relative; */
-  top: 800px; /*partner of position: relative to move container down. can also use down, left, right*/
-  left: 60px;
-  /* right: 20px; */
-  /* flex-flow: row wrap; */
-  /* aspect-ratio: 100 / 29; */
-  aspect-ratio: inherit;
+  position: relative; /*use to hide particle background when scroll up*/
+  top: 800px; /*partner of position: relative to move container down*/
 }
 
 .profile-parallax {
   background: url("../img/background.jpg") no-repeat center;
   background-size: cover;
-  /* background-attachment: fixed; */
   /*size of img*/
   background-size: 250%;
-  /* height: 800px; */
-  /* background-position: 50% 210px !important; */
-  /* background-position: 50% 50px; */
-  /* height: 800px; */
   height: 650px;
   border-radius: 15px; /*radius of the image*/
   opacity: 0.7;
@@ -369,12 +355,9 @@ https://community.adobe.com/t5/muse/parallax-scroll-effect-works-in-all-devices-
 */
 
 h2 {
-  /* font-size: 80px; */
   font-size: 35px;
   text-align: center;
   text-shadow: 3px 2px #000;
-  /* padding-top: 500px; */
-  /* padding-top: 300px; */
   padding-top: 530px;
 }
 
@@ -387,7 +370,6 @@ h2 {
   border-radius: 15px;
   background-color: rgba(149, 165, 166, 1);
   padding: 20px;
-  /* margin: 0 20px; */
   box-shadow: inset 0 0 10px #000000; /*https://css-tricks.com/almanac/properties/b/box-shadow/*/
   /* text-indent: 50px; */
   font-size: 20px;
@@ -405,17 +387,11 @@ h2 {
 }
 
 #experience-container {
-  max-width: 100%;
-  margin: 0 auto;
   background: #c4b921;
   font-size: 24px;
   padding: 15px;
-  position: absolute;
-  top: 3069px;
-  left: 60px;
-  /* flex-flow: row wrap; */
-  /* aspect-ratio: 100 / 29; */
-  aspect-ratio: inherit;
+  position: relative;
+  top: 800px;
 }
 
 .experience-parallax {
@@ -431,18 +407,15 @@ h2 {
 .experience-parallax > h2 {
   color: #c4b921;
 }
-/* #skills-container {
-  max-width: 100%;
-  margin: 0 auto;
+#skills-container {
   background: #f44336;
   font-size: 24px;
-  padding: 25px;
-  position: absolute;
-  top: 3691px;
-  left: 60px;
+  padding: 15px;
+  position: relative;
+  top: 800px;
 }
 
-#projects-container {
+/* #projects-container {
   max-width: 100%;
   margin: 0 auto;
   background: #2196f3;
@@ -503,9 +476,6 @@ footer p {
 
   /* -------------------------------------------------- */
   /* --- START OF main -------------------------------- */
-  #profile-container {
-    max-width: 100%;
-  }
 
   .profile-parallax {
     /*size of img*/
@@ -523,11 +493,6 @@ footer p {
     padding: 25px;
     font-size: 25px;
   }
-
-  #experience-container {
-    top: 3400px;
-  }
-
   /* ---------------------------------- END OF main --- */
   /* -------------------------------------------------- */
 }
@@ -569,7 +534,7 @@ footer p {
 
   #experience-container {
     padding: 35px 15px;
-    top: 2312px;
+    /* top: 2312px; */
   }
 
   .experience-parallax {
