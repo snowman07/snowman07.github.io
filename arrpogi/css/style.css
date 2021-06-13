@@ -395,7 +395,7 @@ h2 {
 }
 
 .experience-parallax {
-  background: url("../img/experience2.jpg") no-repeat center;
+  background: url("../img/experience.jpg") no-repeat center;
   background-size: cover;
   /*size of img*/
   background-size: 200%;
@@ -407,12 +407,27 @@ h2 {
 .experience-parallax > h2 {
   color: #c4b921;
 }
+
 #skills-container {
   background: #f44336;
   font-size: 24px;
   padding: 15px;
   position: relative;
   top: 800px;
+}
+
+.skills-parallax {
+  background: url("../img/skills.jpg") no-repeat center;
+  background-size: cover;
+  /*size of img*/
+  background-size: 200%;
+  height: 650px;
+  border-radius: 15px; /*radius of the image*/
+  opacity: 0.8;
+}
+
+.skills-parallax > h2 {
+  color: #f44336;
 }
 
 /* #projects-container {
@@ -538,6 +553,17 @@ footer p {
   }
 
   .experience-parallax {
+    background-attachment: fixed;
+    /*size of img*/
+    background-size: 70%;
+    height: 800px;
+  }
+
+  #skills-container {
+    padding: 35px 15px;
+  }
+
+  .skills-parallax {
     background-attachment: fixed;
     /*size of img*/
     background-size: 70%;
