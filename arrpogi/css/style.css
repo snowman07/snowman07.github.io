@@ -504,9 +504,8 @@ footer p {
   /* --- START OF main -------------------------------- */
 
   .profile-parallax {
-    /*size of img*/
-    background-size: 150%;
-    height: 700px;
+    background-size: 200%;
+    /* height: 700px; */
   }
 
   h2 {
@@ -514,11 +513,11 @@ footer p {
     padding-top: 520px;
   }
 
-  #profile-container > p {
+  /* #profile-container > p {
     border: 7px solid rgba(171, 183, 183, 1);
     padding: 25px;
     font-size: 25px;
-  }
+  } */
   /* ---------------------------------- END OF main --- */
   /* -------------------------------------------------- */
 }
@@ -578,6 +577,17 @@ footer p {
     background-attachment: fixed;
     /*size of img*/
     background-size: 70%;
+    height: 800px;
+  }
+
+  #projects-container {
+    padding: 35px 15px;
+  }
+
+  .projects-parallax {
+    background-attachment: fixed;
+    /*size of img*/
+    background-size: 60%;
     height: 800px;
   }
   /* ---------------------------------- END OF main --- */
