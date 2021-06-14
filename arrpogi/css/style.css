@@ -341,7 +341,7 @@ main {
 }
 
 .profile-parallax {
-  background: url("../img/background.jpg") no-repeat center;
+  background: url("../img/profile.jpg") no-repeat center;
   background-size: cover;
   /*size of img*/
   background-size: 250%;
@@ -430,16 +430,27 @@ h2 {
   color: #f44336;
 }
 
-/* #projects-container {
-  max-width: 100%;
-  margin: 0 auto;
+#projects-container {
   background: #2196f3;
   font-size: 24px;
-  padding: 25px;
-  position: absolute;
-  top: 4915px;
-  left: 60px;
-} */
+  padding: 15px;
+  position: relative;
+  top: 800px;
+}
+
+.projects-parallax {
+  background: url("../img/projects.jpg") no-repeat center;
+  background-size: cover;
+  /*size of img*/
+  background-size: 150%;
+  height: 650px;
+  border-radius: 15px; /*radius of the image*/
+  opacity: 0.9;
+}
+
+.projects-parallax > h2 {
+  color: #2196f3;
+}
 /* ---------------------------------- END OF main --- */
 /* -------------------------------------------------- */
 
