@@ -470,17 +470,18 @@ h2 {
 /* --- START OF footer ------------------------------ */
 
 footer {
-  position: absolute;
-  top: 5770px; /*try to remove this and make footer sticky*/
-  left: 60px;
+  position: relative;
+  top: 800px; /*try to remove this and make footer sticky*/
+  /* left: 60px; */
   color: #fff;
   background: #111;
-}
-
-.footer-container {
-  position: relative;
   padding: 20px;
 }
+
+/* .footer-container {
+  position: relative;
+  padding: 20px;
+} */
 
 footer p {
   text-align: center;
