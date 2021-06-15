@@ -201,7 +201,7 @@ canvas {
 
 header {
   position: fixed;
-  top: 40px;
+  top: 20px;
 }
 
 .header-logo {
@@ -234,6 +234,7 @@ nav a {
   color: white;
   /* border: solid white 2px; */
   /* border-radius: 0 5px 5px 0; */
+  margin-top: 20px;
 }
 
 nav ul {
@@ -415,7 +416,7 @@ h2 {
   background-size: 200%;
   height: 650px;
   border-radius: 15px; /*radius of the image*/
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .experience-parallax > h2 {
@@ -459,7 +460,7 @@ h2 {
   background-size: 150%;
   height: 650px;
   border-radius: 15px; /*radius of the image*/
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 .projects-parallax > h2 {
