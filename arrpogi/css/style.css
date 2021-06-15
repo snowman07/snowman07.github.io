@@ -375,6 +375,8 @@ h2 {
 
 .profile-parallax > h2 {
   color: #04aa6d;
+  display: flex;
+  flex-direction: column;
 }
 
 #profile-container > p {
