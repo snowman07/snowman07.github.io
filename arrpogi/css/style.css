@@ -457,7 +457,7 @@ h2 {
   background: url("../img/projects.jpg") no-repeat center;
   background-size: cover;
   /*size of img*/
-  background-size: 150%;
+  background-size: 200%;
   height: 650px;
   border-radius: 15px; /*radius of the image*/
   opacity: 0.8;
