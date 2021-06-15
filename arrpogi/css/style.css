@@ -199,8 +199,13 @@ canvas {
 /* ------------------------------------------- */
 /* --- START OF header-logo ------------------ */
 
-.header-logo {
+header {
   position: fixed;
+  top: 40px;
+}
+
+.header-logo {
+  position: absolute;
   /* color: #fff; */
 }
 
@@ -219,7 +224,7 @@ canvas {
 /* --- START OF Navbar ------------------ */
 
 nav a {
-  position: fixed;
+  position: absolute;
   left: -80px;
   transition: 0.4s;
   padding: 20px;
@@ -329,6 +334,8 @@ nav a span {
 
 /* -------------------------------------------------- */
 /* --- START OF main---------------------------------- */
+
+/* Comment-out this main element to see the effect of particles. There's a cons though, main container will turn to a total mess =( */
 main {
   position: absolute; /*position:relative for profile,expe,skills,proj*/
   left: 60px;
@@ -463,37 +470,44 @@ h2 {
 /* --- START OF footer ------------------------------ */
 
 footer {
-  position: fixed;
-  top: 610px;
+  position: absolute;
+  top: 5770px; /*try to remove this and make footer sticky*/
+  left: 60px;
   color: #fff;
+  background: #111;
+}
+
+.footer-container {
+  position: relative;
+  padding: 20px;
 }
 
 footer p {
   text-align: center;
 }
 
-.footer-container {
+.footer-icons {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   padding: 0 15px;
 }
 
-.footer-container > i {
+.footer-icons > i {
   padding: 3px 3px;
 }
 
 /*-------- footer effect -------*/
 /* https://www.littlesnippets.net/blog/some-css-menu-inspiration-using-animated-lines */
 
-.footer-container * {
+.footer-icons * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
 }
 
-.footer-container > i:hover {
+.footer-icons > i:hover {
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
   border-left: 1px solid #fff;
