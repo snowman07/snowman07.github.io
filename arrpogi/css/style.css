@@ -340,6 +340,7 @@ nav a span {
 main {
   position: absolute; /*position:relative for profile,expe,skills,proj*/
   left: 60px;
+  top: 800px;
 }
 
 #profile-container {
@@ -349,7 +350,6 @@ main {
   font-size: 24px;
   padding: 15px;
   position: relative; /*use to hide particle background when scroll up*/
-  top: 800px; /*partner of position: relative to move container down*/
 }
 
 .profile-parallax {
@@ -406,7 +406,6 @@ h2 {
   font-size: 24px;
   padding: 15px;
   position: relative;
-  top: 800px;
 }
 
 .experience-parallax {
@@ -428,7 +427,6 @@ h2 {
   font-size: 24px;
   padding: 15px;
   position: relative;
-  top: 800px;
 }
 
 .skills-parallax {
@@ -450,7 +448,6 @@ h2 {
   font-size: 24px;
   padding: 15px;
   position: relative;
-  top: 800px;
 }
 
 .projects-parallax {
@@ -474,7 +471,7 @@ h2 {
 
 footer {
   position: relative;
-  top: 800px; /*try to remove this and make footer sticky*/
+  /*top: 800px; try to remove this and make footer sticky*/
   /* left: 60px; */
   color: #fff;
   background: #262626;
@@ -546,6 +543,10 @@ footer ul li:hover {
 
   /* -------------------------------------------------- */
   /* --- START OF main -------------------------------- */
+
+  main {
+    top: 1050px;
+  }
 
   .profile-parallax {
     background-size: 120%;
