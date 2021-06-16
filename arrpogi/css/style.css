@@ -477,7 +477,7 @@ footer {
   top: 800px; /*try to remove this and make footer sticky*/
   /* left: 60px; */
   color: #fff;
-  background: #111;
+  background: #262626;
   padding: 20px;
 }
 
@@ -490,35 +490,36 @@ footer p {
   text-align: center;
 }
 
-.footer-icons {
+footer ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
   padding: 0 15px;
 }
 
-.footer-icons > i {
-  padding: 3px 3px;
+footer ul li {
+  padding: 10px;
 }
 
 /*-------- footer effect -------*/
 /* https://www.littlesnippets.net/blog/some-css-menu-inspiration-using-animated-lines */
 
-.footer-icons * {
+footer ul * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
 }
 
-.footer-icons > i:hover {
+footer ul li:hover {
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
-  border-left: 1px solid #fff;
-  border-right: 1px solid #fff;
+  border-left: 1px solid #fff; /*for the line on left*/
+  border-right: 1px solid #fff; /*for the line on right*/
   opacity: 0.5;
   left: 0;
   right: 0;
+  transform: scale(1.5); /*use to enlarge socials*/
 }
 
 /* -------------------------------- END OF footer --- */
