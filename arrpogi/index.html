@@ -1,51 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
 
-    <meta charset="utf-8">
-    <title>Arr - Personal Portfolio</title>
-    <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
-    <meta name="author" content="Vincent Garreau" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" media="screen" href="css/style.css">
-        
-   
-    <!-- Bootstrap CSS -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous"> -->
+<head>
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <meta charset="utf-8">
+  <title>Arr - Personal Portfolio</title>
+  <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
+  <meta name="author" content="Vincent Garreau" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" media="screen" href="css/style.css">
 
 
-  </head>
+  <!-- Bootstrap CSS -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous"> -->
 
-  <body>
-    <!-- START OF particles.js container -->
-    <div id="particles-js">
-      <h1>
-        <a href="" class="typewrite" 
-          data-period="2000" 
-          data-type='[ "arrdomingo.tech", 
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
+</head>
+
+<body>
+  <!-- START OF particles.js container -->
+  <div id="particles-js">
+    <h1>
+      <a href="" class="typewrite" data-period="2000" data-type='[ "arrdomingo.tech", 
                         "Where possibility", 
                         "meets quality",
-                        "and creativity!"]'
-        >
-          <span class="wrap"></span>
-        </a>
-      </h1>
+                        "and creativity!"]'>
+        <span class="wrap"></span>
+      </a>
+    </h1>
+  </div>
+  <!-- END OF particles.js container -->
+
+  <header>
+    <div class="header-logo">
+      <a href="">
+        <i class="fas fa-audio-description fa-5x"></i>
+      </a>
     </div>
-    <!-- END OF particles.js container -->
-    
-    <header>
-      <div class="header-logo">
-        <a href="">
-          <i class="fas fa-audio-description fa-5x"></i>
-        </a>
-      </div>
-      
-      <!-- START OF Navbar -->
-      
-        <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+    <!-- START OF Navbar -->
+
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -86,155 +86,185 @@
           </div>
         </nav> -->
 
-      <nav>
+    <nav>
+      <ul>
+        <li>
+          <a class="profile-nav" href="#profile-container">
+            <span>Profile</span>
+            <i class="fas fa-user-alt fa-2x"></i>
+          </a>
+        </li>
+        <li>
+          <a class="experience-nav" href="#experience-container">
+            <span>Experience</span>
+            <i class="fas fa-laptop-code fa-2x"></i>
+          </a>
+        </li>
+        <li>
+          <a class="skills-nav" href="#skills-container">
+            <span>Skills</span>
+            <i class="fas fa-cogs fa-2x"></i>
+          </a>
+        </li>
+        <li>
+          <a class="projects-nav" href="#projects-container">
+            <span>Projects</span>
+            <i class="fas fa-tasks fa-2x"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- END OF Navbar -->
+  </header>
+
+  <main>
+    <div id="profile-container">
+      <div class="profile-parallax">
+        <h2>
+          <span>Hi! My name is</span>
+          <span>Arr Domingo</span>
+        </h2>
+      </div>
+
+      <p>
+        <span>About Me</span> I am a try-hard IT enthusiast with a drive for best quality and creativity in mind. I have
+        always been fascinated of how technology has revolutionized the world and our daily lives. As a 90's kid, I
+        remember using my first computer messing with CRT monitor and a mouse with ball inside. Nowadays, modern
+        technology has paved the way for multi-functional devices that makes our lives easier, better, faster, and more
+        fun.
+      </p>
+      <p>
+        <span>Tech Life</span> In order to engage myself into tech industry, I took a degree as a Bachelor of Science in
+        Computer Engineering from Polytechnic University of the Philippines. Right after school, I really wanted to work
+        in the network side of the industry where I handle routers, servers, etc. But things don’t happen as much as I
+        want to. No matter how you plan your career, if it’s not HIS will, you won’t get it. To make the story short, I
+        ended up in the software side of the industry. Personally, this was a tough pathway, but I find it challenging
+        and interesting.
+      </p>
+      <p>
+        <span>When you stop learning, you stop growing</span> To keep myself relevant in the software space and for
+        professional growth, I decided to leave the workforce and go back to school. I enrolled to a Diploma program in
+        Digital Media and IT from Northern Alberta Institute of Technology where I gained knowledge and skills on the
+        technologies used in frontend and backend software/web development. But learning doesn’t stop on the four
+        corners of the classroom. As a firm believer of continuous learning, I always find time to learn about latest
+        technologies that are available online so my skills won’t get obsolete.
+      </p>
+    </div>
+    <!-- end of profile-container -->
+
+    <div id="experience-container">
+      <div class="experience-parallax">
+        <h2>Industry Experience</h2>
+      </div>
+
+      <!-- ------ START OF WORK EXPERIENCE ------- -->
+      <ul class="timeline">
+        <li>
+          <div class="timeline-badge">
+            <a><i class="fa fa-circle" id=""></i></a>
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4>Front-End Web Developer - SCI</h4>
+            </div>
+            <div class="timeline-body">
+              <ul style="padding:0 40px">
+                <li>Maintain assets on network of brand sites utilizing XML, JQuery, XSLT & JavaScript.</li>
+                <li>Prioritize and address web requests to ensure requests are effectively resolved in a
+                  timely manner.</li>
+                <li>Collaborate with department staff to ensure user-focused design and launch of
+                  interactive web initiatives.</li>
+                <li>Develop, enhance, maintain and support web applications in Interwoven TeamSite CMS to
+                  evaluate the effectiveness, usability, and accessibility of Web sites and make
+                  recommendations for enhancements to Web sites overall effectiveness.</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <li class="timeline-inverted">
+          <div class="timeline-badge">
+            <a><i class="fa fa-circle invert" id=""></i></a>
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4>Front-End Web Developer - UI/UX Designer - IADC</h4>
+              <p>Accenture Philippines</p>
+              <p>JUNE 2006 - DECEMBER 2009</p>
+            </div>
+            <div class="timeline-body">
+              <p>Responsible for development and support of corporate web sites (IADC, DEA, Careers @ IADC,
+                Drilling Contractor) all running on Joomla CMS.</p>
+
+              <ul style="padding:0 40px">
+                <li>Creating quarterly circulation reports based on data mining and analysis</li>
+                <li>Responsible for subscription for Drilling Contractor</li>
+                <li>Creating newsletters for Drilling Contractor internationally.</li>
+                <li>Creating Drill Bits newsletters for mobile viewers.</li>
+                <li>Integration of Subscription form into a web site via MYSQL + PHP within Joomla.</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="clearfix no-float"></li>
+      </ul>
+      <!-- -------------- END OF WORK EXPERIENCE ----------- -->
+    </div>
+    <div id="skills-container">
+      <div class="skills-parallax">
+        <h2>Technical Skills</h2>
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque veniam, voluptatem ad, amet autem ipsam
+        dignissimos repudiandae qui ea ab numquam quo perferendis aliquid, ratione aliquam nemo odit ut consequuntur.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo ratione iusto pariatur totam, ab fuga cumque
+        possimus rerum quibusdam voluptatibus! Cumque fugiat aut magnam hic eius architecto eos tenetur dolor?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dicta vel, id ipsa quasi ut vitae consectetur
+        possimus quia quisquam at odit in nemo est? Tempore inventore in quidem veritatis! Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Ut, rem! Dignissimos dicta eius totam ratione debitis? Eveniet, nihil veniam,
+        molestias a rerum aperiam officia esse aspernatur reiciendis illum iste vel. Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Tempore adipisci sapiente rerum cumque labore enim eos recusandae! Commodi dolorem
+        repudiandae enim atque corporis deleniti cumque mollitia consectetur, ab, officiis iure!
+      </p>
+    </div>
+    <div id="projects-container">
+      <div class="projects-parallax">
+        <h2>Projects</h2>
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sit quam deserunt ducimus, aliquid adipisci
+        eum odio repellendus tempore blanditiis nostrum eligendi consequatur amet delectus dolor perferendis, possimus
+        sequi quos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat beatae suscipit id optio inventore
+        quos numquam blanditiis facere quisquam aliquam? Cupiditate nam aut officia totam id est, tempora eos dolore.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id officiis earum quaerat molestias quas nesciunt, nam,
+        adipisci blanditiis sequi aspernatur nulla dolore minus quis qui sed cumque dolorum inventore cupiditate! Lorem
+        ipsum, dolor sit amet consectetur adipisicing elit. Quia quasi ratione molestiae laborum unde porro repudiandae
+        nemo blanditiis, aut vel fugit eveniet nam, dolorum laudantium, totam quod ipsam ipsa velit.
+      </p>
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <p>Stalk me</p>
         <ul>
-          <li>
-            <a class="profile-nav" href="#profile-container">
-              <span>Profile</span>
-              <i class="fas fa-user-alt fa-2x"></i>
-            </a>
-          </li>
-          <li>
-            <a class="experience-nav" href="#experience-container">
-              <span>Experience</span>
-              <i class="fas fa-laptop-code fa-2x"></i>
-            </a>
-          </li>
-          <li>
-            <a class="skills-nav" href="#skills-container">
-              <span>Skills</span>
-              <i class="fas fa-cogs fa-2x"></i>
-            </a>
-          </li>
-          <li>
-            <a class="projects-nav" href="#projects-container">
-              <span>Projects</span>
-              <i class="fas fa-tasks fa-2x"></i>
-            </a>
-          </li>
+          <!-- <li><i class="fab fa-facebook-f fa-2x"></i></li> -->
+          <li><i class="fas fa-envelope fa-2x"></i></li>
+          <li><i class="fab fa-twitter fa-2x"></i></li>
+          <li><i class="fab fa-linkedin-in fa-2x"></i></li>
+          <li><i class="fab fa-github-alt fa-2x"></i></li>
         </ul>
-      </nav> 
-      <!-- END OF Navbar -->
-    </header>
-
-    <main>
-      <div id="profile-container">
-        <div class="profile-parallax">
-          <h2>
-            <span>Hi! My name is</span>
-            <span>Arr Domingo</span>
-          </h2>
-        </div>
-
-        <p>
-          <span>About Me</span> I am a try-hard IT enthusiast with a drive for best quality and creativity in mind. I have always been fascinated of how technology has revolutionized the world and our daily lives. As a 90's kid, I remember using my first computer messing with CRT monitor and a mouse with ball inside. Nowadays, modern technology has paved the way for multi-functional devices that makes our lives easier, better, faster, and more fun.
-        </p>
-        <p>
-          <span>Tech Life</span> In order to engage myself into tech industry, I took a degree as a Bachelor of Science in Computer Engineering from Polytechnic University of the Philippines. Right after school, I really wanted to work in the network side of the industry where I handle routers, servers, etc. But things don’t happen as much as I want to. No matter how you plan your career, if it’s not HIS will, you won’t get it. To make the story short, I ended up in the software side of the industry. Personally, this was a tough pathway, but I find it challenging and interesting.
-        </p>
-        <p>
-          <span>When you stop learning, you stop growing</span> To keep myself relevant in the software space and for professional growth, I decided to leave the workforce and go back to school. I enrolled to a Diploma program in Digital Media and IT from Northern Alberta Institute of Technology where I gained knowledge and skills on the technologies used in frontend and backend software/web development. But learning doesn’t stop on the four corners of the classroom. As a firm believer of continuous learning, I always find time to learn about latest technologies that are available online so my skills won’t get obsolete.
-        </p>
       </div>
-      <!-- end of profile-container -->
+    </footer>
+  </main>
 
-      <div id="experience-container">
-        <div class="experience-parallax">
-          <h2>Industry Experience</h2>
-        </div>
+  <!-- START OF scripts -->
+  <script src="particles.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/typewriter.js"></script>
+  <!-- END OF scripts -->
 
-        <!-- ------ START OF WORK EXPERIENCE ------- -->
-        <ul class="timeline">
-          <li>
-              <div class="timeline-badge">
-                  <a><i class="fa fa-circle" id=""></i></a>
-              </div>
-              <div class="timeline-panel">
-                  <div class="timeline-heading">
-                      <h4>Front-End Web Developer - SCI</h4>
-                  </div>
-                  <div class="timeline-body">
-                      <ul style="padding:0 40px">
-                          <li>Maintain assets on network of brand sites utilizing XML, JQuery, XSLT & JavaScript.</li>
-                          <li>Prioritize and address web requests to ensure requests are effectively resolved in a
-                              timely manner.</li>
-                          <li>Collaborate with department staff to ensure user-focused design and launch of
-                              interactive web initiatives.</li>
-                          <li>Develop, enhance, maintain and support web applications in Interwoven TeamSite CMS to
-                              evaluate the effectiveness, usability, and accessibility of Web sites and make
-                              recommendations for enhancements to Web sites overall effectiveness.</li>
-                      </ul>
-                  </div>
-              </div>
-          </li>
+</body>
 
-          <li class="timeline-inverted">
-              <div class="timeline-badge">
-                  <a><i class="fa fa-circle invert" id=""></i></a>
-              </div>
-              <div class="timeline-panel">
-                  <div class="timeline-heading">
-                      <h4>Front-End Web Developer - UI/UX Designer - IADC</h4>
-                      <p>Accenture Philippines</p>
-                      <p>JUNE 2006 - DECEMBER 2009</p>
-                  </div>
-                  <div class="timeline-body">
-                      <p>Responsible for development and support of corporate web sites (IADC, DEA, Careers @ IADC,
-                          Drilling Contractor) all running on Joomla CMS.</p>
-
-                      <ul style="padding:0 40px">
-                          <li>Creating quarterly circulation reports based on data mining and analysis</li>
-                          <li>Responsible for subscription for Drilling Contractor</li>
-                          <li>Creating newsletters for Drilling Contractor internationally.</li>
-                          <li>Creating Drill Bits newsletters for mobile viewers.</li>
-                          <li>Integration of Subscription form into a web site via MYSQL + PHP within Joomla.</li>
-                      </ul>
-                  </div>
-              </div>
-          </li>
-          <li class="clearfix no-float"></li>
-        </ul>
-        <!-- -------------- END OF WORK EXPERIENCE ----------- -->
-      </div>
-      <div id="skills-container">
-        <div class="skills-parallax">
-          <h2>Technical Skills</h2>
-        </div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque veniam, voluptatem ad, amet autem ipsam dignissimos repudiandae qui ea ab numquam quo perferendis aliquid, ratione aliquam nemo odit ut consequuntur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo ratione iusto pariatur totam, ab fuga cumque possimus rerum quibusdam voluptatibus! Cumque fugiat aut magnam hic eius architecto eos tenetur dolor?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dicta vel, id ipsa quasi ut vitae consectetur possimus quia quisquam at odit in nemo est? Tempore inventore in quidem veritatis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, rem! Dignissimos dicta eius totam ratione debitis? Eveniet, nihil veniam, molestias a rerum aperiam officia esse aspernatur reiciendis illum iste vel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore adipisci sapiente rerum cumque labore enim eos recusandae! Commodi dolorem repudiandae enim atque corporis deleniti cumque mollitia consectetur, ab, officiis iure!
-        </p>
-      </div>
-      <div id="projects-container">
-        <div class="projects-parallax">
-          <h2>Projects</h2>
-        </div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sit quam deserunt ducimus, aliquid adipisci eum odio repellendus tempore blanditiis nostrum eligendi consequatur amet delectus dolor perferendis, possimus sequi quos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat beatae suscipit id optio inventore quos numquam blanditiis facere quisquam aliquam? Cupiditate nam aut officia totam id est, tempora eos dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id officiis earum quaerat molestias quas nesciunt, nam, adipisci blanditiis sequi aspernatur nulla dolore minus quis qui sed cumque dolorum inventore cupiditate! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia quasi ratione molestiae laborum unde porro repudiandae nemo blanditiis, aut vel fugit eveniet nam, dolorum laudantium, totam quod ipsam ipsa velit.
-        </p>
-      </div>
-
-      <footer>
-        <div class="footer-container">
-          <p>Stalk me</p>
-          <ul>
-            <!-- <li><i class="fab fa-facebook-f fa-2x"></i></li> -->
-            <li><i class="fas fa-envelope fa-2x"></i></li>
-            <li><i class="fab fa-twitter fa-2x"></i></li>
-            <li><i class="fab fa-linkedin-in fa-2x"></i></li>
-            <li><i class="fab fa-github-alt fa-2x"></i></li>
-          </ul>
-        </div>
-      </footer>   
-    </main>
-
-    <!-- START OF scripts -->
-    <script src="particles.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/typewriter.js"></script>
-    <!-- END OF scripts -->
-
-  </body>
 </html>
