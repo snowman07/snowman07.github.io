@@ -399,7 +399,7 @@ h2 {
   /* text-transform: uppercase; */
   font-weight: bold;
   font-size: 35px;
-  font-family: algerian, courier;
+  font-family: algerian;
   line-height: 80%;
 }
 
@@ -449,7 +449,7 @@ h2 {
 #experience-container > p span {
   font-weight: bold;
   font-size: 60px;
-  font-family: algerian, courier;
+  font-family: algerian;
   line-height: 80%;
 }
 
