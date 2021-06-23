@@ -396,9 +396,11 @@ h2 {
 }
 
 #profile-container > p span {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: bold;
-  font-size: larger;
+  font-size: 35px;
+  font-family: algerian, courier;
+  line-height: 80%;
 }
 
 #experience-container {
@@ -442,6 +444,13 @@ h2 {
 #experience-container > p:hover {
   background-color: #c4b921;
   opacity: 3;
+}
+
+#experience-container > p span {
+  font-weight: bold;
+  font-size: 60px;
+  font-family: algerian, courier;
+  line-height: 80%;
 }
 
 /* ----------------------------------------------------- */
