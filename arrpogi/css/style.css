@@ -424,6 +424,11 @@ h2 {
 
 /* ----------------------------------------------------- */
 /* --------------- START OF EXPERIENCE ----------------- */
+
+ul.timeline {
+  margin: 30px;
+}
+
 .timeline {
   list-style: none;
   padding: 10px 0;
@@ -556,7 +561,6 @@ h2 {
 
 /* ----------------- END OF EXPERIENCE ----------------- */
 /* ----------------------------------------------------- */
-
 
 #skills-container {
   background: #f44336;
@@ -751,8 +755,13 @@ footer ul li:hover {
   /* -------------------------------------- */
   /* -------- START OF EXPERIENCE --------- */
 
+  /* ul.timeline {
+    margin: 30px;
+  } */
+
   ul.timeline:before {
     left: 40px;
+    /* background-color: green; */
   }
   ul.timeline > li {
     margin-bottom: 0px;
