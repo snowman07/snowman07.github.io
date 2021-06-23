@@ -408,6 +408,13 @@ h2 {
   position: relative;
 }
 
+/* ---- ::after PSEUDO ELEMENT for experience-container ---- */
+/* ---- use to position: relative the timeline-container */
+/* #experience-container::after {
+  content: "";
+  position: absolute;
+} */
+
 .experience-parallax {
   background: url("../img/experience.jpg") no-repeat center;
   background-size: cover;
@@ -422,17 +429,37 @@ h2 {
   color: #c4b921;
 }
 
+#experience-container > p {
+  border: 3px solid rgba(171, 183, 183, 1);
+  border-radius: 15px;
+  background-color: rgba(149, 165, 166, 1);
+  padding: 20px;
+  box-shadow: inset 0 0 10px #000000; /*https://css-tricks.com/almanac/properties/b/box-shadow/*/
+  /* text-indent: 50px; */
+  font-size: 20px;
+}
+
+#experience-container > p:hover {
+  background-color: #c4b921;
+  opacity: 3;
+}
+
 /* ----------------------------------------------------- */
 /* --------------- START OF EXPERIENCE ----------------- */
 
+/* .timeline-container {
+  position: relative;
+} */
+
 ul.timeline {
-  margin: 30px;
+  position: relative;
 }
 
 .timeline {
   list-style: none;
   padding: 10px 0;
   position: relative;
+  /* position: absolute; */
   font-weight: 300;
 }
 .timeline:before {
@@ -452,6 +479,7 @@ ul.timeline {
   float: left;
   clear: left;
 }
+
 .timeline > li:before,
 .timeline > li:after {
   content: " ";

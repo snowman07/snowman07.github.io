@@ -22,3 +22,4 @@ Currently using github free host at the moment but I have plan to migrate to .te
 - [Font Awesome - Free Icons](https://fontawesome.com/icons?d=gallery&p=2&m=free)
 - [Photos](https://unsplash.com/)
 - [Footer Effect](https://www.littlesnippets.net/blog/some-css-menu-inspiration-using-animated-lines)
+- [Industry Experience reference](https://codepen.io/togrul/pen/xwxodv)
