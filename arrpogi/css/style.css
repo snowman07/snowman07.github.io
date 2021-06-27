@@ -454,149 +454,119 @@ h2 {
 }
 
 /* ----------------------------------------------------- */
-/* --------------- START OF EXPERIENCE ----------------- */
+/* --------- START OF w3 schools timeline -------------- */
+
+/* The actual timeline (the vertical ruler) */
 .timeline {
-  list-style: none;
-  padding: 40px 0;
   position: relative;
-  font-weight: 300;
+  max-width: 1200px;
+  margin: 0 auto;
+  /* left: 31px; */
 }
-.timeline:before {
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: white;
   top: 0;
   bottom: 0;
-  position: absolute;
-  content: " ";
-  width: 2px;
-  background: #ffffff;
-  left: 95%;
-  margin-left: -1.5px;
-}
-.timeline > li {
-  margin-bottom: 20px;
-  position: relative;
-  width: 95%;
-  float: left;
-  clear: left;
+  left: 8%;
+  margin-left: -3px;
 }
 
-.timeline > li:before,
-.timeline > li:after {
-  content: " ";
-  display: table;
-}
-.timeline > li:after {
-  clear: both;
-}
-.timeline > li:before,
-.timeline > li:after {
-  content: " ";
-  display: table;
-}
-.timeline > li:after {
-  clear: both;
-}
-.timeline > li > .timeline-panel {
-  width: calc(100% - 30px);
-  width: -moz-calc(100% - 30px);
-  width: -webkit-calc(100% - 30px);
-  float: left;
-  border: 1px solid #dcdcdc;
-  background: green;
+/* Container around content */
+.container {
+  padding: 10px 40px;
   position: relative;
+  background-color: inherit;
+  width: 50%;
 }
-.timeline > li > .timeline-panel:before {
+
+/* The circles on the timeline */
+.container::after {
+  content: "";
   position: absolute;
-  top: 26px;
-  right: -15px;
-  display: inline-block;
-  border-top: 15px solid transparent;
-  border-left: 15px solid #dcdcdc;
-  border-right: 0 solid #dcdcdc;
-  border-bottom: 15px solid transparent;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #ff9f55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
   content: " ";
-}
-.timeline > li > .timeline-panel:after {
+  height: 0;
   position: absolute;
-  top: 27px;
-  right: -14px;
-  display: inline-block;
-  border-top: 14px solid transparent;
-  border-left: 14px solid green;
-  border-right: 0 solid green;
-  border-bottom: 14px solid transparent;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
   content: " ";
-}
-.timeline > li > .timeline-badge {
-  color: #ffffff;
-  width: 24px;
-  height: 24px;
-  line-height: 50px;
-  text-align: center;
+  height: 0;
   position: absolute;
-  top: 30px;
-  right: -12px;
-  z-index: 100;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
 }
-/* .timeline > li.timeline-inverted > .timeline-panel {
-  float: right;
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
 }
-.timeline > li.timeline-inverted > .timeline-panel:before {
-  border-left-width: 0;
-  border-right-width: 15px;
-  left: -15px;
-  right: auto;
+
+/* Full width containers */
+.container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
 }
-.timeline > li.timeline-inverted > .timeline-panel:after {
-  border-left-width: 0;
-  border-right-width: 14px;
-  left: -14px;
-  right: auto;
-} */
-.timeline-badge > a {
-  color: #ffffff !important;
+
+/* Make sure that all arrows are poitning leftwards */
+.container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
 }
-.timeline-badge a:hover {
-  color: #dcdcdc !important;
+
+/* Make sure all circles are at the same spot */
+.left::after,
+.right::after {
+  left: 15px;
 }
-.timeline-title {
-  margin-top: 0;
-  color: inherit;
-}
-.timeline-heading h4 {
-  font-weight: 400;
-  padding: 0 15px;
-  color: red;
-}
-.timeline-body > p,
-.timeline-body > ul {
-  padding: 10px 15px;
-  margin-bottom: 0;
-}
-/* .timeline > li.timeline-inverted {
-  float: right;
-  clear: right;
-} */
-/* .timeline > li:nth-child(2) {
-  margin-top: 60px;
-} */
-/* .timeline > li.timeline-inverted > .timeline-badge {
-  left: -12px;
-} */
-.no-float {
-  float: none !important;
-}
-.timeline > li.timeline-inverted {
-  float: left;
-  clear: left;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-/* .timeline > li.timeline-inverted > .timeline-badge {
-  left: 28px;
+
+/* Make all right containers behave like the left ones */
+/* .right {
+  left: 0%;
 } */
 
-/* ----------------- END OF EXPERIENCE ----------------- */
-/* ----------------------------------------------------- */
+/* ------------ END of w3 schools timeline ------------ */
+/* ---------------------------------------------------- */
 
 #skills-container {
   background: #f44336;
@@ -788,78 +758,14 @@ footer ul li:hover {
     height: 800px;
   }
 
-  /* -------------------------------------- */
-  /* -------- START OF EXPERIENCE --------- */
-  ul.timeline:before {
-    left: 40px;
-  }
-  ul.timeline > li {
-    margin-bottom: 0px;
-    position: relative;
-    width: 100%;
-    float: left;
-    clear: left;
-  }
-  ul.timeline > li > .timeline-panel {
-    width: calc(100% - 70px);
-    width: -moz-calc(100% - 70px);
-    width: -webkit-calc(100% - 70px);
-  }
-  ul.timeline > li > .timeline-badge {
-    left: 28px;
-    margin-left: 0;
-    top: 30px;
-  }
-  ul.timeline > li > .timeline-panel {
-    float: right;
-  }
-  ul.timeline > li > .timeline-panel:before {
-    border-left-width: 0;
-    border-right-width: 15px;
-    left: -15px;
-    right: auto;
-  }
-  ul.timeline > li > .timeline-panel:after {
-    border-left-width: 0;
-    border-right-width: 14px;
-    left: -14px;
-    right: auto;
-  }
-  /* .timeline > li.timeline-inverted {
-    float: left;
-    clear: left;
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-  .timeline > li.timeline-inverted > .timeline-badge {
-    left: 28px;
-  } */
-  .timeline > li.timeline-inverted > .timeline-panel {
-    float: right;
-  }
-  .timeline > li.timeline-inverted > .timeline-panel:before {
-    border-left-width: 0;
-    border-right-width: 15px;
-    left: -15px;
-    right: auto;
-  }
-  .timeline > li.timeline-inverted > .timeline-panel:after {
-    border-left-width: 0;
-    border-right-width: 14px;
-    left: -14px;
-    right: auto;
+  /* ------- w3 school timeline -------- */
+
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
   }
 
-  .timeline > li.timeline-inverted {
-    float: right;
-    clear: right;
-  }
-  /* .timeline > li.timeline-inverted > .timeline-badge {
-    left: -12px;
-  } */
-
-  /* ---------- END OF EXPERIENCE --------- */
-  /* -------------------------------------- */
+  /* --------end w3 schools timeline ------ */
 
   #skills-container {
     padding: 35px 15px;
