@@ -22,4 +22,7 @@ Currently using github free host at the moment but I have plan to migrate to .te
 - [Font Awesome - Free Icons](https://fontawesome.com/icons?d=gallery&p=2&m=free)
 - [Photos](https://unsplash.com/)
 - [Footer Effect](https://www.littlesnippets.net/blog/some-css-menu-inspiration-using-animated-lines)
-- [Industry Experience reference](https://codepen.io/togrul/pen/xwxodv)
+- Industry Experience reference (timeline)
+  - [w3schools which uses max-width too](https://www.w3schools.com/howto/howto_css_timeline.asp)
+  - [uses max-width which is good for `desktop-first approach`](https://codepen.io/togrul/pen/xwxodv)
+  - [uses min-width which is good for `mobile-first approach` ; no vertical ruler in mobile media query](https://www.youtube.com/watch?v=zNccqv0g6Q4&t=10s)
