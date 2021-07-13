@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        /* THIS IS A MOBILE-FIRST APPROACH */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Helvetica, sans-serif;
+            background-color: #474e5d;
+        }
+
+        /* The actual TIMELINE (the vertical ruler) */
+        /* generic code */
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* the actual timeline (the vertical ruler) */
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: white;
+            top: 0;
+            bottom: 0;
+            left: 31px;
+            margin-left: -3px;
+        }
+
+        /* the actual content */
+        /* generic code */
+        .content {
+            padding: 20px 30px;
+            background-color: white;
+            position: relative;
+            border-radius: 6px;
+        }
+
+        /* Container around content */
+        /* generic code */
+        .container {
+            padding: 10px 40px;
+            position: relative;
+            width: 100%;
+            padding-left: 70px;
+            padding-right: 25px;
+        }
+
+        /* The CIRCLES on the timeline */
+        /* this is .timeline ul li::after in the video */
+        .container::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -17px;
+            background-color: white;
+            border: 4px solid #FF9F55;
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+            /* left: 15px; */
+        }
+
+        .container::after:hover {
+            background-color: red;
+        }
+
+        /* Make sure all CIRCLES are at the same spot */
+        .left::after,
+        .right::after {
+            left: 15px;
+        }
+
+        /* TABLET VIEW 401-768px*/
+        /* Media queries - Responsive timeline on screens <= 600px wide */
+        @media all and (min-width: 25.0625rem) {
+
+            .timeline::after {
+                left: 50%;
+            }
+
+            .container {
+                padding: 10px 40px;
+                /* position: relative; */
+                /* background-color: inherit; */
+                width: 50%;
+            }
+
+
+
+            /* Place the right container to the right */
+            .right {
+                left: 50%;
+            }
+
+            .right::after {
+                left: -16px;
+            }
+
+            /* Place the left CONTAINER to the left */
+            /* generic */
+            .left {
+                left: 0;
+            }
+
+            /* this is the .timeline ul li:nth-child(odd)::after in the video */
+            .left::after {
+                left: 92%; /*not the best solution; change for other media*/
+                /* position: absolute; */
+                /* right: 50%; */
+                /* transform: translateX(1200%); */
+                
+            }
+
+            /* .left::after {
+                right: 50%;
+            } */
+        }
+
+        /* DESKTOP VIEW 769-1140 */
+        @media all and (min-width: 48.0625rem) {
+            .left::after {
+                left: 95%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="timeline">
+        <!-- <details>
+            <summary>This is the summary<br>
+               &nbsp;&nbsp;&nbsp; Date here              
+            </summary>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur iure adipisci maiores cupiditate accusantium deserunt nesciunt voluptates reprehenderit nulla unde eum, culpa officiis! Voluptas obcaecati praesentium minima, quia officiis porro?</p>
+        </details> -->
+        <div class="container left">
+            <div class="content">
+                <!-- <h2>2017</h2>
+                <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea
+                    mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto
+                    primis ea eam. lore
+                </p> -->
+                <details>
+                    <summary>This is the summary<br>
+                        &nbsp;&nbsp;&nbsp; Date here
+                    </summary>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur iure adipisci maiores
+                        cupiditate accusantium deserunt nesciunt voluptates reprehenderit nulla unde eum, culpa
+                        officiis! Voluptas obcaecati praesentium minima, quia officiis porro?</p>
+                </details>
+            </div>
+        </div>
+        <div class="container right">
+            <div class="content">
+                <!-- <h2>2016</h2>
+                <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea
+                    mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto
+                    primis ea eam.
+                </p> -->
+                <details>
+                    <summary>This is the 2nd summary<br>
+                        &nbsp;&nbsp;&nbsp; Date here
+                    </summary>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur iure adipisci maiores
+                        cupiditate accusantium deserunt nesciunt voluptates reprehenderit nulla unde eum, culpa
+                        officiis! Voluptas obcaecati praesentium minima, quia officiis porro?</p>
+                </details>
+
+            </div>
+        </div>
+        <div class="container left">
+            <div class="content">
+                <!-- <h2>2017</h2>
+                <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea
+                    mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto
+                    primis ea eam. lore
+                </p> -->
+                <details>
+                    <summary>This is the summary<br>
+                        &nbsp;&nbsp;&nbsp; Date here
+                    </summary>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur iure adipisci maiores
+                        cupiditate accusantium deserunt nesciunt voluptates reprehenderit nulla unde eum, culpa
+                        officiis! Voluptas obcaecati praesentium minima, quia officiis porro?</p>
+                </details>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
