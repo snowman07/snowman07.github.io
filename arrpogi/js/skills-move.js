@@ -1,6 +1,6 @@
 jQuery(document).ready(function () {
     /*MODIFICATION START*/
-    jQuery(document).on('scroll', function () {
+    jQuery(window).on('scroll', function () {
         if (jQuery('html,body').scrollTop() > jQuery('#particles-js').height()) {
             /*MODIFICATION END*/
             jQuery(".progress-bar").each(function () {
