@@ -590,7 +590,7 @@ h2 {
 }
 
 /* technical skills style START */
-.skills-container-inner {
+#skills-container-inner {
   height: 300px;
   max-width: 100%;
   width: 70%;
