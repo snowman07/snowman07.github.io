@@ -1,7 +1,7 @@
 jQuery(document).ready(function () {
     /*MODIFICATION START*/
     jQuery(document).on('scroll', function () {
-        if (jQuery('html,body').scrollTop() > jQuery('#particles-js').height()) {
+        if (jQuery('html,body').scrollTop() > jQuery('main #skills-container').height()) {
             /*MODIFICATION END*/
             jQuery(".progress-bar").each(function () {
                 jQuery(this).find(".progress-content").animate({
