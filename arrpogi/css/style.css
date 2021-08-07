@@ -777,7 +777,7 @@ footer ul li:hover {
   /* Place the left CONTAINER to the left */
   /* generic */
   .left {
-    left: 0;
+    left: -6.5%;
   }
 
   /* this is the .timeline ul li:nth-child(odd)::after in the video */
