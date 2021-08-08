@@ -835,6 +835,10 @@ footer ul li:hover {
     text-shadow: 5px 3px #000;
   }
 
+  #profile-container > p {
+    border: 8px solid rgba(171, 183, 183, 1);
+  }
+
   #experience-container {
     padding: 35px 15px;
     /* top: 2312px; */
@@ -847,6 +851,9 @@ footer ul li:hover {
     height: 800px;
   }
 
+  #experience-container > p {
+    border: 8px solid rgba(171, 183, 183, 1);
+  }
   /* ----------------------------------------------------------- */
   /* ----------- START OF TIMELINE IN EXPERIENCE DIV ----------- */
 
