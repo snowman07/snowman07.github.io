@@ -764,54 +764,13 @@ footer ul li:hover {
     padding-top: 520px;
   }
 
+  .timeline details {
+    font-size: 20px;
+  }
+
   .skills-parallax {
     background-size: 100%;
   }
-
-  /* ----------------------------------------------------------- */
-  /* ----------- START OF TIMELINE IN EXPERIENCE DIV ----------- */
-
-  .timeline::after {
-    left: 50%;
-  }
-
-  .container {
-    padding: 10px 40px;
-    /* position: relative; */
-    /* background-color: inherit; */
-    width: 50%;
-  }
-
-  /* Place the right container to the right */
-  .right {
-    left: 50%;
-  }
-
-  .right::after {
-    left: -16px;
-  }
-
-  /* Place the left CONTAINER to the left */
-  /* generic */
-  .left {
-    left: -6.5%;
-  }
-
-  /* this is the .timeline ul li:nth-child(odd)::after in the video */
-  .left::after {
-    left: 92%;
-    /*not the best solution; change for other media*/
-    /* position: absolute; */
-    /* right: 50%; */
-    /* transform: translateX(1200%); */
-  }
-
-  /* .left::after {
-      right: 50%;
-  } */
-
-  /* ------------ END OF TIMELINE IN EXPERIENCE DIV ------------ */
-  /* ----------------------------------------------------------- */
 
   /* ---------------------------------- END OF main --- */
   /* -------------------------------------------------- */
@@ -871,6 +830,7 @@ footer ul li:hover {
   #experience-container > p {
     border: 8px solid rgba(171, 183, 183, 1);
   }
+
   /* ----------------------------------------------------------- */
   /* ----------- START OF TIMELINE IN EXPERIENCE DIV ----------- */
 
@@ -878,19 +838,41 @@ footer ul li:hover {
     padding: 30px 0 0 0;
   }
 
-  .timeline details {
-    font-size: 20px;
+  .timeline::after {
+    left: 50%;
   }
 
   .content {
     border: 8px solid rgba(171, 183, 183, 1);
   }
 
+  .container {
+    padding: 10px 40px;
+    /* position: relative; */
+    /* background-color: inherit; */
+    width: 50%;
+  }
+
+  /* Place the right container to the right */
+  .right {
+    left: 50%;
+  }
+
+  .right::after {
+    left: -16px;
+  }
+
+  /* Place the left CONTAINER to the left */
+  /* generic */
+  .left {
+    left: -6.5%;
+  }
+
   .left::after {
     left: 97%; /*not the best solution; change for other media*/
   }
 
-  /* ------------- END OF TIMELINE IN EXPERIENCE DIV ----------- */
+  /* ------------ END OF TIMELINE IN EXPERIENCE DIV ------------ */
   /* ----------------------------------------------------------- */
 
   #skills-container {
