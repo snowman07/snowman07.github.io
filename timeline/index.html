@@ -81,6 +81,55 @@
             left: 15px;
         }
 
+        /* ---------------------------- */
+        /* --------- CARD AREA -------- */
+        .containercard {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:space-around;
+        }
+
+        .flip-card {
+            background-color: transparent;
+            width: 300px;
+            height: 300px;
+            perspective: 1000px;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        .flip-card-front {
+            background-color: #bbb;
+            color: black;
+        }
+
+        .flip-card-back {
+            background-color: #2980b9;
+            color: white;
+            transform: rotateY(200deg);
+        }
+
+            
         /* TABLET VIEW 401-768px*/
         /* Media queries - Responsive timeline on screens <= 600px wide */
         @media all and (min-width: 25.0625rem) {
@@ -133,6 +182,8 @@
             .left::after {
                 left: 97%; /*not the best solution; change for other media*/
             }
+
+            
         }
     </style>
 
@@ -200,6 +251,35 @@
             </div>
         </div>
 
+    </div>
+
+    <div class="containercard">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="https://picsum.photos/id/6/200/200" alt="avatar" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                    <h1>Arr Domingo</h1>
+                    <p>Software Engineer</p>
+                    <p>We love this guy</p>
+                    <button><a style="text-decoration:none" href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_flip_card">Go to this website</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="https://picsum.photos/id/10/200/200" alt="avatar" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                    <h1>Ess Domingo</h1>
+                    <p>CEO</p>
+                    <p>Smarty</p>
+                    <button><a style="text-decoration: none;" href="https://www.google.com/">Visit website</a></button>
+                </div>
+            </div>
+        </div>
     </div>
 
 </body>
