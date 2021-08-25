@@ -81,8 +81,8 @@
             left: 15px;
         }
 
-        /* ---------------------------- */
-        /* --------- CARD AREA -------- */
+        /* ------------------------------------- */
+        /* --------- START OF CARD AREA -------- */
         .containercard {
             display: flex;
             flex-wrap: wrap;
@@ -116,6 +116,8 @@
             height: 100%;
             -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
+            padding: 10px;
+            border-radius: 5px;
         }
 
         .flip-card-front {
@@ -127,7 +129,11 @@
             background-color: #2980b9;
             color: white;
             transform: rotateY(200deg);
+            border: solid 5px yellow;
         }
+
+        /* --------- END OF CARD AREA -------- */
+        /* ----------------------------------- */
 
             
         /* TABLET VIEW 401-768px*/
@@ -175,6 +181,25 @@
             /* .left::after {
                 right: 50%;
             } */
+
+
+            /* ------------------------------------- */
+            /* --------- START OF CARD AREA -------- */
+            /* .flip-card-front, .flip-card-back {
+                margin: 20px;
+            } */
+
+            /* .flip-card-inner {
+                margin: 20px;
+            } */
+
+            .flip-card {
+                margin: 20px 0 20px 0;
+            }
+
+           
+            /* --------- END OF CARD AREA -------- */
+            /* ----------------------------------- */
         }
 
         /* DESKTOP VIEW 769-1140 */
@@ -257,7 +282,7 @@
         <div class="flip-card">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
-                    <img src="https://picsum.photos/id/6/200/200" alt="avatar" style="width:300px;height:300px;">
+                    <img src="https://picsum.photos/id/6/200/200" alt="avatar" style="width:300px;height:300px;border-radius: 5px;">
                 </div>
                 <div class="flip-card-back">
                     <h1>Arr Domingo</h1>
@@ -270,11 +295,24 @@
         <div class="flip-card">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
-                    <img src="https://picsum.photos/id/10/200/200" alt="avatar" style="width:300px;height:300px;">
+                    <img src="https://picsum.photos/id/10/200/200" alt="avatar" style="width:300px;height:300px;border-radius: 5px;">
                 </div>
                 <div class="flip-card-back">
                     <h1>Ess Domingo</h1>
                     <p>CEO</p>
+                    <p>Smarty</p>
+                    <button><a style="text-decoration: none;" href="https://www.google.com/">Visit website</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="https://picsum.photos/id/20/200/200" alt="avatar" style="width:300px;height:300px;border-radius: 5px;">
+                </div>
+                <div class="flip-card-back">
+                    <h1>Tee Domingo</h1>
+                    <p>Lawyer</p>
                     <p>Smarty</p>
                     <button><a style="text-decoration: none;" href="https://www.google.com/">Visit website</a></button>
                 </div>
