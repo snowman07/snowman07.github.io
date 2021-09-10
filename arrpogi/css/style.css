@@ -737,6 +737,9 @@ padding-right: 25px; /* Separate bars from container */
 .tech-used > button {
   font-size: 20px;
   margin-bottom: 10px;
+  background-color: transparent;
+  color: #e1e1e0;
+  border: solid 3px rgba(171, 183, 183, 1);
   border-radius: 5px;
 }
 
@@ -786,11 +789,12 @@ padding-right: 25px; /* Separate bars from container */
 }
 
 .flip-card-back > button {
+  background-color: transparent;
+  border: solid 5px rgba(171, 183, 183, 1);
   border-radius: 10px;
   margin-left: 20px;
   margin-right: 20px;
   font-size: 18px;
-  background-color: rgba(171, 183, 183, 1);
 }
 
 .flip-card-back > button:hover {
