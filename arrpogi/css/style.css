@@ -774,7 +774,7 @@ padding-right: 25px; /* Separate bars from container */
   background-color: #2196f3;
   color: black;
   transform: rotateY(200deg);
-  border: solid 10px rgba(171, 183, 183, 1);
+  border: solid 8px rgba(171, 183, 183, 1);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -790,6 +790,7 @@ padding-right: 25px; /* Separate bars from container */
   margin-left: 20px;
   margin-right: 20px;
   font-size: 18px;
+  background-color: rgba(171, 183, 183, 1);
 }
 
 .flip-card-back > button:hover {
