@@ -789,6 +789,10 @@ padding-right: 25px; /* Separate bars from container */
 }
 
 .flip-card-back > button {
+  text-decoration: none;
+}
+
+.flip-card-back > button {
   background-color: transparent;
   border: solid 5px rgba(171, 183, 183, 1);
   border-radius: 10px;
