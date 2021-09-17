@@ -579,7 +579,7 @@ h2 {
   position: relative;
   margin: 5px 0;
   font-family: Montserrat, sans-serif;
-  font-size: 2e;
+  /* font-size: 2e; */
   line-height: 15px;
   font-weight: 400;
   color: #2e2e2e;
@@ -788,22 +788,21 @@ h2 {
   font-size: 16px;
 }
 
-.flip-card-back > button {
+/* .flip-card-back > button {
   text-decoration: none;
-}
+} */
 
-.flip-card-back > button {
+/* .flip-card-back > button {
   background-color: transparent;
   border: solid 5px rgba(171, 183, 183, 1);
   border-radius: 10px;
   margin-left: 20px;
   margin-right: 20px;
   font-size: 18px;
-}
+} */
 
-.flip-card-back > button:hover {
-  /* box-shadow: 0 8px 8px 0 yellow; */
-  box-shadow: 0 0 30px #ffee10;
+.flip-card-back i:hover {
+  color: rgba(36, 249, 36);
 }
 
 /* --------- END OF CARD AREA -------- */
