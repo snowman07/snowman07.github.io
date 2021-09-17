@@ -570,8 +570,8 @@ h2 {
 .progress-bar {
   margin: 20px 0 10px;
   overflow: hidden;
-  /*padding-left:20px;
-padding-right: 25px; /* Separate bars from container */
+  padding-right: 20px;
+  /*padding-right: 25px; /* Separate bars from container */
 }
 
 .progress-title-holder {
