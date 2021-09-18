@@ -564,11 +564,16 @@ h2 {
   /* height: 300px; */
   max-width: 100%;
   /* width: 70%; */
-  margin: 5%;
+  margin: 2% 5% 2% 5%;
 }
 
-.skills-container-inner > .stack {
-  padding-top: 50px;
+.stack {
+  padding: 40px 0;
+}
+
+.stack > h3 {
+  font-size: 40px;
+  padding-bottom: 10px;
 }
 
 .progress-bar {
@@ -592,6 +597,7 @@ h2 {
 .progress-title {
   z-index: 100;
   font-weight: bold;
+  color: #000;
 }
 
 .progress-number-wrapper {
@@ -623,7 +629,7 @@ h2 {
   font-weight: 600;
   font-style: normal;
   text-transform: none;
-  color: #ffffff;
+  color: #000;
 }
 
 .down-arrow {
