@@ -572,7 +572,7 @@ h2 {
 }
 
 .stack > h3 {
-  font-size: 40px;
+  font-size: 30px;
   padding-bottom: 10px;
 }
 
@@ -1051,6 +1051,10 @@ footer ul li:hover {
     height: 800px;
   }
 
+  .stack > h3 {
+    font-size: 40px;
+  }
+
   #projects-container {
     padding: 35px 15px;
   }
@@ -1069,12 +1073,12 @@ footer ul li:hover {
   /* ------------------------------------- */
   /* --------- START OF CARD AREA -------- */
   .containercard {
-    margin: 50px;
+    margin: 20px 60px;
   }
 
   .flip-card {
     padding: 25px 30px 100px 20px; /*black bg*/
-    margin: 35px 20px 35px 20px;
+    margin: 35px 80px; /*change margin to move cards*/
   }
 
   .flip-card-front {
