@@ -742,7 +742,19 @@ h2 {
 .tech-used {
   /* display: flex;
   justify-content: space-around; */
-  margin: 20px 0;
+  margin: 35px 0;
+  border: solid 1px #ccc;
+  padding: 15px;
+  /* position: absolute; */
+}
+
+h5 {
+  color: #ccc;
+  background-color: black;
+  position: relative;
+  top: -30px;
+  padding-left: 10px;
+  margin: 0 120px 0 5px;
 }
 
 .tech-used > button {
