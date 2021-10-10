@@ -725,8 +725,8 @@ h2 {
   border-radius: 5px;
 
   /*position of img*/
-  padding: 15px 20px 120px 20px; /*black background*/
-  margin: 15px 0 15px -10px;
+  padding: 15px 20px 250px 20px; /*black background*/
+  margin: 25px 0 15px -10px;
 }
 
 .flip-card-inner {
@@ -742,7 +742,7 @@ h2 {
 .tech-used {
   /* display: flex;
   justify-content: space-around; */
-  margin: 35px 0;
+  margin: 55px 0;
   border: solid 1px #ccc;
   padding: 15px;
   /* position: absolute; */
@@ -750,11 +750,12 @@ h2 {
 
 h5 {
   color: #ccc;
-  background-color: black;
+  background-color: rgba(19, 20, 21, 0.96);
   position: relative;
   top: -30px;
   padding-left: 10px;
   margin: 0 120px 0 5px;
+  border: solid 1px #ccc;
 }
 
 .tech-used > button {
@@ -783,7 +784,7 @@ h5 {
 }
 
 .flip-card-front {
-  color: black;
+  /* color: black; */
 
   /*determines the position of img*/
   padding: 20px 0 20px 30px;
@@ -944,7 +945,7 @@ footer ul li:hover {
   /* ------------------------------------- */
   /* --------- START OF CARD AREA -------- */
   .flip-card {
-    margin: 20px 0 20px 0;
+    margin: 20px 0 60px 0;
   }
   /* --------- END OF CARD AREA -------- */
   /* ------------------------------------- */
@@ -1089,17 +1090,43 @@ footer ul li:hover {
   }
 
   .flip-card {
-    padding: 25px 30px 100px 20px; /*black bg*/
+    padding: 25px 100px 270px 20px; /*black bg*/
     margin: 35px 80px; /*change margin to move cards*/
   }
 
   .flip-card-front {
     /*determines the position of img*/
-    padding: 30px 10px 30px 40px;
+    padding: 30px 80px 30px 40px;
   }
 
   .flip-card-front > img {
-    width: 270px;
+    width: 340px;
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(170deg);
+  }
+
+  .flip-card-back {
+    width: 130%;
+    height: 310px;
+  }
+
+  .flip-card-back > p {
+    font-size: 18px;
+  }
+
+  .flip-card-back {
+    padding: 12px;
+  }
+
+  .tech-used {
+    margin: 55px -50px 55px 30px;
+    border: solid 3px #ccc;
+  }
+
+  h5 {
+    border: solid 3px #ccc;
   }
 
   /* --------- END OF CARD AREA -------- */
