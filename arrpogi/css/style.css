@@ -725,8 +725,8 @@ h2 {
   border-radius: 5px;
 
   /*position of img*/
-  padding: 15px 20px 250px 20px; /*black background*/
-  margin: 25px 0 15px -10px;
+  padding: 15px 20px 300px 20px; /*black background*/
+  margin: 25px 0 30px -10px;
 }
 
 .flip-card-inner {
@@ -740,8 +740,8 @@ h2 {
 }
 
 .tech-used {
-  /* display: flex;
-  justify-content: space-around; */
+  /* display: flex; */
+  /* justify-content: space-around; */
   margin: 55px 0;
   border: solid 1px #ccc;
   padding: 15px;
@@ -758,7 +758,13 @@ h5 {
   border: solid 1px #ccc;
 }
 
-.tech-used > button {
+.tech-used > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.tech-used > div > button {
   font-size: 20px;
   margin-bottom: 10px;
   background-color: transparent;
@@ -1090,7 +1096,7 @@ footer ul li:hover {
   }
 
   .flip-card {
-    padding: 25px 100px 270px 20px; /*black bg*/
+    padding: 25px 100px 300px 20px; /*black bg*/
     margin: 35px 80px; /*change margin to move cards*/
   }
 
