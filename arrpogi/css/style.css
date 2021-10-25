@@ -584,7 +584,7 @@ h2 {
 }
 
 .progress-title-holder {
-  padding-bottom: 7px;
+  padding-bottom: 25px;
   position: relative;
   margin: 5px 0;
   font-family: Montserrat, sans-serif;
@@ -597,6 +597,7 @@ h2 {
 .progress-title {
   z-index: 100;
   font-weight: bold;
+  line-height: 1.3;
   color: #000;
 }
 
