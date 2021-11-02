@@ -265,7 +265,7 @@ nav a i {
 
 nav a span {
   writing-mode: vertical-lr;
-  text-orientation: sideways-right;
+  /* text-orientation: sideways-right; */
   text-transform: uppercase;
 }
 
@@ -622,7 +622,7 @@ h2 {
 
 .progress-number-wrapper,
 .progress-number-mark {
-  font-family: Open Sans, sans-serif;
+  font-family: sans-serif;
   font-size: 11px;
   line-height: 24px;
   height: 24px;
