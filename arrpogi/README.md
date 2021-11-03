@@ -26,3 +26,5 @@ Currently using github free host at the moment but I have plan to migrate to .te
   - [w3schools which uses max-width too](https://www.w3schools.com/howto/howto_css_timeline.asp)
   - [uses max-width which is good for `desktop-first approach`](https://codepen.io/togrul/pen/xwxodv)
   - [uses min-width which is good for `mobile-first approach` ; no vertical ruler in mobile media query](https://www.youtube.com/watch?v=zNccqv0g6Q4&t=10s)
+- [Setting tech domain using github pages](https://www.youtube.com/watch?v=mhQ3nNdS-TE) - purchased the domain from techdomain. Then I used that domain in the "Custom Domain" and setup an "A record" in the control panel in the tech domain.
+- [What are CNAME records](https://www.youtube.com/watch?v=ZXCQwdVgDno) - need to setup cname in the dns provider (control panel in techdomain) so arrdomingo.tech can still open in www.arrdomingo.tech
