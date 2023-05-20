@@ -1,0 +1,1157 @@
+/* 
+=============================================================================
+=============================================================================
+HTML5 CSS Reset Minified - Eric Meyer
+============================================================================= 
+*/
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+/* ul, */
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+body {
+  line-height: 1;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+nav ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+}
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+del {
+  text-decoration: line-through;
+}
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+input,
+select {
+  vertical-align: middle;
+}
+li {
+  list-style: none;
+}
+/* 
+=============================================================================
+END OF HTML5 CSS Reset Minified - Eric Meyer
+=============================================================================
+============================================================================= 
+*/
+
+/* 
+=============================================================================
+=============================================================================
+START OF CSS
+============================================================================= 
+*/
+
+/* -------------------------------------- */
+/* --- START OF base -------------------- */
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: #111;
+  scroll-behavior: smooth;
+}
+
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  font: normal 75% Arial, Helvetica, sans-serif;
+}
+
+canvas {
+  /* display: block; */
+  vertical-align: bottom;
+}
+/* ---------------------- END OF base --- */
+/* -------------------------------------- */
+
+/**********************************************************/
+/**********************************************************/
+/*******    START OF MOBILE VIEW (DEFAULT 1-400px)   ******/
+/**********************************************************/
+
+/* ------------------------------------------- */
+/* --- START OF header-logo ------------------ */
+
+header {
+  position: fixed;
+  top: 20px;
+}
+
+.header-logo {
+  position: absolute;
+  /* color: #fff; */
+}
+
+.header-logo a {
+  color: #fff;
+}
+
+.header-logo i:hover {
+  opacity: 0.5;
+}
+
+/* -------------------- END OF header-logo --- */
+/* ------------------------------------------- */
+
+/* -------------------------------------- */
+/* --- START OF Navbar ------------------ */
+
+nav a {
+  position: absolute;
+  left: -80px;
+  transition: 0.4s;
+  padding: 20px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  /* border: solid white 2px; */
+  /* border-radius: 0 5px 5px 0; */
+  margin-top: 20px;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+nav a:hover {
+  left: 0;
+}
+
+li a {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+li a i {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+nav a i {
+  padding-left: 45px;
+}
+
+nav a span {
+  writing-mode: vertical-lr;
+  /* text-orientation: sideways-right; */
+  text-transform: uppercase;
+}
+
+.profile-nav {
+  top: 70px;
+  background-color: #04aa6d;
+  /* border: solid #04aa6d 5px; */
+}
+
+.experience-nav {
+  top: 187px;
+  background-color: #c4b921;
+}
+
+.skills-nav {
+  top: 343px;
+  background-color: #f44336;
+}
+
+.projects-nav {
+  top: 444px;
+  background-color: #2196f3;
+}
+
+/* -------------------- END OF Navbar --- */
+/* -------------------------------------- */
+
+/* -------------------------------------------------- */
+/* --- START OF particles-js ------------------------ */
+/* header {
+  position: relative;
+} */
+/* nav {
+  position: fixed;
+  opacity: 0;
+} */
+
+#particles-js {
+  width: 100%;
+  height: 100%;
+  background-color: #062397;
+  background-image: url("");
+  background-size: cover;
+  background-position: 50% 50%;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  position: fixed; /*-------for the background of particles-------*/
+}
+
+#particles-js > h1 {
+  position: absolute;
+  top: 50%; /*to center the h1 typewriter*/
+  width: 100%;
+  text-align: center;
+  padding-left: 20px;
+  /* font-size: 100px; */
+}
+
+.typewrite {
+  color: #fff;
+  text-decoration: none;
+  font-size: 35px;
+}
+
+/* -------------------------- END OF particles-js --- */
+/* -------------------------------------------------- */
+
+/* -------------------------------------------------- */
+/* --- START OF main---------------------------------- */
+
+/* Comment-out this main element to see the effect of particles. There's a cons though, main container will turn to a total mess =( */
+main {
+  position: absolute; /*position:relative for profile,expe,skills,proj*/
+  left: 60px; /*this is the exact px*/
+  top: 800px;
+}
+
+#profile-container {
+  /* max-width: 100%; */
+  /* margin: 0 auto; */
+  background: #04aa6d;
+  font-size: 24px;
+  padding: 15px;
+  position: relative; /*use to hide particle background when scroll up*/
+}
+
+.profile-parallax {
+  background: url("../img/profile.jpg") no-repeat center;
+  background-size: cover;
+  /*size of img*/
+  background-size: 250%;
+  height: 650px;
+  border-radius: 15px; /*radius of the image*/
+  opacity: 0.7;
+}
+
+/* PARALLAX DOESNT WORK ON MOBILE DEVICES
+https://community.adobe.com/t5/muse/parallax-scroll-effect-works-in-all-devices-but-ipad-iphone/m-p/8834589
+*/
+
+h2 {
+  font-size: 35px;
+  text-align: center;
+  text-shadow: 3px 2px #000;
+  padding-top: 530px;
+  /* transition: all 0.35s ease; */
+}
+
+.profile-parallax > h2 {
+  color: #04aa6d;
+  display: flex;
+  flex-direction: column;
+}
+
+#profile-container > p {
+  border: 3px solid rgba(171, 183, 183, 1);
+  border-radius: 15px;
+  background-color: rgba(149, 165, 166, 1);
+  padding: 20px;
+  box-shadow: inset 0 0 10px #000000; /*https://css-tricks.com/almanac/properties/b/box-shadow/*/
+  /* text-indent: 50px; */
+  font-size: 20px;
+}
+
+#profile-container > p:hover {
+  background-color: #04aa6d;
+  opacity: 3;
+}
+
+#profile-container > p span {
+  /* text-transform: uppercase; */
+  font-weight: bold;
+  font-size: 35px;
+  font-family: algerian;
+  line-height: 80%;
+}
+
+#experience-container {
+  background: #c4b921;
+  font-size: 24px;
+  padding: 15px;
+  position: relative;
+}
+
+/* ---- ::after PSEUDO ELEMENT for experience-container ---- */
+/* ---- use to position: relative the timeline-container */
+/* #experience-container::after {
+  content: "";
+  position: absolute;
+} */
+
+.experience-parallax {
+  background: url("../img/experience.jpg") no-repeat center;
+  background-size: cover;
+  /*size of img*/
+  background-size: 200%;
+  height: 650px;
+  border-radius: 15px; /*radius of the image*/
+  opacity: 0.9;
+}
+
+.experience-parallax > h2 {
+  color: #c4b921;
+}
+
+#experience-container > p {
+  border: 3px solid rgba(171, 183, 183, 1);
+  border-radius: 15px;
+  background-color: rgba(149, 165, 166, 1);
+  padding: 20px;
+  box-shadow: inset 0 0 10px #000000; /*https://css-tricks.com/almanac/properties/b/box-shadow/*/
+  /* text-indent: 50px; */
+  font-size: 20px;
+}
+
+#experience-container > p:hover {
+  background-color: #c4b921;
+  opacity: 3;
+}
+
+#experience-container > p span {
+  font-weight: bold;
+  font-size: 60px;
+  font-family: algerian;
+  line-height: 80%;
+}
+
+/* ----------------------------------------------------------- */
+/* ----------- START OF TIMELINE IN EXPERIENCE DIV ----------- */
+
+/* The actual TIMELINE (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* the actual timeline (the vertical ruler) */
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 31px;
+  margin-left: -3px;
+}
+
+.timeline ul li {
+  list-style: square
+    url(https://cdn.bitdegree.org/learn/list-style-image-marker-1.png?426d93cd);
+}
+
+.timeline details {
+  font-size: 16px;
+}
+
+.timeline summary {
+  font-weight: bold;
+}
+
+/* the actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+
+  border: 3px solid rgba(171, 183, 183, 1);
+  background-color: rgba(149, 165, 166, 1);
+  box-shadow: inset 0 0 10px #000000;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  width: 75%;
+  padding-left: 75px;
+  padding-right: 25px;
+}
+
+/* The CIRCLES on the timeline */
+.container::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #ff9f55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+  /* left: 15px; */
+}
+
+.container::after:hover {
+  background-color: red;
+}
+
+/* Make sure all CIRCLES are at the same spot */
+.left::after,
+.right::after {
+  left: 15px;
+}
+
+/* ------------ END OF TIMELINE IN EXPERIENECE DIV ----------- */
+/* ----------------------------------------------------------- */
+
+#skills-container {
+  background: #f44336;
+  font-size: 24px;
+  padding: 15px;
+  position: relative;
+}
+
+.skills-parallax {
+  background: url("../img/skills.jpg") no-repeat center;
+  background-size: cover;
+  /*size of img*/ /* ----------------------------------------------------------- */
+  /* ----------- START OF TIMELINE IN EXPERIENCE DIV ----------- */
+  background-size: 200%;
+  height: 650px;
+  border-radius: 15px; /*radius of the image*/
+  opacity: 0.8;
+}
+
+.skills-parallax > h2 {
+  color: #f44336;
+}
+
+/* technical skills style START */
+#skills-container-inner {
+  /* height: 300px; */
+  max-width: 100%;
+  /* width: 70%; */
+  margin: 2% 5% 2% 5%;
+}
+
+.stack {
+  padding: 40px 0;
+}
+
+.stack > h3 {
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+
+.progress-bar {
+  margin: 20px 0 10px;
+  overflow: hidden;
+  padding-right: 20px;
+  /*padding-right: 25px; /* Separate bars from container */
+}
+
+.progress-title-holder {
+  padding-bottom: 25px;
+  position: relative;
+  margin: 5px 0;
+  font-family: Montserrat, sans-serif;
+  /* font-size: 2e; */
+  line-height: 15px;
+  font-weight: 400;
+  color: #2e2e2e;
+}
+
+.progress-title {
+  z-index: 100;
+  font-weight: bold;
+  line-height: 1.3;
+  color: #000;
+}
+
+.progress-number-wrapper {
+  width: 100%;
+  z-index: 10;
+}
+
+.progress-number-mark {
+  margin-bottom: 4px;
+  border-radius: 3px;
+  background-color: #00d2ff;
+  padding: 0 8px;
+  position: absolute;
+  bottom: 0;
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+}
+
+.progress-number-wrapper,
+.progress-number-mark {
+  font-family: sans-serif;
+  font-size: 11px;
+  line-height: 24px;
+  height: 24px;
+  letter-spacing: 0px;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: none;
+  color: #000;
+}
+
+.down-arrow {
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-top: 3px solid #00d2ff;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+}
+
+.progress-content-outter {
+  height: 12px;
+  background-color: #e1e1e0;
+}
+
+.progress-content {
+  height: 21px;
+  background-color: #00d2ff;
+  width: 0%;
+  /* box-shadow: 5px 10px 8px #888888; */
+}
+/* technical skills style END */
+
+#projects-container {
+  background: #2196f3;
+  font-size: 24px;
+  padding: 15px;
+  position: relative;
+}
+
+.projects-parallax {
+  background: url("../img/projects.jpg") no-repeat center;
+  background-size: cover;
+  /*size of img*/
+  background-size: 200%;
+  height: 650px;
+  border-radius: 15px; /*radius of the image*/
+  opacity: 0.8;
+}
+
+.projects-parallax > h2 {
+  color: #2196f3;
+}
+
+#projects-container > p {
+  border: 3px solid rgba(171, 183, 183, 1);
+  border-radius: 15px;
+  background-color: rgba(149, 165, 166, 1);
+  padding: 20px;
+  box-shadow: inset 0 0 10px #000000; /*https://css-tricks.com/almanac/properties/b/box-shadow/*/
+  /* text-indent: 50px; */
+  font-size: 20px;
+}
+
+#projects-container > p:hover {
+  background-color: #2196f3;
+  opacity: 3;
+}
+
+#projects-container > p span {
+  /* text-transform: uppercase; */
+  font-weight: bold;
+  font-size: 60px;
+  font-family: algerian;
+  line-height: 80%;
+}
+
+/* ------------------------------------- */
+/* --------- START OF CARD AREA -------- */
+
+.containercard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* margin: 50px; */
+}
+
+.flip-card {
+  background-color: rgba(19, 20, 21, 0.96);
+
+  /*https://css-tricks.com/almanac/properties/b/box-shadow/*/
+  /* box-shadow: inset 0 0 10px #000000;  */
+  width: 240px; /*background effect of the img*/
+  height: 340px; /*background effect of the img*/
+  perspective: 800px;
+
+  border-radius: 5px;
+
+  /*position of img*/
+  padding: 15px 20px 300px 20px; /*black background*/
+  margin: 25px 0 30px -10px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.tech-used {
+  /* display: flex; */
+  /* justify-content: space-around; */
+  margin: 55px 0;
+  border: solid 1px #ccc;
+  padding: 15px;
+  /* position: absolute; */
+}
+
+h5 {
+  color: #ccc;
+  background-color: rgba(19, 20, 21, 0.96);
+  position: relative;
+  top: -30px;
+  padding-left: 10px;
+  margin: 0 120px 0 5px;
+  border: solid 1px #ccc;
+}
+
+.tech-used > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.tech-used > div > button {
+  font-size: 20px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  color: #e1e1e0;
+  border: solid 3px rgba(171, 183, 183, 1);
+  border-radius: 5px;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(170deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  /* padding: 15px; */
+  border-radius: 5px;
+  background-color: #ccc;
+}
+
+.flip-card-front {
+  /* color: black; */
+
+  /*determines the position of img*/
+  padding: 20px 0 20px 30px;
+}
+
+.flip-card-front > img {
+  width: 250px;
+  height: 300px;
+  border-radius: 5px;
+  /* left: -10px; */
+}
+
+.flip-card-back {
+  background-color: #2196f3;
+  color: black;
+  transform: rotateY(200deg);
+  border: solid 8px rgba(171, 183, 183, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.flip-card-back > p {
+  font-size: 16px;
+}
+
+/* .flip-card-back > button {
+  text-decoration: none;
+} */
+
+/* .flip-card-back > button {
+  background-color: transparent;
+  border: solid 5px rgba(171, 183, 183, 1);
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 18px;
+} */
+
+.flip-card-back i:hover {
+  color: rgba(36, 249, 36);
+}
+
+/* --------- END OF CARD AREA -------- */
+/* ----------------------------------- */
+
+/* ---------------------------------- END OF main --- */
+/* -------------------------------------------------- */
+
+/* -------------------------------------------------- */
+/* --- START OF footer ------------------------------ */
+
+footer {
+  position: relative;
+  /*top: 800px; try to remove this and make footer sticky*/
+  /* left: 60px; */
+  color: #fff;
+  padding: 40px 50px 20px 50px;
+}
+
+/* .footer-container {
+  position: relative;
+  padding: 20px;
+} */
+
+footer p {
+  text-align: center;
+  font-size: medium;
+  padding-bottom: 10px;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 15px;
+}
+
+footer ul li {
+  padding: 10px;
+}
+
+/*-------- footer effect -------*/
+/* https://www.littlesnippets.net/blog/some-css-menu-inspiration-using-animated-lines */
+
+footer ul * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+footer ul li:hover {
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  border-left: 1px solid #fff; /*for the line on left*/
+  border-right: 1px solid #fff; /*for the line on right*/
+  opacity: 0.5;
+  left: 0;
+  right: 0;
+  transform: scale(1.5); /*use to enlarge socials*/
+}
+
+footer ul li a i {
+  color: #ccc;
+}
+
+.footer-container > p:last-child {
+  border-top: 1px solid #f9f9f9;
+  padding-top: 20px;
+  font-size: 13px;
+}
+
+/* -------------------------------- END OF footer --- */
+/* -------------------------------------------------- */
+
+/**********************************************************/
+/********    END OF MOBILE VIEW (DEFAULT 1-400px)    ******/
+/**********************************************************/
+/**********************************************************/
+
+/**********************************************************/
+/**********************************************************/
+/*********    START OF TABLET VIEW (401-768px)   **********/
+/**********************************************************/
+@media all and (min-width: 25.0625rem) {
+  /* -------------------------------------------------- */
+  /* --- START OF particles-js ------------------------ */
+  .typewrite {
+    font-size: 60px;
+  }
+
+  /* -------------------------- END OF particles-js --- */
+  /* -------------------------------------------------- */
+
+  /* -------------------------------------------------- */
+  /* --- START OF main -------------------------------- */
+
+  main {
+    top: 1050px;
+  }
+
+  .profile-parallax {
+    background-size: 120%;
+    /* height: 700px; */
+  }
+
+  h2 {
+    font-size: 50px;
+    padding-top: 520px;
+  }
+
+  .timeline details {
+    font-size: 20px;
+  }
+
+  .skills-parallax {
+    background-size: 100%;
+  }
+
+  /* ------------------------------------- */
+  /* --------- START OF CARD AREA -------- */
+  .flip-card {
+    margin: 20px 0 60px 0;
+  }
+  /* --------- END OF CARD AREA -------- */
+  /* ------------------------------------- */
+
+  /* ---------------------------------- END OF main --- */
+  /* -------------------------------------------------- */
+}
+/**********************************************************/
+/**********    END OF TABLET VIEW (401-768px)    **********/
+/**********************************************************/
+/**********************************************************/
+
+/**********************************************************/
+/**********************************************************/
+/*******    START OF DESKTOP VIEW (769-1140px)   **********/
+/**********************************************************/
+@media all and (min-width: 48.0625rem) /* @media (max-width: 48.0625rem) */ {
+  /* -------------------------------------------------- */
+  /* --- START OF particles-js ------------------------ */
+  .typewrite {
+    font-size: 90px;
+  }
+  /* -------------------------- END OF particles-js --- */
+  /* -------------------------------------------------- */
+
+  /* -------------------------------------------------- */
+  /* --- START OF main -------------------------------- */
+  #profile-container {
+    padding: 35px 15px;
+  }
+  .profile-parallax {
+    background-attachment: fixed;
+    /*size of img*/
+    background-size: 60%;
+    height: 800px;
+  }
+
+  h2 {
+    font-size: 80px;
+    padding-top: 500px;
+    text-shadow: 5px 3px #000;
+  }
+
+  #profile-container > p {
+    border: 8px solid rgba(171, 183, 183, 1);
+  }
+
+  #experience-container {
+    padding: 35px 15px;
+    /* top: 2312px; */
+  }
+
+  .experience-parallax {
+    background-attachment: fixed;
+    /*size of img*/
+    background-size: 70%;
+    height: 800px;
+  }
+
+  #experience-container > p {
+    border: 8px solid rgba(171, 183, 183, 1);
+  }
+
+  /* ----------------------------------------------------------- */
+  /* ----------- START OF TIMELINE IN EXPERIENCE DIV ----------- */
+
+  .timeline {
+    padding: 30px 0 0 0;
+  }
+
+  .timeline::after {
+    left: 50%;
+  }
+
+  .content {
+    border: 8px solid rgba(171, 183, 183, 1);
+  }
+
+  .container {
+    padding: 10px 40px;
+    /* position: relative; */
+    /* background-color: inherit; */
+    width: 50%;
+  }
+
+  /* Place the right container to the right */
+  .right {
+    left: 50%;
+  }
+
+  .right::after {
+    left: -16px;
+  }
+
+  /* Place the left CONTAINER to the left */
+  /* generic */
+  .left {
+    left: -6.5%;
+  }
+
+  .left::after {
+    left: 97%; /*not the best solution; change for other media*/
+  }
+
+  /* ------------ END OF TIMELINE IN EXPERIENCE DIV ------------ */
+  /* ----------------------------------------------------------- */
+
+  #skills-container {
+    padding: 35px 15px;
+  }
+
+  .skills-parallax {
+    background-attachment: fixed;
+    /*size of img*/
+    background-size: 70%;
+    height: 800px;
+  }
+
+  .stack > h3 {
+    font-size: 40px;
+  }
+
+  #projects-container {
+    padding: 35px 15px;
+  }
+
+  .projects-parallax {
+    background-attachment: fixed;
+    /*size of img*/
+    background-size: 60%;
+    height: 800px;
+  }
+
+  #projects-container > p {
+    border: 8px solid rgba(171, 183, 183, 1);
+  }
+
+  /* ------------------------------------- */
+  /* --------- START OF CARD AREA -------- */
+  .containercard {
+    margin: 20px 60px;
+  }
+
+  .flip-card {
+    padding: 25px 100px 320px 20px; /*black bg*/
+    margin: 35px 80px; /*change margin to move cards*/
+  }
+
+  .flip-card-front {
+    /*determines the position of img*/
+    padding: 30px 80px 30px 40px;
+  }
+
+  .flip-card-front > img {
+    width: 340px;
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(170deg);
+  }
+
+  .flip-card-back {
+    width: 130%;
+    height: 310px;
+  }
+
+  .flip-card-back > p {
+    font-size: 18px;
+  }
+
+  .flip-card-back {
+    padding: 12px;
+  }
+
+  .tech-used {
+    margin: 55px -50px 55px 30px;
+    border: solid 3px #ccc;
+  }
+
+  h5 {
+    border: solid 3px #ccc;
+  }
+
+  /* --------- END OF CARD AREA -------- */
+  /* ----------------------------------- */
+
+  .footer-container > p:last-child {
+    margin: 0px 250px;
+  }
+
+  /* ---------------------------------- END OF main --- */
+  /* -------------------------------------------------- */
+}
+/**********************************************************/
+/**********    END OF DESKTOP VIEW (769-1140px)    ********/
+/**********************************************************/
+/**********************************************************/
