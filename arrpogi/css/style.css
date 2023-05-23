@@ -308,7 +308,8 @@ nav a span {
   width: 100%;
   height: 100%;
   background-color: #062397;
-  background-image: url("");
+  /* background-image: url(""); */
+  background-image: linear-gradient(to left, rgb(53, 114, 245), rgb(194, 224, 111));
   background-size: cover;
   background-position: 50% 50%;
   /* background-position: center; */
@@ -348,6 +349,7 @@ main {
   /* max-width: 100%; */
   /* margin: 0 auto; */
   background: #04aa6d;
+  background-image: linear-gradient(to right, #04aa6d, rgb(136, 196, 131)  );
   font-size: 24px;
   padding: 15px;
   position: relative; /*use to hide particle background when scroll up*/
@@ -406,6 +408,7 @@ h2 {
 
 #experience-container {
   background: #c4b921;
+  background-image: linear-gradient(to right, #c4b921, rgb(204, 203, 134));
   font-size: 24px;
   padding: 15px;
   position: relative;
@@ -540,6 +543,7 @@ h2 {
 
 #skills-container {
   background: #f44336;
+  background-image: linear-gradient(to right, #f44336, rgb(211, 121, 121));
   font-size: 24px;
   padding: 15px;
   position: relative;
@@ -663,6 +667,7 @@ h2 {
 
 #projects-container {
   background: #2196f3;
+  background-image: linear-gradient(to right, #2196f3, rgb(177, 194, 226)  );
   font-size: 24px;
   padding: 15px;
   position: relative;
