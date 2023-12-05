@@ -11,7 +11,7 @@ This is a static, responsive, mobile-first approach personal website where I can
 
 ## Hosting Service
 
-Currently using github free host at the moment but I have plan to migrate to .tech (dot tech) host service.
+Currently using github free host but I have plan to migrate to .tech (dot tech) host service (or hostinger).
 
 ## Helpful References:
 
