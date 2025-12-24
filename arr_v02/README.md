@@ -29,3 +29,8 @@ Currently using github free host but I have plan to migrate to .tech (dot tech) 
 - [Setting tech domain using github pages](https://www.youtube.com/watch?v=mhQ3nNdS-TE) - purchased the domain from techdomain. Then I used that domain in the "Custom Domain" and setup an "A record" in the control panel in the tech domain.
 - [What are CNAME records](https://www.youtube.com/watch?v=ZXCQwdVgDno) - need to setup cname in the dns provider (control panel in techdomain) so arrdomingo.tech can still open in www.arrdomingo.tech
 - [Connect github page to .tech domain](https://sanskar10100.hashnode.dev/how-to-get-a-free-tech-domain-connect-it-to-github-pages-and-get-a-free-ssl-certificate) - helpful steps to connect Github pages to .tech domain
+
+
+## `Updates`
+ - 12/23/2025
+   - Added `dev` branch. Purpose is to first work in `dev` branch before merging it to the `main` branch. `dev` branch can also be used as the baseline in creating another branch.  
