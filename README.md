@@ -8,7 +8,7 @@
 
 ## `Updates`
  - 12/23/2025
-    - `arr_v02` folder is added. This `version 2 of my personal porfolio` where I added the my academic labs in `cybersecurity`.
+    - `arr_v02` folder is added. This is the `version 2 of my personal porfolio` where I added my academic labs in `cybersecurity`.
     - SSH_key is generated to avoid `permission denied` when cloning or pushing.
       - Steps:
          > 1 Go to github profile \
