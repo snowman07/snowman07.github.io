@@ -124,41 +124,9 @@
   </header>
 
   <main>
-    <div id="profile-container">
-      <div class="profile-parallax">
-        <h2>
-          <span>Hi! My name is</span>
-          <span>Arr Domingo</span>
-        </h2>
-      </div>
-
-      <p>
-        <span>About Me</span> I am a continuous learner IT enthusiast with a drive for best quality and creativity in mind. I have
-        always been fascinated of how technology has revolutionized the world and our daily lives. As a 90's kid, I
-        remember using my first computer messing with CRT monitor and a mouse with ball inside. Nowadays, modern
-        technology has paved the way for multi-functional devices that makes our lives easier, better, faster, and more
-        fun.
-      </p>
-      <p>
-        <span>Tech Life</span> In order to engage myself into tech industry, I took a degree as a Bachelor of Science in
-        Computer Engineering from Polytechnic University of the Philippines. Right after school, I really wanted to work
-        in the network side of the industry where I handle routers, servers, etc. But things doesn’t happen as much as I
-        want to. No matter how I plan my career, if it’s not for me, I won’t get it. To make the story short, I
-        ended up in the software side of the industry. Personally, this was a tough pathway, but I find it challenging
-        and interesting.
-      </p>
-      <p>
-        <span>When you stop learning, you stop growing</span> Since I earned my degree as a Bachelor of Science in Computer 
-        Engineering from Polytechnic University of the Philippines, I had been enthusiastically working in the IT industry. 
-        To keep myself relevant in the software space and for professional growth, I decided to leave the workforce and go 
-        back to school. I enrolled to a Diploma program in Digital Media and IT with concentration in General Software 
-        Development from Northern Alberta Institute of Technology (NAIT) where I gained knowledge and skills on the
-        technologies used in frontend and backend software/web development. But learning doesn’t stop on the four
-        corners of the classroom. As a firm believer of continuous learning, I always find time learning about latest
-        technologies that are available online and trying to improve continually so my skills won’t get obsolete.
-      </p>
-    </div>
-    <!-- end of profile-container -->
+    <!-- start of profile -->
+    <div id="profile"></div>
+    <!-- end of profile -->
 
     <div id="experience-container">
       <div class="experience-parallax">
@@ -1043,12 +1011,24 @@
 
   </main>
 
-  <!-- START OF scripts -->
+  <!-- -------------------------------------------------------------------- -->
+  <!-- ---------------------- START OF javascript ------------------------- -->
 
   <script src="particles.js"></script>
   <script src="js/app.js"></script>
   <script src="js/typewriter.js"></script>
 
+  <!-- START of javascript for profile -->
+  <script>
+    fetch("profile.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("profile").innerHTML = html;
+      });
+  </script>
+  <!-- END of javascript for profile -->
+
+  
   <!-- START of javascript for footer -->
   <script>
     fetch("footer.html")
@@ -1059,7 +1039,8 @@
   </script>
   <!-- END of javascript for footer -->
 
-  <!-- END OF scripts -->
+  <!-- -------------------------- END OF scripts -------------------------- -->
+  <!-- -------------------------------------------------------------------- -->
 
 </body>
 
