@@ -28,3 +28,5 @@
          > > 7.8 Paste in the Ket field 
          
          > 8 Click Add SSH key
+- 12/26/2025
+  - `arr_v03` folder is added which is going to be my `latest personal portfolio` because it is in this folder/repository where I will include my skills in cybersecurity.
