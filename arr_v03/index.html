@@ -63,7 +63,7 @@
     <!-- end of experience -->
 
     <!-- start of skills -->
-    <div id="skills"></div>
+    <div id="landing-skills"></div>
     <!-- end of skills -->
 
     <!-- start of projects -->
@@ -115,10 +115,10 @@
 
   <!-- START of javascript for skills -->
   <script>
-    fetch("html/landing/skills.html")
+    fetch("html/landing/landing-skills.html")
       .then(res => res.text())
       .then(html => {
-        document.getElementById("skills").innerHTML = html;
+        document.getElementById("landing-skills").innerHTML = html;
       });
   </script>
   <!-- END of javascript for skills -->  
