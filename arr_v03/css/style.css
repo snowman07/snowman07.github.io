@@ -270,7 +270,7 @@ nav a span {
   writing-mode: vertical-lr;
   /* text-orientation: sideways-right; */
   text-transform: uppercase;
-  
+
   position: absolute;
   top: 100px;
 }
@@ -1165,3 +1165,6 @@ footer ul li a i {
 /**********    END OF DESKTOP VIEW (769-1140px)    ********/
 /**********************************************************/
 /**********************************************************/
+
+
+/*# sourceMappingURL=style.css.map */
