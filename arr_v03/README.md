@@ -33,4 +33,16 @@ Currently using github free host but I have plan to migrate to .tech (dot tech) 
 
 ## `Updates`
  - 12/23/2025
-   - Added `dev` branch. Purpose is to first work in `dev` branch before merging it to the `main` branch. `dev` branch can also be used as the baseline in creating another branch.  
+   - Added `dev` branch. Purpose is to first work in `dev` branch before merging it to the `main` branch. `dev` branch can also be used as the baseline in creating another branch.
+ - 12/29/2025
+   - Decided not to continue with `arr_v03` as this would take pretty decent time to finish.
+     - Branches in this repository:
+       - main branch - no significant changes in files, output is similar to previous portfolio (arrpogi, arr_v02).
+       - dev branch - no significant changes in files and output.
+       - dev02-door branch
+         - `organized the html files` where landing page, software skills, and cybersecurity skills were supoosed to be separated.
+         - output has `two menus`: `profile` and `skills`. This is the `REVAMP PLAN` where I will separate software skills and cybersecurity skills. Skills menu doesn't configured yet to be redirected to the div
+       - dev03-scss branch
+         - same file setup with dev02-door branch with added `scss` folder for `SASS` styling approach.
+         - skills menu is already configured. Added codes for opening a door animation based in `SASS approach`. 
+           
