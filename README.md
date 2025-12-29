@@ -39,4 +39,6 @@
     - [CSS BEM - The What, How, and Why | Block Element Modifier Methodology](https://www.youtube.com/watch?v=aKenj9ZQwJg)
     - [How to Create an HTML & SCSS Project](https://www.youtube.com/watch?v=OTVmhPrtDOE)
       - this youtube is basically the steps to `install SASS compiler` and `watch the changes in scss file`. Command to watch is: `sass --watch [location of .scss] [location of .css]`. This command will run continuously in your terminal. As you save changes to style.scss, the css/style.css file will be automatically updated with the compiled CSS code.
-      - `CAVEAT`: Installing SASS in an existing CSS would `REMOVED` the existing css codes. As a workaround, it is better if you copy the entire file (in this case, arr_v02 folder is copied to make arr_v03). Then I just copied the CSS codes from arr_v02 and pasted the css codes to arr_v03.
+      - ~~`CAVEAT`: Installing SASS in an existing CSS would `REMOVED` the existing css codes. As a workaround, it is better if you copy the entire file (in this case, arr_v02 folder is copied to make arr_v03). Then I just copied the CSS codes from arr_v02 and pasted the css codes to arr_v03.~~
+    - [How to Convert a CSS Project to SCSS Efficiently](https://www.djamware.com/post/68db4ae02531e12271c7aba8/how-to-convert-a-css-project-to-scss-efficiently)
+      - this is the `MOST USEFUL` resources so far in adding SASS/SCSS in an existing CSS files.
