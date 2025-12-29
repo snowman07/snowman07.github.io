@@ -42,3 +42,5 @@
       - ~~`CAVEAT`: Installing SASS in an existing CSS would `REMOVED` the existing css codes. As a workaround, it is better if you copy the entire file (in this case, arr_v02 folder is copied to make arr_v03). Then I just copied the CSS codes from arr_v02 and pasted the css codes to arr_v03.~~
     - [How to Convert a CSS Project to SCSS Efficiently](https://www.djamware.com/post/68db4ae02531e12271c7aba8/how-to-convert-a-css-project-to-scss-efficiently)
       - this is the `MOST USEFUL` resources so far in adding SASS/SCSS in an existing CSS files.
+- 12/29/2025
+  - Please visit `arr_v03` folder for the specific info about the updates like the branches created, etc.   
