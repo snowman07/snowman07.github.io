@@ -43,4 +43,6 @@
     - [How to Convert a CSS Project to SCSS Efficiently](https://www.djamware.com/post/68db4ae02531e12271c7aba8/how-to-convert-a-css-project-to-scss-efficiently)
       - this is the `MOST USEFUL` resources so far in adding SASS/SCSS in an existing CSS files.
 - 12/29/2025
-  - Please visit `arr_v03` folder for the specific info about the updates like the branches created, etc.   
+  - Please visit `arr_v03` folder for the specific info about the updates like the branches created, etc.
+- 12/29/2025
+  - Created `arr_v04` folder. This folder/repository is going to have the same output as other folders (arrpogi, arr_v01). Cybersecurity skills will be added in `Projects` menu.
