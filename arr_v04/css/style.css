@@ -45,6 +45,42 @@
   width: 125px;
 }
 
+.cyber-card {
+  background-color: green;
+}
+
+.cyber-tool-used {
+  margin: 25px 15px;
+  border: solid 1px #ccc;
+  padding: 15px;
+  border: solid 3px #ccc;
+}
+
+.cyber-tool-used > h5 {
+  color: #ccc;
+  background-color: green;
+  position: relative;
+  top: -30px;
+  padding: 0 10px;
+  margin: 0 120px 0 5px;
+  border: solid 1px #ccc;
+}
+
+.cyber-tool-used > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.cyber-tool-used > div > button {
+  font-size: 20px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  color: #e1e1e0;
+  border: solid 3px rgb(171, 183, 183);
+  border-radius: 5px;
+}
+
 /* 
 =============================================================================
 =============================================================================
