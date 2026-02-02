@@ -46,3 +46,8 @@
   - Please visit `arr_v03` folder for the specific info about the updates like the branches created, etc.
 - 12/29/2025
   - Created `arr_v04` folder. This folder/repository is going to have the same output as other folders (arrpogi, arr_v01). Cybersecurity skills will be added in `Projects` menu.
+- Feb 02, 2026
+  - Regarding scss file (referencing to 12/28/2025), code will be written in `scss file`.
+  - In order for the scss code to take effect in the liver server, run the watch command:
+    - `sass --watch [location of .scss] [location of .css]`
+    - ex: `sass --watch scss/style.scss css/style.css`
