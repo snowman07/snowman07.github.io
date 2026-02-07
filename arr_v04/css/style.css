@@ -5,7 +5,7 @@
   position: relative;
   width: 200px;
   height: 300px;
-  margin: 20px;
+  margin: 30px;
   border: 10px solid lightgray;
 }
 
@@ -46,7 +46,7 @@
 }
 
 .cyber-card {
-  background-color: green;
+  background-color: rgba(19, 20, 21, 0.96);
 }
 
 .cyber-tool-used {
@@ -58,7 +58,7 @@
 
 .cyber-tool-used > h5 {
   color: #ccc;
-  background-color: green;
+  background-color: rgba(19, 20, 21, 0.96);
   position: relative;
   top: -30px;
   padding: 0 10px;
