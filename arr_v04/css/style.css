@@ -3,9 +3,9 @@
 .backdoor {
   background-color: blue;
   position: relative;
-  width: 200px;
-  height: 300px;
-  margin: 30px;
+  width: 300px;
+  height: 400px;
+  margin: 50px 100px;
   border: 10px solid lightgray;
 }
 
@@ -14,8 +14,8 @@
   position: absolute;
   top: 0px;
   left: 0px;
-  width: 200px;
-  height: 300px;
+  width: 300px;
+  height: 400px;
   transform-origin: left;
   /*Speed of the Door animation*/
   transition: all 0.8s ease-in-out;
@@ -28,13 +28,13 @@
 
 .door span {
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   display: block;
   background-color: lightgray;
-  top: 100px;
-  left: 160px;
+  top: 170px;
+  left: 250px;
 }
 
 .trapezoid {
@@ -47,6 +47,7 @@
 
 .cyber-card {
   background-color: rgba(19, 20, 21, 0.96);
+  margin: 20px;
 }
 
 .cyber-tool-used {
