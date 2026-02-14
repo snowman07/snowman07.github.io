@@ -48,6 +48,7 @@
 .cyber-card {
   background-color: rgba(19, 20, 21, 0.96);
   margin: 20px;
+  border-radius: 5px;
 }
 
 .cyber-tool-used {
