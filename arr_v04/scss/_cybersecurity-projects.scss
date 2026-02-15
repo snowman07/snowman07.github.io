@@ -6,6 +6,20 @@
   height:400px;     //height of the .backdoor = .door
   margin: 30px 50px;  // this sets the black background width
   border: 10px solid lightgray;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.backdoor > p {
+  padding: 10px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.backdoor > a {
+  text-align: center;
 }
 
 .door
