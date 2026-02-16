@@ -23,7 +23,6 @@
 }
 
 .door {
-  background-color: brown;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -37,6 +36,14 @@
 .backdoor:hover .door {
   -webkit-transform: perspective(900) rotateY(90deg);
   transition: all 1s ease-in-out;
+}
+
+.blue-team {
+  background-color: blue;
+}
+
+.red-team {
+  background-color: red;
 }
 
 .door span {
