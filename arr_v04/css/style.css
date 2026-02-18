@@ -10,6 +10,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  box-shadow: 0 0 25px 15px #a3cfe7;
 }
 
 .backdoor > p {
@@ -30,7 +31,8 @@
   height: 400px;
   transform-origin: left;
   /*Speed of the Door animation*/
-  transition: all 0.8s ease-in-out;
+  transition: all 1.1s ease-in-out;
+  border: black solid 1px;
 }
 
 .backdoor:hover .door {
@@ -44,6 +46,10 @@
 
 .red-team {
   background-color: red;
+}
+
+.purple-team {
+  background-color: purple;
 }
 
 .door span {
