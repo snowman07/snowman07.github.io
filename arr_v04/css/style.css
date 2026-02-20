@@ -1,7 +1,6 @@
 /* ========================================================================= */
 /* ========== Put other SCSS files here(those with underscore) ============= */
 .backdoor {
-  background-color: blue;
   position: relative;
   width: 300px;
   height: 400px;
@@ -13,6 +12,18 @@
   box-shadow: 0 0 25px 15px #a3cfe7;
 }
 
+.backdoor-blue {
+  background-image: radial-gradient(rgb(109, 147, 204) 7%, rgb(64, 123, 211) 25%, rgb(43, 119, 233) 70%);
+}
+
+.backdoor-red {
+  background-image: radial-gradient(rgb(224, 175, 175) 7%, rgb(233, 123, 123) 25%, rgb(241, 64, 64) 70%);
+}
+
+.backdoor-purple {
+  background-image: radial-gradient(rgb(212, 159, 214) 7%, rgb(215, 112, 224) 25%, rgb(175, 50, 233) 70%);
+}
+
 .backdoor > p {
   padding: 10px;
   font-size: 18px;
@@ -21,6 +32,10 @@
 
 .backdoor > a {
   text-align: center;
+}
+
+.backdoor i:hover {
+  color: rgb(36, 249, 36);
 }
 
 .door {
