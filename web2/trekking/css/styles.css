@@ -1,0 +1,1272 @@
+/** user specific styles here **/
+/* typography */
+
+/***********************************************************/
+/***********************************************************/ 
+/*******            THIS IS THE GENERAL CODE         *******/
+/***********************************************************/
+
+/**In the sample, this is the General styling:**/
+
+html {
+    margin: 0 auto;     /*centers the web page*/
+    max-width: 100%;    /*2,080px*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Arvo', serif;  
+}
+
+
+/**********************************************************/ 
+/*******            END OF THE GENERAL CODE         *******/
+/**********************************************************/ 
+/**********************************************************/
+
+
+/**********************************************************/
+/**********************************************************/ 
+/*******    START OF THE CODE FOR THE INDEX PAGE     ******/
+/**********************************************************/
+
+/**************************/
+/***    start of header ***/
+/**************************/
+
+/**this is the img of header**/
+.banner {
+    background-image: url(../img/homepage/hikers.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 31.25rem 0;       /*height of the banner img*/
+    /* height: 790px; 
+    font-family: 'Arvo', serif; 
+    color: #e9e6e3; */
+}
+
+.top-nav {
+    margin-top: -28.125rem; /**to move nav at the top**/
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.25rem;
+}
+
+/* .container-main a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #e0ddda;
+    
+} */
+header nav {
+    display: flex; /**need display: flex here to ALIGN logo and ul**/
+    justify-content: space-between;
+    padding: 0 4rem; /**this is the left-right space of nav logo nav cart **/
+    
+}
+
+/***************************************************/
+/************start of main menu styling*************/
+
+header nav .container-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    text-transform: capitalize;
+    /* position: relative; */  
+}
+
+/* .container-main .li-main {
+    display: flex;
+    justify-content: space-between;
+} */
+
+/**to target the anchor tags **/
+.li-main > a {
+    text-decoration: none; /**to remove underline of anchor tag**/
+    color: #e0ddda;
+    font-size: 1.125rem;
+    font-weight: 400; /*for font-style:arvo*/
+    padding-left: 3.125rem; /*to add space on main menu*/
+    /* padding: 0 25px; */
+} 
+
+/* .space-main {
+    display: flex;
+    justify-content: space-around;
+} */
+
+
+/*HOVER STATE for main menu to display secondary menu*/
+.li-main:hover > .container-secondary {
+    opacity: 1;
+    visibility: visible; /*once hovered, secondary-menu will display*/  
+}
+
+.li-main > a:hover {
+    border-bottom: solid #a56758;
+    text-transform: uppercase;
+}
+
+
+/************end of main menu styling***************/
+/***************************************************/
+
+
+
+/***************************************************/
+/*********start of secondary menu styling***********/
+
+/* .container-secondary li{
+    padding: 10px; 
+} */
+
+.container-secondary {
+    background-color: #342820;
+    display: flex;
+    justify-content: space-around; /*space around*/ 
+    align-items: center;
+    text-align: center;
+    
+    
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 15%; /**space from main menu**/
+
+    /*for hover state*/
+    opacity: 0;
+    visibility: hidden; /**secondary-menu is initially hidden**/
+    transition: all 0.3s ease-in-out;
+
+}
+
+.container-secondary > .li-secondary > a {
+    text-decoration: none;
+    color: #e0ddda;
+    text-transform: uppercase;
+    /* flex: 1; */
+    font-weight: 400;
+    
+}
+
+/* a:hover {
+    text-decoration: 
+} */
+
+
+
+.li-secondary {
+    padding: 1.25rem 0; /**this will give top and bottom space to sec. menu**/
+   
+}
+
+/*********end of secondary menu styling***********/
+/*************************************************/
+
+
+
+/**************************************************/
+/*************start of mega menu styling***********/
+
+/**March 12: hover state to show mega menu**/
+.li-secondary:hover > .container-mega {
+    opacity: 1;
+    visibility: visible;
+    /* background: #e0ddda; */
+}
+
+
+.li-secondary:hover,
+.li-secondary > a:hover {
+    color: #342820; 
+    background-color: #e0ddda;
+}
+/* .li-secondary:hover {
+    color: #342820; 
+} */
+
+
+/*code for .container-mega to display when li-secondary hovered*/
+.container-mega {
+    width: 97%; /**size of the white bg of mega container**/
+    position: absolute;
+    top: 3.9375rem; /*space of mega container from secondary container*/
+    left: 0;
+    right: 0;
+    text-align: left;
+    display: flex;
+    background: #e0ddda;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.container-mega-menu-item {
+    padding: 0.9375rem;
+    width: 115.2rem;
+    margin: auto;
+}
+
+
+.li-secondary > .container-mega {
+    max-width:115.2rem;
+    margin:auto;
+}
+
+.container-mega-menu-item  {
+    padding: 3.125rem 4.375rem; /**space for the mega menu items**/
+}
+
+.mega-menu-dropdown li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mega-menu-flex-column li{ 
+    flex-direction: column;
+}
+
+.mega-menu-flex-column ul {
+    padding-bottom: 1.5625rem;
+}
+.mega-menu-items li { 
+    text-align:left;   
+}
+.mega-menu-items li a {
+    color: #342820;
+    text-decoration: none;
+}
+.mega-menu-items li a:hover {
+    border-bottom: solid 1px;
+}
+/**************end of mega menu styling***********/
+/*************************************************/
+
+
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    align-items: center;
+    
+    padding-top: 15.625rem;
+    /* font-family: 'Arvo', serif;  */
+    
+    color: #e9e6e3;
+} 
+
+h1 {
+    font-size: 4.375rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    /* padding-bottom: 62px; */
+    
+    
+}
+
+.banner-text > p {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 2.125rem;
+    font-weight: 400;
+    padding: 2.5rem 24.375rem;
+    text-align: center;
+    
+    letter-spacing: 5px;
+}
+
+
+
+
+/**************************/
+/***    end of header   ***/
+/**************************/
+
+
+/**************************/
+/***    start of main   ***/
+/**************************/
+
+
+/**************************************************/
+/***********start of .product-container************/
+main .product-container {
+    color: #342820;
+    background-color: #eae9e8;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 3.75rem 4.375rem;
+    text-transform: uppercase;
+    font-family: 'Titillium Web'
+}
+
+input[type=checkbox] {
+    width: initial;
+    padding: initial;
+}
+
+main .product-container > .product-category {
+    display: flex;
+    flex-direction: row;
+}
+
+main .product-category {
+    padding: 0 1rem;
+    font-size: 18px;
+    font-weight: 400; /**Titilium regular**/
+    
+}
+
+.product-category > div {
+    margin-right: 35px;
+}
+
+.product-container > h2 {
+    color: #8f8782;
+    font-size: 1rem;
+    font-weight: 300; /**Titilium light**/
+    background-color: #342820;
+    padding: 1.25rem 1.875rem;
+    border-radius: 0.3125rem; /*for rounded button*/
+    /* margin: 0 16px; */
+}
+/*************end of .product-container***********/
+/*************************************************/
+
+main > .main-center-container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    background-color: #ffffff;
+    padding: 100px;
+}
+
+
+/**************************************************/
+/***************start of .men section**************/
+.men-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /*wait*/
+}
+.men-top {
+    position: relative; /*relative position on MEN element*/
+
+}
+
+.men-title {
+    
+    /* border-style: solid;
+    border-width: thick;
+    border-color: #a56758; */
+    border-bottom: solid thick #342820;
+   
+}
+.men-title > h2 {
+    text-transform: uppercase;
+    position: absolute; /*for the MEN element to move*/
+    top: -10%; /*value to move-up the MEN element*/
+    left: 0;
+    background-color: #ffffff;
+    padding-right: 50px;
+    color: #56423d;
+    font-family: 'Titillium Web';
+    font-size: 18px;
+    font-weight: 700;
+
+}
+
+.men-page {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+.men-page > a,
+.men-page > .arrow {
+    display: flex;
+    justify-content: flex-end;
+}
+.men-page > a {
+    text-decoration: none;
+}
+
+.men-bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* margin: 0 30px; */
+    
+}
+/**start of code for the 3 images**/
+.content-container {
+    /* width: 100%; */
+    margin: 1.25rem 0; /*space on left and right corner */
+    background-color: #eae9e8;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; 
+}
+
+.content-container > .top-content {
+    display: flex;
+    justify-content: space-between;
+}
+.top-content > .top-left {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+.content-container h3 {
+    font-family: 'Titillium Web';
+    font-weight: 400;
+    text-transform: uppercase;
+}
+/* .top-left > i {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+.content-container > .center-content {
+    display: flex;
+    padding: 3.125rem 5.625rem;
+}
+
+.content-container > .bottom-content {
+    display: flex;
+    justify-content: space-between;
+}
+/**end of code for the 3 images**/
+
+/******************end of .men section************/
+/*************************************************/
+
+
+/**************************************************/
+/*************start of .women section**************/
+.women-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /*wait*/
+    margin-top: 3.75rem;
+}
+.women-top {
+    position: relative; /*relative position on MEN element*/
+
+}
+
+.women-title {
+    
+    /* border-style: solid;
+    border-width: thick;
+    border-color: #a56758; */
+    border-bottom: solid thick #342820;
+   
+}
+.women-title > h2 {
+    text-transform: uppercase;
+    position: absolute; /*for the MEN element to move*/
+    top: -10%; /*value to move-up the MEN element*/
+    left: 0;
+    background-color: #ffffff;
+    padding-right: 3.125rem;
+    color: #56423d;
+    font-family: 'Titillium Web';
+    font-size: 1.125rem;
+    font-weight: 700;
+
+}
+
+.women-page {
+    margin-top: 4.375rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.women-page > a,
+.women-page > .arrow {
+    display: flex;
+    justify-content: flex-end;
+}
+.women-page > a {
+    text-decoration: none;
+}
+
+.women-bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* margin: 0 30px; */
+    
+}
+
+/******************end of .women section**********/
+/*************************************************/
+
+
+/**************************************************/
+/******************start of .about*****************/
+main > .about {
+    background-color: #342820;
+    text-align: center;
+    padding: 5rem 16.25rem; /*space between .about and .border*/  
+    }
+
+main .about > .border {
+    border-style: solid;
+    border-width: thick;
+    border-color: #a56758;
+    /* margin: 0 125px; */
+    position: relative; /*relative value for h2 element*/
+
+}
+
+main .about .border > h2 {
+    text-transform: uppercase;
+    font-family: 'Arvo';
+    font-weight: 700; /*Arvo bold*/
+    font-size: 1.5rem;
+    color: #eae9e8;
+    /*
+    this is the position absolute relative to top-left corner of .border 
+    reference: https://www.tutorialspoint.com/css/css_positioning.htm
+    */
+    position: absolute; 
+    /*
+    used top and left value along with the position property to move h2 element anywhere in the html document 
+    */
+    top: -10%; /*Move Up - Use a negative value for top*/
+    left: 40%; /*Move Right - Use a positive value for left.
+    */
+    background-color: #342820;
+    padding: 0 30px; /*padding left and right for ABOUT*/
+
+}
+
+main .about .border > p {
+    font-family: 'Titillium Web';
+    font-weight: 400;
+    font-size: 16px;
+    /* text-align: center; */
+    /* margin: 90px 480px; */
+    padding: 90px 240px;
+    color: #eae9e8;
+    /* border-style: solid;
+    border-width: thick;
+    border-color: #a56758; */
+}
+
+
+/*********************end of .about***************/
+/*************************************************/
+
+
+/**************************/
+/***    end of main     ***/
+/**************************/
+
+
+/**************************/
+/***    start of footer ***/
+/**************************/
+footer {
+    background-color: #1f1813;
+    display: flex;
+    /* justify-content: flex-s; */
+    padding: 110px 20px;
+}
+
+/***container for left-content***/
+footer .left-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+footer .left-content > h2 {
+    text-transform: uppercase;
+    color: #e9e6e3;
+    font-family: 'Arvo';
+    font-weight: 700;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+footer .left-content > p {
+    color: #e9e6e3;
+    font-family: 'Titillium Web';
+    font-weight: 400;
+    font-size: 14px;
+}
+
+/***container for right-content***/
+
+footer .right-content {
+    margin-left: 760px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-family: 'Titillium Web';
+    font-size: 16px;
+    padding-top: 20px;
+}
+
+footer .right-content > ul
+{
+    display: flex;
+}
+
+footer .right-content > ul > li {
+    list-style: none;
+    
+}
+
+footer .right-content > ul > li > a {
+    font-weight: 400;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+footer .right-content > p {
+    font-weight: 700;
+    color: white;
+    text-transform: capitalize;
+}
+
+/**************************/
+/***    end of footer   ***/
+/**************************/
+
+
+
+/**********************************************************/ 
+/*****        END OF THE CODE FOR THE INDEX PAGE     ******/
+/**********************************************************/
+/**********************************************************/ 
+
+
+
+
+
+/**********************************************************/
+/**********************************************************/ 
+/*******    START OF THE CODE FOR THE CART PAGE     *******/
+/**********************************************************/
+
+/**************************/
+/***    start of header ***/
+/**************************/
+
+/*************** THIS PART IS IDENTICAL TO HOMEPAGE ***************/
+
+/**************************/
+/***    end of header   ***/
+/**************************/
+
+main .product-container .checkout > p {
+    color: #333333;
+    font-family: 'Arvo';
+    font-weight: 700;
+    font-size: 24px;
+}
+
+
+
+
+
+main .text-form-container {
+    width: 100%; /*size of .text-form-container*/
+    padding: 50px 70px; /*size of .text-form-container*/
+    /* margin: 3.063rem 8rem; */
+    /* border-bottom: solid 0.0625rem #dddddd; */
+    /* border-bottom: 1px solid; */
+  }
+  
+  main .text-form-container .heading-containers {
+    display: flex;
+  }
+  
+  main .text-form-container .heading-containers .heading-container-one {
+    flex: 1 50%;
+    padding-right: 8rem;
+  }
+  
+  main .text-form-container .heading-containers .heading-container-one h2 {
+    font-family: 'Arvo';
+    font-weight: 700;
+    font-size: 16px;
+    /* line-height: 1.3; */
+    color: #342820;
+    text-transform: capitalize;
+    background-color: #eae9e8;
+    padding: 0.6875rem 0 0.875rem 1.25rem;
+    margin: 0;
+  }
+  
+  main .text-form-container .heading-containers .heading-container-one p {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 2.2;
+    color: #444444;
+    margin-right: 9.063rem;
+  }
+  
+  main .text-form-container .heading-containers .heading-container-two {
+    flex: 1 50%;
+  }
+  
+  main .text-form-container .heading-containers .heading-container-two h2 {
+    font-family: 'Arvo';
+    font-weight: 700;
+    font-size: 16px;
+    /* line-height: 1.3; */
+    color: #342820;
+    text-transform: capitalize;
+    background-color: #eae9e8;
+    padding: 0.6875rem 0 0.875rem 1.25rem;
+    margin: 0;
+  }
+  
+  main .text-form-container .text-form-coupon-container {
+    display: flex;
+    margin-bottom: 2.438rem;
+  }
+  
+  main .text-form-container .text-form-coupon-container input {
+    border: solid 0.0625rem #dddddd;
+  }
+  
+  main .text-form-container .text-form-coupon-container .text-container {
+    flex: 1 50%;
+  }
+  
+  main .text-form-container .text-form-coupon-container .text-container p {
+    font-family: 'Titillium Web';
+    font-weight: 400;
+    font-size: 16px;
+    /* line-height: 1.3; */
+    color: #342820;
+    margin-right: 8rem;
+  }
+  
+  main .text-form-container .text-form-coupon-container .text-container .form-one {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main .text-form-container .text-form-coupon-container .text-container .form-one .username-container {
+    margin-right: 8rem;
+  }
+  
+  main .text-form-container .text-form-coupon-container .text-container .form-one .username-container label {
+    display: block;
+    font-family: 'Titillium Web';
+    font-weight: 400;
+    font-size: 16px;
+    color: #342820;
+    text-transform: capitalize;
+    padding-bottom: 0.5rem;
+  }
+  
+  main .text-form-container .text-form-coupon-container .text-container .form-one .username-container input {
+    width: 80%;
+    height: 2.125rem;
+  }
+  
+  main .text-form-container .text-form-coupon-container .text-container .form-one .password-button-container {
+    margin: 0.5rem 0;
+  }
+  
+  main .text-form-container .text-form-coupon-container .text-container .form-one .password-button-container label {
+    display: block;
+    font-family: 'Titillium Web';
+    font-weight: 400;
+    font-size: 16px;
+    color: #342820;
+    text-transform: capitalize;
+    padding-bottom: 0.5rem;
+  }
+  
+  main .text-form-container .text-form-coupon-container .text-container .form-one .password-button-container .input-btn-container input {
+    width: 65.5%;
+    height: 2.125rem;
+  }
+  
+  main .text-form-container .text-form-coupon-container .text-container .form-one .password-button-container .input-btn-container .btn {
+    position: relative;
+    top: -0.8rem;
+    margin-left: 1rem;
+    background-color: #342820;
+    color: #bcb6b2;
+    font-family: 'Titillium Web';
+    font-size: 16px;
+    font-weight: 300;
+    padding: 1.313rem 1.938rem;
+    border-radius: 0.1875rem;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  
+  main .text-form-container .text-form-coupon-container .coupon-container {
+    flex: 1 50%;
+  }
+  
+  main .text-form-container .text-form-coupon-container .coupon-container label {
+    display: block;
+    padding: 1rem 0 0.3125rem 0;
+    font-family: 'Titillium Web';
+    font-weight: 400;
+    font-size: 16px;
+    color: #342820;
+    text-transform: capitalize;
+  }
+  
+  main .text-form-container .text-form-coupon-container .coupon-container input {
+    width: 100%;
+    height: 2.125rem;
+  }
+  
+  main .text-form-container .text-form-coupon-container .coupon-container .btn-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+  }
+  
+  main .text-form-container .text-form-coupon-container .coupon-container .btn-container a {
+    background-color: #342820;
+    color: #bcb6b2;
+    font-family: 'Titillium Web';
+    font-size: 16px;
+    font-weight: 300;
+    padding: 1.313rem 1.938rem;
+    border-radius: 0.1875rem;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  
+  main .text-form-container .text-form-coupon-container .coupon-container .btn-container a:hover {
+    box-shadow: 0 0 0.5rem black;
+    transition: all 0.2s ease-out;
+  }
+
+  main .address-container {
+    width: 100%; /*size of .text-form-container*/
+    padding: 50px 70px; /*size of .text-form-container*/
+    display: flex;
+  }
+  
+  main .address-container input {
+    height: 2.125rem;
+    border: solid 0.0625rem #dddddd;
+  }
+  
+  main .address-container .billing-container {
+    flex: 1 50%;
+    padding-right: 8rem;
+  }
+  
+  main .address-container .billing-container h2 {
+    font-family: 'Arvo';
+    font-weight: 700;
+    font-size: 18px;
+    color: #342820;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+  }
+  
+  main .address-container .billing-container form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  main .address-container .billing-container form .first-name-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1 50%;
+    padding-right: 1.875rem;
+    margin-bottom: 0.875rem;
+  }
+  
+  main .address-container .billing-container form .first-name-container label {
+    font-family: 'Titillium Web';
+    font-weight: 400;
+    font-size: 16px;
+    color: #342820;
+    text-transform: capitalize;
+  }
+  
+  main .address-container .billing-container form .last-name-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1 50%;
+  }
+  
+  main .address-container .billing-container form .last-name-container label {
+    font-family: 'Titillium Web';
+    font-weight: 400;
+    font-size: 16px;
+    color: #342820;
+    text-transform: capitalize;
+  }
+  
+  main .address-container .billing-container form .address-info-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 0.875rem;
+  }
+  
+  main .address-container .billing-container form .address-info-container label {
+    font-family: 'Titillium Web';
+    font-weight: 400;
+    font-size: 16px;
+    color: #342820;
+    text-transform: capitalize;
+  }
+  
+  main .address-container .billing-container form .city-town-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1 50%;
+    padding-right: 1.875rem;
+    margin-bottom: 0.875rem;
+  }
+  
+  main .address-container .billing-container form .city-town-container label {
+    font-family: 'Titillium Web';
+    font-weight: 400;
+    font-size: 16px;
+    color: #342820;
+    text-transform: capitalize;
+  }
+  
+  main .address-container .billing-container form .province-state-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1 50%;
+  }
+  
+  main .address-container .billing-container form .province-state-container label {
+    font-family: 'Titillium Web';
+    font-weight: 400;
+    font-size: 16px;
+    color: #342820;
+    text-transform: capitalize;
+  }
+  
+  main .address-container .billing-container form .postal-code-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1 50%;
+    padding-right: 1.875rem;
+  }
+  
+  main .address-container .billing-container form .postal-code-container label {
+    font-family: 'Titillium Web';
+    font-weight: 400;
+    font-size: 16px;
+    color: #342820;
+    text-transform: capitalize;
+  }
+  
+  main .address-container .billing-container form .phone-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1 50%;
+  }
+  
+  main .address-container .billing-container form .phone-container label {
+    font-family: 'Titillium Web';
+    font-weight: 400;
+    font-size: 16px;
+    color: #342820;
+    text-transform: capitalize;
+  }
+  
+  main .address-container .shipping-container {
+    flex: 1 50%;
+    
+  }
+  
+  main .address-container .shipping-container h2 {
+    font-family: 'Arvo';
+    font-weight: 700;
+    font-size: 18px;
+    color: #342820;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    
+  }
+  
+  main .address-container .shipping-container form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  main .address-container .shipping-container form .first-name-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1 50%;
+    padding-right: 1.875rem;
+    margin-bottom: 0.875rem;
+  }
+  
+  main .address-container .shipping-container form .first-name-container label {
+    font-family: 'Titillium Web';
+    font-weight: 400;
+    font-size: 16px;
+    color: #342820;
+    text-transform: capitalize;
+  }
+  
+  main .address-container .shipping-container form .last-name-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1 50%;
+  }
+  
+  main .address-container .shipping-container form .last-name-container label {
+    font-family: 'Titillium Web';
+    font-weight: 400;
+    font-size: 16px;
+    color: #342820;
+    text-transform: capitalize;
+  }
+  
+  main .address-container .shipping-container form .address-info-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 0.875rem;
+  }
+  
+  main .address-container .shipping-container form .address-info-container label {
+    font-family: 'Titillium Web';
+    font-weight: 400;
+    font-size: 16px;
+    color: #342820;
+    text-transform: capitalize;
+  }
+  
+  main .address-container .shipping-container form .city-town-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1 50%;
+    padding-right: 1.875rem;
+    margin-bottom: 0.875rem;
+  }
+  
+  main .address-container .shipping-container form .city-town-container label {
+    font-family: 'Titillium Web';
+    font-weight: 400;
+    font-size: 16px;
+    color: #342820;
+    text-transform: capitalize;
+  }
+  
+  main .address-container .shipping-container form .province-state-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1 50%;
+  }
+  
+  main .address-container .shipping-container form .province-state-container label {
+    font-family: 'Titillium Web';
+    font-weight: 400;
+    font-size: 16px;
+    color: #342820;
+    text-transform: capitalize;
+  }
+  
+  main .address-container .shipping-container form .postal-code-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1 50%;
+    padding-right: 1.875rem;
+  }
+  
+  main .address-container .shipping-container form .postal-code-container label {
+    font-family: 'Titillium Web';
+    font-weight: 400;
+    font-size: 16px;
+    color: #342820;
+    text-transform: capitalize;
+  }
+  
+  main .address-container .shipping-container form .phone-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1 50%;
+  }
+  
+  main .address-container .shipping-container form .phone-container label {
+    font-family: 'Titillium Web';
+    font-weight: 400;
+    font-size: 16px;
+    color: #342820;
+    text-transform: capitalize;
+  }
+
+
+  main .account-checkbox {
+    width: 100%; /*size of .text-form-container*/
+    padding: 0 70px; /*size of .text-form-container*/
+    /* margin: 0 8rem; */
+    padding-bottom: 2.225rem;
+    /* border-bottom: solid 0.0625rem #dddddd; */
+  }
+  
+  main .account-checkbox label {
+    font-family: 'Titillium Web';
+    font-weight: 400;
+    font-size: 16px;
+    color: #342820;
+  }
+
+  main .cart-container {
+    width: 100%; /*size of .text-form-container*/
+    padding: 50px 70px; /*size of .text-form-container*/
+  }
+  
+  main .total-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin: 0 8rem; */
+  }
+  
+  main .total-button h3 {
+    font-family: 'Arvo';
+    font-weight: 700;
+    font-size: 18px;
+    color: #342820;
+    text-transform: capitalize;
+    /* margin-top: 2.125rem; */
+  }
+  
+  main .total-button a {
+    background-color: #342820;
+    color: #bcb6b2;
+    font-family: 'Titillium Web';
+    font-size: 16px;
+    font-weight: 300;
+    padding: 1.313rem 1.938rem;
+    border-radius: 0.1875rem;
+    text-transform: uppercase;
+    margin-top: 1.125rem;
+    text-decoration: none;
+  }
+  
+  main .subtotal, main .shipping-handling, main .gst {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* padding: 0 70px;  */
+    /* margin: 0 70px; */
+    border-bottom: solid 0.0625rem;
+  }
+  
+  main .subtotal p, main .shipping-handling p, main .gst p {
+    font-family: 'Arvo';
+    font-weight: 600;
+    font-size: 16px;
+    color: #342820;
+    text-align: right;
+    margin-bottom: 20px;
+  }
+  
+  main .total {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  main .total h2 {
+    font-family: 'Titillium Web';
+    font-weight: 700;
+    font-size: 16px;
+    color: #6a615b;
+    text-transform: uppercase;
+    margin: 0.75rem 1.188rem 0 0;
+  }
+  
+  main .total p {
+    font-family: 'Titillium Web';
+    font-weight: 700;
+    font-size: 16px;
+    color: #a56758;
+    text-transform: uppercase;
+    margin: 0.75rem 0 0 0;
+  }
+  
+  main .payment-container {
+    width: 100%; /*size of .text-form-container*/
+    padding: 50px 70px; /*size of .text-form-container*/
+    border: solid 0.0625rem #dddddd;
+  }
+  
+  main .payment-container .option-one, main .payment-container .option-two, main .payment-container .option-three, main .payment-container .option-four {
+    border: solid 0.0625rem #dddddd;
+    padding: 2.25rem 2.25rem 2.063rem 1rem;
+  }
+  
+  main .payment-container label {
+    font-family: 'Titillium Web';
+    font-weight: 700;
+    font-size: 16px;
+    color: #342820;
+    text-transform: capitalize;
+  }
+  
+  main .payment-container p {
+    font-family: 'Titillium Web';
+    font-weight: 400;
+    font-size: 16px;
+    color: #342820;
+    padding-left: 1rem;
+  }
+  
+  main .checkout-btn {
+    padding: 1.25rem 8rem 70px 70px;
+  }
+  
+  main .checkout-btn a {
+    background-color: #342820;
+    color: #e4e2e1;
+    font-family: 'Titillium Web';
+    font-size: 16px;
+    font-weight: 300;
+    padding: 1.25rem 2.563rem;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+
+/**************************/
+/***    start of footer ***/
+/**************************/
+
+/*************** THIS PART IS IDENTICAL TO HOMEPAGE ***************/
+
+/**************************/
+/***    end of footer   ***/
+/**************************/
+
+
+/**********************************************************/ 
+/******        END OF THE CODE FOR THE CART PAGE     ******/
+/**********************************************************/ 
+/**********************************************************/

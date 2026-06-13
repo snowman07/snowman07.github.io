@@ -1,0 +1,74 @@
+/** GLOBAL STYLES **/
+
+body{
+    font-family: arial, sans-serif;
+    font-size:18px;
+    color:#000; /*black*/
+}
+
+.container{
+    width:960px;
+    margin:0 auto;
+}
+
+header,
+main,
+footer{
+    border:2px solid #000;
+    margin-top:20px;
+    padding:20px 40px;
+}
+/**  flex items: adding flex properities to the parent **/
+header,
+main{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/**HEADER **/
+
+header div{ text-align: center;}
+header div p{ font-size:14px;}
+header ul{ text-align: right;}
+
+header ul span{ color:#333; }
+header ul li{
+    margin-bottom: 23px;
+}
+
+header ul li:first-child{
+    font-size:16px;
+}
+header ul li:nth-child(2){
+    font-size:36px;
+    font-weight:bold;
+}
+
+header ul li:last-child{
+    font-weight:bold;
+}
+
+header ul img{ vertical-align: top;}
+
+/** main **/
+
+section ul{
+    text-align:center;
+}
+
+section ul li{
+ color:#444;
+ line-height: 50px;   
+}
+
+section ul li a{
+    display:inline-block;
+    text-decoration: none;
+    color:#fff;
+    background:#333;
+    padding:10px;
+    margin-top:50px;
+}
+
+footer{ text-align:center;}

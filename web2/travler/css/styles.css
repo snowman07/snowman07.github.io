@@ -1,0 +1,1358 @@
+
+/***********************************************************/
+/***********************************************************/
+/*******            THIS IS THE GENERAL CODE         *******/
+/***********************************************************/
+
+html
+{
+    margin: 0 auto;     /*centers the web page*/
+    max-width: 100%;    /*2,080px*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    background-color: #ebebeb;
+}
+
+h1 {
+    color: #6a19ac;
+    font-size: 3.5625rem;
+    font-weight: 900; /*Source Sans Pro Black 900*/
+    /*font-style: ; */
+}
+
+h2 {
+    color: #ffffff;
+    text-align: center;
+    font-weight: 900; /*Source Sans Pro Black 900*/
+}
+
+.banner > p {
+    color: #ffffff;
+    text-align: center;
+    font-weight: 400; /*Source Sans Pro Regular 400*/
+}
+
+h3,
+.map-text > p {
+    color: #ffffff;
+}
+
+h4,
+.feature-info p {
+    color: #ffffff;
+}
+
+
+footer {
+    background-color: #373737;
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 1.875rem 1.25rem 1.875rem 1.25rem;
+    border-top: 1.875rem solid #6017a3;
+}
+
+/**********************************************************/
+/*******            END OF THE GENERAL CODE         *******/
+/**********************************************************/
+/**********************************************************/
+
+
+
+
+
+
+
+
+/**********************************************************/
+/**********************************************************/
+/*******    START OF MOBILE VIEW (DEFAULT 1-400px)   ******/
+/**********************************************************/
+
+/**************************/
+/***    start of header ***/
+/**************************/
+
+/***************************************************/
+/******** start of class="header.logo"    **********/
+
+
+/* Step 1: Default state. Starting with the mobile view first, style and layout the nav links for how they look when visable */
+
+.header-logo {
+    padding: 1.6875rem 1.25rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    /* toggle-icon */
+    position: relative; /*the absolute value is set to header nav*/
+}
+
+/*need this to align the img logo*/
+.header-logo > img {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.header-logo-right {
+    padding-left: 1.25rem;
+
+    flex-flow: row wrap;
+}
+
+.header-logo p {
+    color: #707070;
+    font-size: 0.875rem;
+    font-weight: 300;
+    font-style: italic;
+}
+
+/*this will be the event button but for now style it*/
+
+.toggle-icon {
+    padding-top: 2.375rem;
+}
+.toggle-icon span {
+    width: 1.875rem;
+    height: 0.25rem;
+    margin-bottom: 0.375rem;
+    /* border-radius: 100px; */
+    background-color: #6017a3;
+    display: block;
+}
+
+/*********    end of class="header.logo"  **********/
+/***************************************************/
+
+/***************************************************/
+/****************   start of nav    ****************/
+
+header ul {
+    background-color: #f8f8f8;
+}
+
+header li {
+    border-bottom: 0.0625rem solid #ebebeb;
+}
+
+header a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #707070;
+    font-size: 1.0625rem;
+    font-weight: 400; /*Source Sans Pro Regular 400*/
+}
+
+
+
+.menu-links li {
+    display: flex;
+    justify-content: start;
+    /* line-height: 40px; */
+    padding: 1.25rem 1.25rem;
+}
+
+.menu-links li span {
+    text-transform: lowercase;
+}
+
+.menu-links a {
+    /* this allows the clickable area to take up the full width and height of the li element instead of just having the text itself clickable */
+    display: block;
+    padding-left: 1.5625rem;
+}
+
+
+
+/* Step 2: Now lets hide the menu links. Once hidden that's the defautl state - how the screen looks when first loaded */
+
+header nav {
+
+    /* we can hide this nav with display: none, however, we can't apply trasition properties to display: none & display: block. We can apply transition properties to height values but it will only work with max-height. Note, you could also use visability and opactity as we did with the dropdown menu */
+    max-height: 0;
+    overflow: hidden;
+    /* the transition property will make this change happen smoothly */
+    transition: max-height .7s ease-in-out;
+    /*the relative value is set to header-logo*/
+    position: absolute;
+    top: 10rem;
+    width: 100%;
+
+}
+
+/* Step 3: Create a special class that will show the menu. This class exists only in the CSS file for now, we don't add it in the markup. The javascript will do that for us, Let's go and do that in the js file. */
+.show-nav {
+    max-height: 25rem;
+    border-bottom: 0.3125rem solid #6017a3;
+}
+
+/***************    end of nav  ********************/
+/***************************************************/
+
+
+/***************************************************/
+/********   start of class="banner"    *************/
+
+.banner {
+    background-image: url(../img/header/banner-background-small.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* style the text so that we can see it over the image */
+    color: #fff;
+    padding: 3.125rem 4.375rem; /*height of the banner image*/
+
+    flex-flow: row wrap;
+}
+
+
+/************    end of class="banner"  ************/
+/***************************************************/
+
+/**************************/
+/***    end of header   ***/
+/**************************/
+
+
+
+/**************************/
+/****    start of main ****/
+/**************************/
+/***************************************************/
+/********   start of features   *************/
+
+.feature {
+    background-color: #2d2d2d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature > section:first-child {
+    display: flex;
+    /* flex-flow: wrap; */
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.feature-text h4 span {
+    text-transform: lowercase;
+}
+
+.map-text {
+    padding: 4.375rem 5rem 1.25rem 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.5625rem;
+    font-weight: 400; /*SourceSansPro Regular 400*/
+}
+.map-text > p {
+    font-size: 1rem;
+    font-weight: 400; /*SourceSansPro Regular 400*/
+}
+
+
+
+
+.feature-info {
+    display: flex;
+    flex-wrap: wrap; /*use to move on next row*/
+    padding: 0 1.25rem; /*20px*/
+}
+
+h4 {
+    text-transform: capitalize;
+    font-weight: 300; /*light*/
+    font-size: 1.5625rem;
+    padding: 1.25rem 0 0.625rem 0;
+}
+
+.feature-info p {
+    font-weight: 400; /*regular*/
+    font-size: 1rem;
+    padding: 0.625rem 0;
+}
+
+.feature-container {
+    padding: 0.9375rem 0;
+}
+
+.feature-info img {
+    /* display: block; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/************    end of features ************/
+/***************************************************/
+
+
+/***************************************************/
+/********   start of callout   *************/
+
+.call-out {
+    background-color: #252525;
+    background-image: url(../img/main/background-small.png);
+    background-repeat: no-repeat;
+    background-position: initial;
+    background-size: cover;
+    text-align: center;
+    padding: 10rem 1.875rem 1.875rem 3.75rem;
+    color: #ffffff;
+}
+
+.call-out-text > h4 {
+    text-transform: none;
+    font-size: 1.5625rem;
+    font-weight: 300;
+}
+
+.call-out-text > p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+
+
+
+
+/* .banner {
+    background-image: url(../img/header/banner-background-small.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    color: #fff;
+    padding: 50px 70px;
+} */
+
+/************    end of callout ************/
+/***************************************************/
+
+/***************************************************/
+/********   start of team   *************/
+
+.team {
+    padding: 0 1.25rem;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.team section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5625rem 0;
+}
+
+.team section h4 {
+    color: #7b7b7b;
+    letter-spacing: 0.1875rem;
+    font-weight: 300;
+}
+
+.team section > p {
+    color: #7b7b7b;
+    letter-spacing: 0.0625rem;
+    font-weight: 400;
+}
+
+.team h4 span {
+    text-transform: lowercase;
+}
+
+.team span {
+    text-transform: capitalize;
+}
+
+.col-image {
+    position: relative;
+    max-width: 100%;
+}
+
+.col-image i {
+    position: absolute;
+    right:0;
+    bottom:0;
+    font-size:1.6rem;
+    background: #8f33c4;
+    padding: 0.625rem;
+    color: #ffffff;
+}
+
+.team-flex-grid {
+    display: flex;
+    flex-flow: row wrap;
+    /* justify-content: center; */
+}
+.row-one {
+    width: 49.999%;
+}
+
+.row-two {
+    width: 49.999%;
+}
+
+.col-one {
+    /* border-right: solid 10px #ebebeb; */
+    padding-right: 0.625rem;
+}
+
+.col-two {
+    /* border-left: solid 10px #ebebeb; */
+    padding-left: 0.625rem;
+}
+
+
+.team-col > div:last-of-type {
+    padding: 1.5625rem 0;
+    text-transform: capitalize;
+    color: #7b7b7b;
+}
+
+.team-col > div:last-of-type > p:first-child {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+
+/************    end of team ************/
+/***************************************************/
+
+/***************************************************/
+/********   start of text columns   *************/
+
+.flex-grid {
+    padding: 1.6875rem 1.25rem;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+h5 {
+    text-transform: capitalize;
+    font-size: 1.5625rem;
+    font-weight: 700;
+    color: #252525;
+}
+
+.col div p:first-of-type {
+    color: #6017a3;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.col div p:last-of-type {
+    color: #949494;
+    font-size: 1rem;
+    font-weight: 400;
+    padding-top: 1.25rem;
+}
+
+
+.col {
+    background-color: #ffffff;
+    margin: 1.25rem 0;
+}
+
+.col > div {
+    padding: 0 1.5625rem 1.5625rem;
+}
+
+.col > i {
+    background-color: #8f33c4;
+    padding: 0.625rem;
+    color: #ffffff;
+}
+
+
+
+/************    end of text columns ************/
+/***************************************************/
+
+/**************************/
+/****    end of main   ****/
+/**************************/
+
+/**************************/
+/****    start of footer ****/
+/**************************/
+
+.footer-logo {
+    /* padding: 1.6875rem 1.25rem; */
+    display: flex;
+    flex-flow: row wrap;
+    padding-bottom: 1.875rem;
+}
+ /*need this to align the img logo*/
+.footer-logo > img {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.footer-logo-right {
+    padding-left: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+}
+
+.footer-logo p {
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: 300;
+    font-style: italic;
+}
+
+footer h1 {
+    color: #ffffff;
+    font-size: 2.4375rem;
+}
+
+.footer-container {
+    padding: 0.625rem 0;
+}
+
+footer ul{
+    list-style-type: none; /*remove bullet*/
+    display: flex;
+    justify-content: space-between;
+    padding: unset;
+    /*to remove the padding set on "user agent stylesheet"*/
+
+    display: flex;
+    flex-flow: row wrap;
+}
+
+footer li > a {
+    text-decoration: none; /**to remove underline of anchor tag**/
+    text-transform: capitalize;
+    color: #ffffff;
+    border-bottom: 0.1875rem solid #914dcf;
+    padding: 0.625rem 0;
+}
+
+
+.reverse {
+    padding-top: 1.25rem;
+}
+
+
+
+.social {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.625rem 0;
+
+
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    padding: 0.625rem;
+}
+
+.container > p {
+    padding-left: 0.625rem;
+    text-transform: capitalize;
+}
+
+.container:nth-child(3) > p {
+    text-transform: uppercase;
+}
+
+/**************************/
+/****    end of footer   ****/
+/**************************/
+
+
+/**********************************************************/
+/********    END OF MOBILE VIEW (DEFAULT 1-400px)    ******/
+/**********************************************************/
+/**********************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**********************************************************/
+/**********************************************************/
+/*********    START OF TABLET VIEW (401-768px)   **********/
+/**********************************************************/
+
+/* Step 4: Once the screen is wide enough to show all the menu links we'll remove the hamburger/toggle icon and simply show the menu links when the page loads. We will have to overwrite some styling inside the media query to layout them out differently on a wider screen. */
+/*TABLET VIEW (401px-768px)*/
+@media only screen and (min-width: 25.0625rem){
+
+    /**************************/
+    /***    start of header ***/
+    /**************************/
+
+    /* we don't need the icon anymore, so hide it */
+    .toggle-icon {
+        display: none;
+    }
+    /*purpose of this is to hide the border bottom on mobile view*/
+    .show-nav {
+        border-bottom: white;
+    }
+
+    /*this is the container*/
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        /* width: 100%; */
+        /* flex-direction: row;
+        align-items: initial;*/
+    }
+
+    /***************************************************/
+    /********   start of class="header-logo"    ********/
+
+    /*********    end of class="header.logo"  **********/
+    /***************************************************/
+
+    /***************************************************/
+    /****************   start of nav    ****************/
+
+    header nav {
+        /*we want to see the nav by default, so make sure it's shown*/
+        max-height: 100%;
+        /*since mobile view used absolute and relative position for nav, use position: static on this breakpoint to positioned according to the normal flow of the page*/
+        position: static;
+    }
+
+    .menu-links {
+        display: flex;
+        flex-wrap: nowrap; /*deafult*/
+        justify-content: space-between;
+        border-bottom: 0.25rem solid #6017a3;
+    }
+
+    .menu-links li {
+        display: flex;
+        /* flex-wrap: nowrap; */
+        flex-direction: column;
+        align-items: center;
+        border-right: 0.125rem solid #ebebeb;
+        width: 100%;
+    }
+
+    .menu-links a {
+        padding: 0.3125rem 0; /*10px*/
+    }
+
+    header a {
+        text-align: center;
+        /* color: red; */
+    }
+
+
+
+     /* .menu-links,
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu-links li {
+        padding: 0 5px;
+        margin: 0 3px;
+    }
+
+    .menu-links li:hover {
+         mobile screens don't need hover states, add them here instead
+        background-color: #dde7e9;
+        border-radius: 8px;
+    } */
+
+
+    /***************    end of nav  ********************/
+    /***************************************************/
+
+
+    /***************************************************/
+    /********   start of class="banner"    *************/
+
+    .banner {
+        background-image: url(../img/header/banner-background-medium.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        /* style the text so that we can see it over the image */
+        color: #fff;
+        padding: 9.375rem 4.375rem; /*height of the banner image*/
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 3rem; /*48px*/
+    }
+    .banner > p {
+        font-size: 1.5rem; /*24px*/
+        padding: 1rem 0;
+    }
+
+    /************    end of class="banner"  ************/
+    /***************************************************/
+
+    /**************************/
+    /***    end of header   ***/
+    /**************************/
+
+
+
+
+    /**************************/
+    /****    start of main ****/
+    /**************************/
+    /***************************************************/
+    /********   start of features   *************/
+
+    /* .feature {
+        padding: 0 20px;
+    } */
+
+    .feature {
+        display: flex;
+        align-items: center;
+    }
+
+    .feature > section:first-child {
+        /* display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center; */
+        padding: 0 1.25rem;
+    }
+
+    .map-text {
+        padding: 4.375rem 1.25rem 1.25rem 1.25rem;
+        /* display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center; */
+    }
+
+    h3 {
+        text-align: center;
+        font-size: 2.4375rem;
+        /*font-weight: 400; SourceSansPro Regular 400*/
+    }
+    .map-text > p {
+        font-size: 1.5625rem;
+        /*font-weight: 400; SourceSansPro Regular 400*/
+    }
+
+
+
+    /*to change the direction */
+    .feature-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .feature-text {
+        padding-left: 2.5rem;
+    }
+
+    .feature-info img {
+        /* display: block; */
+        /* margin-top: auto; */
+        margin-bottom: auto;
+    }
+
+    .call-out-text > h4 {
+        padding: 0 0 0.625rem 0;
+        letter-spacing: 0.1875rem;
+    }
+
+    .call-out-text > p {
+        letter-spacing: 0.0625rem;
+    }
+
+    /************    end of features ************/
+    /***************************************************/
+
+
+    /***************************************************/
+    /********   start of callout   *************/
+
+    .call-out {
+        background-color: #252525;
+        background-image: url(../img/main/background-medium.png);
+        background-repeat: no-repeat;
+        background-position: left 0 top 1.875rem; /*code to have a swift flow of image*/
+        /* background-size: cover; */
+        /* top: 10px; */
+
+        /* padding: 110px 70px;  */
+        /* padding: 160px 30px 30px 60px; */
+    }
+
+
+    .call-out-text {
+        display: flex;
+        flex-direction: column;
+        padding: 1.875rem 0 0 0;
+    }
+
+
+    .call-out > h4 {
+        text-transform: none;
+        font-size: 1.9375rem;
+        font-weight: 300;
+        /* top: 100px; */
+
+    }
+
+    .call-out > p {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    /* .banner {
+        background-image: url(../img/header/banner-background-small.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        color: #fff;
+        padding: 50px 70px;
+    } */
+
+
+
+    /************    end of callout ************/
+    /***************************************************/
+
+    /***************************************************/
+    /********   start of team   *************/
+
+    .team {
+        padding: 1rem 1.25rem 0 1.25rem;
+        /* width: 100%; */
+        /* display: flex; */
+        flex-flow: row wrap;
+    }
+
+    .team section{
+        /* position: relative;
+        border-top: thick solid #dedede;
+        width: 300%; */
+        flex-direction: column; /*for h4 and p*/
+    }
+
+    .team section h4::before {
+        content: '';
+        border-left: thick solid #dedede;
+        width: 7.8125rem;
+        height: 0.1875rem;
+        display: inline-block;
+        position: relative;
+        background:  #dedede;
+        vertical-align: middle;
+    }
+
+    .team section h4::after {
+        content: '';
+        border-left: thick solid #dedede;
+        width: 7.8125rem;
+        height: 0.1875rem;
+        display: inline-block;
+        position: relative;
+        background: #dedede;
+        vertical-align: middle;
+    }
+
+    .team section h4 {
+        font-size: 2.4375rem;
+    }
+
+
+    /* .team section h4 {
+        padding: 1.25rem 1.25rem 0.625rem 1.25rem;
+        background-color: #ebebeb;
+        font-size: 2.4375rem;
+
+        position: absolute;
+        left: 20%;
+        transform: translateX(-50%);
+        transform: translateY(-90%);
+
+        flex-flow: row wrap;
+    } */
+
+    .team section > p {
+        color: #7b7b7b;
+        letter-spacing: 0.0625rem;
+        font-weight: 400;
+        padding-bottom: 1rem;
+    }
+
+    .team-col > div:last-of-type > p:first-child {
+        font-size: 2.4375rem;
+    }
+
+
+    /************    end of team ************/
+    /***************************************************/
+
+    /***************************************************/
+    /********   start of text columns   *************/
+
+    /* .col {
+        margin: 20px 0;
+    } */
+
+    .col-1,
+    .col-2 {
+        width: 49.999%;
+
+    }
+
+    /*dirty lil trick. To show some space on flex grid*/
+    .col-2 {
+        border-left: 0.625rem solid #ebebeb;
+        /* padding-left: 10px */
+    }
+    .col-1 {
+        border-right: 0.625rem solid #ebebeb;
+        /* padding-right: 10px; */
+    }
+
+    /************    end of text columns ************/
+    /***************************************************/
+
+    /**************************/
+    /****    end of main   ****/
+    /**************************/
+
+
+
+    /**************************/
+    /****    start of footer ****/
+    /**************************/
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        /* justify-content: center; */
+        /* flex-basis: 40%; */
+    }
+
+    footer > div {
+        flex-basis: 50%;
+    }
+
+    footer > .footer-container:first-child {
+        padding-right: 0.625rem;
+    }
+    footer > .footer-container:last-child {
+        padding-left: 0.625rem;
+    }
+
+    /*reverse the position of social and p*/
+    .reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    /**************************/
+    /****    end of footer   ****/
+    /**************************/
+
+
+}
+
+
+/**********************************************************/
+/**********    END OF TABLET VIEW (401-768px)    **********/
+/**********************************************************/
+/**********************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**********************************************************/
+/**********************************************************/
+/*******    START OF DESKTOP VIEW (769-1140px)   **********/
+/**********************************************************/
+
+/*DESKTOP VIEW (769px-up)*/
+@media only screen and (min-width: 48.0625rem) {
+
+    /**************************/
+    /***    start of header ***/
+    /**************************/
+
+
+
+
+    /***************************************************/
+    /********   start of class="header-logo"    ********/
+
+    .header-logo {
+        padding: 1.6875rem 9.375rem; /*150px distance left and right*/
+        display: flex;
+        justify-content: space-between;
+        /* toggle-icon */
+        position: relative; /*the absolute value is set to header nav*/
+    }
+
+
+    /*********    end of class="header.logo"  **********/
+    /***************************************************/
+
+    /***************************************************/
+    /****************   start of nav    ****************/
+
+    header nav {
+        /*we want to see the nav by default, so make sure it's shown*/
+        max-height: 100%;
+        /*since mobile view used absolute and relative position for nav, use position: static on this breakpoint to positioned according to the normal flow of the page*/
+        position: static;
+
+
+        padding: 0 9.375rem; /*150px distance left and right*/
+    }
+
+    .menu-links {
+        display: flex;
+        flex-wrap: nowrap; /*deafult*/
+        justify-content: space-between;
+        border-bottom: 0.125rem solid #6017a3;
+
+    }
+
+    /***************    end of nav  ********************/
+    /***************************************************/
+
+
+    /***************************************************/
+    /********   start of class="banner"    *************/
+
+    .banner {
+        background-image: url(../img/header/banner-background-large.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        /* style the text so that we can see it over the image */
+        color: #fff;
+        padding: 9.375rem 10rem; /*height of the banner image*/ /*150px 160px*/
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 4.5rem; /*72px*/
+    }
+    .banner > p {
+        font-size: 2rem; /*32px*/
+        padding: 1rem 0;
+    }
+
+    /************    end of class="banner"  ************/
+    /***************************************************/
+
+    /**************************/
+    /***    end of header   ***/
+    /**************************/
+
+
+
+
+    /**************************/
+    /****    start of main ****/
+    /**************************/
+    /***************************************************/
+    /********   start of features   *************/
+
+    .feature {
+        display: flex;
+        align-items: center;
+        padding: 0 9.375rem; /*150px distance left and right*/
+    }
+
+    .feature > section:first-child {
+        /* align-items: center; */
+        flex-direction: row;
+        align-items: center;
+        padding: 0 0; /*to remove the padding in tablet view*/
+    }
+
+    .map-text {
+        padding: 4.375rem 1.25rem 1.25rem 1.25rem;
+        text-align: center;
+    }
+
+    h3 {
+
+        font-size: 2.5rem;
+        font-weight: 400; /*SourceSansPro Regular 400*/
+    }
+    .map-text > p {
+        font-size: 1.5625rem;
+        font-weight: 400; /*SourceSansPro Regular 400*/
+    }
+
+    .map picture {
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-top: 4.375rem;
+    }
+
+
+
+
+    .feature-info {
+        display: flex;
+        flex-wrap: nowrap;
+        /* flex-direction: row; */
+        flex-basis: 30%;
+        padding: 1.875rem 0 5rem 0;
+    }
+
+    .feature-container {
+        flex-direction: column;
+        padding: 0 0;
+    }
+
+    .feature-text {
+        padding-left: 0;
+    }
+
+    /*to add space on column*/
+    .feature-info > div:nth-child(2) {
+        padding: 0 1.25rem;
+    }
+
+    /************    end of features ************/
+    /***************************************************/
+
+
+    /***************************************************/
+    /********   start of callout   *************/
+
+    .call-out {
+        /* background-color: #252525;
+        background-image: url(../img/main/background-large.png);
+        background-repeat: no-repeat;
+
+        background-size: cover; */
+
+        /*code to have a swift flow of image*/
+        /* background-position: left 0 top 0;  */
+
+        padding: 14.375rem 0;
+        position: relative;
+
+
+    }
+
+    .call-out-text {
+
+        /* display: flex;
+        flex-direction: column; */
+        /* padding: 60px 0 0 0; */
+        /* justify-content: center; */
+        position: absolute;
+        top: 60%;
+        left: 30%;
+    }
+
+
+    .call-out-text > h4 {
+        /* text-transform: none; */
+        font-size: 2.4375rem;
+        letter-spacing: initial;
+
+    }
+
+    .call-out-text > p {
+        font-size: 1.5625rem;
+        letter-spacing: initial;
+    }
+
+    /* .banner {
+        background-image: url(../img/header/banner-background-small.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        color: #fff;
+        padding: 50px 70px;
+    } */
+
+
+
+
+    /************    end of callout ************/
+    /***************************************************/
+
+    /***************************************************/
+    /********   start of team   *************/
+
+    .team {
+        padding: 2rem 9.375rem 0;
+    }
+
+    .team section {
+        flex-flow: row wrap;
+        flex-direction: column;
+    }
+
+    .team section h4 {
+        font-size: 3rem;
+    }
+
+    .team section > p {
+        padding-top: 1rem;
+    }
+
+    .team-col {
+        width: 24.999%;
+    }
+
+    .team-col > div:last-of-type > p:first-child {
+        font-size: 1.5625rem;
+    }
+
+
+
+    .male-one {
+        /* border-right: solid 10px #ebebeb; */
+        padding-right: 0.625rem;
+    }
+
+    .male-two {
+        /* border-left: solid 10px #ebebeb; */
+        padding-left: 0.625rem;
+    }
+
+
+    /************    end of team ************/
+    /***************************************************/
+
+    /***************************************************/
+    /********   start of text columns   *************/
+
+    .flex-grid {
+        padding: 4.375rem 9.375rem;
+    }
+
+    .col {
+        width: 33.333%;
+    }
+
+    /*dirty lil trick. To show some space on flex grid*/
+    .col-1 {
+        border-right: 0.625rem solid #ebebeb;
+    }
+
+    .col-2 {
+        border-right: 0.625rem solid #ebebeb;
+
+    }
+    .col-3 {
+        border-left: 0.625rem solid #ebebeb;
+    }
+
+    /************    end of text columns ************/
+    /***************************************************/
+
+    /**************************/
+    /****    end of main   ****/
+    /**************************/
+
+
+
+    /**************************/
+    /****    start of footer ****/
+    /**************************/
+
+    footer {
+        padding: 4.375rem 9.375rem;
+    }
+
+    .social {
+        justify-content: flex-start;
+        padding: 0.625rem 0;
+    }
+
+    .container {
+        padding-left: 0;
+        padding-right: 2rem;
+    }
+
+    .footer-container nav li a {
+        border-bottom: none;
+    }
+
+    .footer-container nav li:hover {
+        border-bottom: 0.25rem solid #6017a3;
+    }
+    /**************************/
+    /****    end of footer   ****/
+    /**************************/
+
+
+}
+
+/**********************************************************/
+/**********    END OF DESKTOP VIEW (769-1140px)    ********/
+/**********************************************************/
+/**********************************************************/
+

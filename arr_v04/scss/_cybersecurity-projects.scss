@@ -1,0 +1,139 @@
+.backdoor
+{
+  // background-color: blue;
+  position:relative;
+  width:300px;      //width of the .backdoor = .door
+  height:400px;     //height of the .backdoor = .door
+  margin: 30px 50px;  // this sets the black background width
+  border: 10px solid lightgray;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  box-shadow: 0 0 25px 15px #a3cfe7;
+}
+
+.backdoor-blue {
+  background-image: radial-gradient(rgb(109, 147, 204) 7%, rgb(64, 123, 211) 25%, rgb(43, 119, 233) 70%);
+}
+
+.backdoor-red {
+  background-image: radial-gradient(rgb(224, 175, 175) 7%, rgb(233, 123, 123) 25%, rgb(241, 64, 64) 70%);
+}
+
+.backdoor-purple {
+  background-image: radial-gradient(rgb(212, 159, 214) 7%, rgb(215, 112, 224) 25%, rgb(175, 50, 233) 70%);
+}
+
+.backdoor > p {
+  padding: 10px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.backdoor > a {
+  text-align: center;
+}
+
+.backdoor i:hover {
+  color: rgba(36, 249, 36);
+}
+
+.door
+{
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:300px;      //width of the .door = .backdoor
+  height:400px;     //height of the .door = .backdoor 
+ 
+  transform-origin: left;
+  /*Speed of the Door animation*/
+  transition: all 1.1s ease-in-out;
+
+  border: black solid 1px;
+}
+
+.backdoor:hover .door {
+  -webkit-transform: perspective(900) rotateY(90deg);
+  transition: all 1s ease-in-out;
+}
+
+.blue-team {
+  // box-shadow: 0 0 50px 15px #48abe0;
+  background-image: conic-gradient(at 90% 45%, rgb(22, 67, 218), rgb(105, 211, 214), blue);
+}
+
+.red-team {
+  background-image: conic-gradient(at 90% 45%, rgb(235, 93, 93), rgb(231, 128, 102), red);
+
+}
+
+.purple-team {
+  // background-color: purple;
+  background-image: conic-gradient(at 90% 45%, rgb(165, 69, 221), rgb(177, 123, 204), purple);
+
+}
+
+.door span {
+  position:  absolute;
+  width: 30px;
+  height: 30px;
+  border-radius:50%;
+  display:block;
+  background-color: lightgray;
+  top:170px;
+  left:250px;
+  border: solid 2px black;
+}
+
+.trapezoid {
+	border-bottom: 50px solid #555;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	height: 0;
+	width: 125px;
+}
+
+.cyber-card {
+  background-color: rgba(19, 20, 21, 0.96);
+  margin: 20px;
+  border-radius: 5px;
+  //padding: 15px 10px 50px 10px; /*black background*/
+
+  position: relative;
+}
+
+.cyber-tool-used {
+  margin: 25px 15px;
+  border: solid 1px #ccc;
+  padding: 15px;
+  // margin: 55px -50px 55px 30px;
+  border: solid 3px #ccc;
+}
+
+.cyber-tool-used > h5 {
+  color: #ccc;
+  background-color: rgba(19, 20, 21, 0.96);
+  position: relative;
+  top: -30px;
+  padding: 0 10px;
+  margin: 0 120px 0 5px;
+  border: solid 1px #ccc;
+}
+
+.cyber-tool-used > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.cyber-tool-used > div > button {
+  font-size: 20px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  color: #e1e1e0;
+  border: solid 3px rgba(171, 183, 183, 1);
+  border-radius: 5px;
+}
